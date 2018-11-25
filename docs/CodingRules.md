@@ -1,56 +1,57 @@
 # Coding Rules
 
 ## Git Rules
+
 One main thing/feature per commit (unless you document your code at the same time as you code).  
-Use of [Git Emoji](https://gitmoji.carloscuesta.me/) (if you need two git emoji [except documentation] try to split your commit) 
+Use of [Git Emoji](https://gitmoji.carloscuesta.me/) (if you need two git emoji [except documentation] try to split your commit)
 
 ## Repository Structure
 
 - **audio** : For samples
-- **dependencies** : installed dependencies   
+- **dependencies** : installed dependencies
 - **doc** For Documentation complement, Doxyfile, coding rules...
-	- only in *.md for text
-	- Documentation images : prefers Vector graphics *.svg or *.png
-	- *Logo* : synesthesia.svg & synesthesia.png
+  - only in *.md for text
+  - Documentation images : prefers Vector graphics *.svg or *.png
+  - *Logo* : synesthesia.svg & synesthesia.png
 - **images** : If Images needed (not for documentation)
 - **src** : all source code except tests
-	- **gui** : standalone interface
-		- **.hpp*, **.cpp*, *CMakeLists.txt*
-	- **sound-processing** : all sound processing
-		- **.hpp*, **.cpp*, *CMakeLists.txt*
-	- **visualization** : visualization
-		- **.hpp*, **.cpp*, *CMakeLists.txt*
-	- *CMakeLists.txt* 
-- **tests**  
-	all tests source code
-	- **.hpp*, **.cpp*, *CMakeLists.txt*
+  - **gui** : standalone interface
+    - **.hpp*, **.cpp*, *CMakeLists.txt*
+  - **sound-processing** : all sound processing
+    - **.hpp*, **.cpp*, *CMakeLists.txt*
+  - **visualization** : visualization
+    - **.hpp*, **.cpp*, *CMakeLists.txt*
+  - *CMakeLists.txt*
+- **tests** : all tests source code
+  - **.hpp*, **.cpp*, *CMakeLists.txt*
 - *.gitignore*
 - *LICENSE*
 - *README.md*
 - *build.cmd*
-- *build.sh* 
+- *build.sh*
 - *install_dependencies.cmd*
-- *install_dependencies.sh* 
-
+- *install_dependencies.sh*
 
 ## folders and files name
-- **Folders** :  
-all-lower
-	- &#10004; **my-folder-name**
-	- &#10060; **my_folder_name**, **myFolderName**, **MyFolderName**, **My Folder Name**...
-- *Files* :  
-lowerCamelCase, UpperCamelCase, Underscore prefix tolerant, dash + specification suffix tolerant 
-	- &#10004; *myFileName.ext*, *MyFileName.ext*, *myFileName-extended.ext*, *_myFileName.ext* 
-	- &#10060; *my_file_name*, *my-file-name*, *My File Name*...
+
+- **Folders** : all-lower
+  - ✔️ **my-folder-name**
+  - ❌ **my_folder_name**, **myFolderName**, **MyFolderName**, **My Folder Name**...
+- *Files* : lowerCamelCase, UpperCamelCase, Underscore prefix tolerant, dash + specification suffix tolerant
+  - ✔️ *myFileName.ext*, *MyFileName.ext*, *myFileName-extended.ext*, *_myFileName.ext*
+  - ❌ *my_file_name*, *my-file-name*, *My File Name*...
 
 ## C/C++ Coding Rules
 
 ### Naming
+
 #### Explicit Naming
+
 The name should be explicit. Abbreviations are allowed as long as they are obvious.  
 Ex: pointer => ptr, input => in, result => res...  
 
 #### Naming Style
+
 | Entity | Style | Prefix | Suffix | Naming Template |
 |:---|:---|:---:|:---:|:---|
 | Struct | UpperCamelCase | S | | SMyStruct |
@@ -69,154 +70,173 @@ Ex: pointer => ptr, input => in, result => res...
 | - Public Function | UpperCamelCase | | | MyFunction |
 
 ### Modernize style Code
+
 In Header file :  
 &#10004; `#pragma once`  
-&#10060; `#ifndef ...#define ... #endif`
+❌ `#ifndef ...#define ... #endif`
 
-auto use : 
-use auto if type is iterator or not important  
+auto use : use auto if type is iterator or not important  
 &#10004; `for (const auto& elem:vector){ cout<<elem; }`  
 &#10004; `auto it = v.begin();`  
-&#10060; `auto i = 0;`
-
+❌ `auto i = 0;`
 
 Loop with useless iterator :  
 &#10004; `for (const auto& elem:vector){ cout<<elem; }`  
-&#10060; `for (size_t i = 0; i < vector.size(); ++i){ cout<<vector[i]; }`  
-&#10060; `for (auto it = v.begin(); it != v.end(); ++it){ cout<<*it; }`  
+❌ `for (size_t i = 0; i < vector.size(); ++i){ cout<<vector[i]; }`  
+❌ `for (auto it = v.begin(); it != v.end(); ++it){ cout<<*it; }`  
 
 nullptr instead of NULL:  
 &#10004; `double *a = nullptr;`  
-&#10060; `double *a = NULL;`  
+❌ `double *a = NULL;`  
 
-always initialize the variables in the class declaration : 
-```
+always initialize the variables in the class declaration :
+
+```c++
 class C
 {
 public:
-	int var = 0;
-	float *arr = nullptr; 
+    int var = 0;
+    float *arr = nullptr;
 
-	void a();
+    void a();
 };
 ```
 
 #### Class declaration
-```
+
+```c++
 class C
 {
 protected:
-	//variables (const first)
+    //variables (const first)
 private:
-	//variables (const first)
+    //variables (const first)
 public:
-	//variables (const first)
+    //variables (const first)
 protected:
-	//function
+    //function
 private:
-	//function
+    //function
 public:
-	//function
+    //function
 };
 ```
 
+### Formatting
 
-### Formatting 
 It's a listing of Resharper options (plugin of Jetbrain in visual studio). If you use it you can load the setting file in `doc` folder
 
 #### Tabs & Indent
+
 - Tab character
 - How to aligne : Mix Tab and space for optimal fill
 
 #### Braces Layout
+
 **Namespace Déclaration** : at next line (BSD Style)
 
-```
+```c++
 namespace ns
 {
-	void a();
+    void a();
 }
 ```
-**Type Declaration** : at next line (BSD Style)  
-```
+
+**Type Declaration** : at next line (BSD Style)
+
+```c++
 class C
 {
 public:
-	void a();
+    void a();
 };
 ```
+
 **Place Namespace on the same line** : false
-```
+
+```c++
 namespace A
 {
-	namespace B
-	{
-		void a();
-	}
+    namespace B
+    {
+        void a();
+    }
 }
 ```
+
 **Function Déclaration** : at next line (BSD Style)
-```
+
+```c++
 void a()
 {
-	b();
+    b();
 }
 ```
-**Block under case label** : at end of line (K&R Style)  
-```
+
+**Block under case label** : at end of line (K&R Style)
+
+```c++
 switch (expression) {
-	case 0: {
-		foo();
-		break;
-	}
+    case 0: {
+        foo();
+        break;
+    }
 }
 ```
-**Other statement and blocks** : at end of line (K&R Style)  
-```
+
+**Other statement and blocks** : at end of line (K&R Style)
+
+```c++
 if (condition) {
-	foo();
+    foo();
 } else {
-	foo();
+    foo();
 }
 ```
 
-**Empty Braces format** : together on the same line (BSD Style)  
+**Empty Braces format** : together on the same line (BSD Style)
 
-```
+```c++
 class C {};
 ```
 
 **Simple statement** : as you want short statement can be stay in one line
-```
+
+```c++
 int foo() { return 0; }
 int foo()
 {
-	return 0;
+    return 0;
 }
 ```
 
 #### Blank lines
+
 **Max blank lines** : 1  
 **Blank line around function, namespace, classes** : min 1  
 **Blank line around variable declaration** : min 0
 
 #### Spaces
+
 **pointer & reference declaration** : before
-```
+
+```c++
 int **data;
 int **data, *data2, &data3 = *data2;
 int **foo(int a, int b);
 ```
 
 **comma déclaration** : before
-```
+
+```c++
 int a, b, c;
 int foo(int a, int b, int c);
 template<typename K, typename V>
 ```
 
 **parentheses parameter, angle bracket Template, empty bracket** : No
-```
+
+```c++
 int foo(int a, int b, int c);
 template<typename K>
 vector<vector<int>> v;
@@ -226,33 +246,37 @@ struct map {};
 ```
 
 **around operator** : Always
-```
+
+```c++
 c = a + b;
-c = (a > 0) ? a : b; 
+c = (a > 0) ? a : b;
 ```
 
-**Align end of line comments if possible**
-```
-int a;			// a variable
-int FooVariable;	// Foo Variable
+**Align end of line comments** : if possible
+
+```c++
+int a;              // a variable
+int FooVariable;    // Foo Variable
 ```
 
 **Align Multiple declaration if possible** : previous option in Tabs & Indent part make for you the alignment
-```
+
+```c++
 int first,
     second;
 double average(double first,
-	       double second);
+               double second);
 ```
 
 #### Line breaks
 
 **If / else** : if single statement : as you want short statement can be stay in one line
-```
+
+```c++
 if (true) {
-	foo();
+    foo();
 } else {
-	foo();
+    foo();
 }
 
 if (true) { foo(); }
@@ -260,34 +284,36 @@ else { foo(); }
 ```
 
 **Do While** :
-```
+
+```c++
 do {
-	foo();
+    foo();
 } while (true);
 ```
 
 **Try Catch** :
-```
+
+```c++
 try {
-	foo();
+    foo();
 } catch (...) {
-	foo();
+    foo();
 }
 ```
 
 **Switch Case** : if single statement : as you want short statement can be stay in one line
-```
+
+```c++
 switch (a) {
-	case b: 
-		foo(); 
-		foo(); 
-		break;
-	case c: break;
+    case b:
+        foo();
+        foo();
+        break;
+    case c: break;
 }
 
 switch (a) {
-	case b: foo(); break;
-	case c: foo(); break;
+    case b: foo(); break;
+    case c: foo(); break;
 }
 ```
-
