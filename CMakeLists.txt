@@ -1,13 +1,13 @@
 # CMakeList.txt : fichier projet CMake de niveau supérieur, effectuez une configuration globale
 # et incluez les sous-projets ici.
 #
-cmake_minimum_required (VERSION 3.10)
+cmake_minimum_required (VERSION 3.12)
 
 project (Synesthesia)
 set(VERSION 0.1)
 
 # Incluez les dépendances.
-add_subdirectory ("dependencies/wxWidgets")
+# add_subdirectory ("dependencies/wxWidgets")
 
 # Paramètres CMAKE
 set(CMAKE_CXX_STANDARD 17)		# Standard de Codage

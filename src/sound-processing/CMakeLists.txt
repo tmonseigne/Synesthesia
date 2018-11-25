@@ -1,6 +1,6 @@
 ﻿cmake_minimum_required (VERSION 3.10)
 
-project(sound-hello-world CXX)
+project(sound-hello-world)
 
 
 set(SRC_FILES 
