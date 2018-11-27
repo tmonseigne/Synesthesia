@@ -1,16 +1,13 @@
-# CMakeList.txt : fichier projet CMake de niveau supérieur, effectuez une configuration globale
-# et incluez les sous-projets ici.
-#
 cmake_minimum_required (VERSION 3.12)
 
-project (Synesthesia)
-set(VERSION 0.1)
+project (Synesthesia	
+		VERSION 1.0
+		DESCRIPTION "Synesthesia"
+		LANGUAGES CXX)
 
-# Incluez les dépendances.
-
-# Paramètres CMAKE
-set(CMAKE_CXX_STANDARD 17)		# Standard de Codage
-set(CMAKE_BUILD_TYPE Release)	# Build par défaut
+# CMAKE Parameters
+set(CMAKE_CXX_STANDARD 17)		# Standard
+set(CMAKE_BUILD_TYPE Release)	# Default Build
 set(CMAKE_INSTALL_PREFIX "${CMAKE_SOURCE_DIR}/build")
 set(BUILD_DOC TRUE)
 set(BUILD_TESTS  TRUE)
@@ -24,17 +21,13 @@ message(STATUS "
 \tBuild Docs: ${BUILD_DOC}
 \tBuild Tests: ${BUILD_TESTS}")
 
-# Incluez les sous-projets.
-#add_subdirectory ("src/gui")			# Aucun Cmake c'est un Qt maintenant
+#add_subdirectory ("src/gui")			# No CMake yet only Qmake
 add_subdirectory ("src/sound-processing")
 #add_subdirectory ("src/visualization")
-#add_subdirectory("src/tests")
 
 #Build Test
 if(BUILD_TESTS)
-	message("Tests build started")
-else(BUILD_TESTS)
-    message("Test is not build.")
+	add_subdirectory("tests")
 endif(BUILD_TESTS)
 
 #Build Documentation

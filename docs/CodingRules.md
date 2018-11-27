@@ -2,7 +2,7 @@
 
 ## Git Rules
 
-One main thing/feature per commit (unless you document your code at the same time as you code).  
+One main thing/feature per commit (unless you document your code at the same time as you code).
 Use of [Git Emoji](https://gitmoji.carloscuesta.me/) (if you need two git emoji [except documentation] try to split your commit)
 
 ## Repository Structure
@@ -47,8 +47,8 @@ Use of [Git Emoji](https://gitmoji.carloscuesta.me/) (if you need two git emoji 
 
 #### Explicit Naming
 
-The name should be explicit. Abbreviations are allowed as long as they are obvious.  
-Ex: pointer => ptr, input => in, result => res...  
+The name should be explicit. Abbreviations are allowed as long as they are obvious.
+Ex: pointer => ptr, input => in, result => res...
 
 #### Naming Style
 
@@ -71,23 +71,27 @@ Ex: pointer => ptr, input => in, result => res...
 
 ### Modernize style Code
 
-In Header file :  
-&#10004; `#pragma once`  
-❌ `#ifndef ...#define ... #endif`
+In Header file :
 
-auto use : use auto if type is iterator or not important  
-&#10004; `for (const auto& elem:vector){ cout<<elem; }`  
-&#10004; `auto it = v.begin();`  
-❌ `auto i = 0;`
+- ✔️ `#pragma once`
+- ❌ `#ifndef ...#define ... #endif`
 
-Loop with useless iterator :  
-&#10004; `for (const auto& elem:vector){ cout<<elem; }`  
-❌ `for (size_t i = 0; i < vector.size(); ++i){ cout<<vector[i]; }`  
-❌ `for (auto it = v.begin(); it != v.end(); ++it){ cout<<*it; }`  
+auto use : use auto if type is iterator or not important
 
-nullptr instead of NULL:  
-&#10004; `double *a = nullptr;`  
-❌ `double *a = NULL;`  
+- ✔️ `for (const auto& elem:vector){ cout<<elem; }`
+- ✔️ `auto it = v.begin();`
+- ❌ `auto i = 0;`
+
+Loop with useless iterator :
+
+- ✔️ `for (const auto& elem:vector){ cout<<elem; }`
+- ❌ `for (size_t i = 0; i < vector.size(); ++i){ cout<<vector[i]; }`
+- ❌ `for (auto it = v.begin(); it != v.end(); ++it){ cout<<*it; }`
+
+nullptr instead of NULL:
+
+- ✔️ `double *a = nullptr;`
+- ❌ `double *a = NULL;`
 
 always initialize the variables in the class declaration :
 
@@ -212,8 +216,8 @@ int foo()
 
 #### Blank lines
 
-**Max blank lines** : 1  
-**Blank line around function, namespace, classes** : min 1  
+**Max blank lines** : 1
+**Blank line around function, namespace, classes** : min 1
 **Blank line around variable declaration** : min 0
 
 #### Spaces
