@@ -1,2 +1,33 @@
 language:
   - cpp
+
+before_install:
+  ############################################################################
+  # Install a recent CMake
+  ############################################################################
+  - |
+    if [ "$TRAVIS_OS_NAME" == "linux" ]; then
+      CMAKE_INSTALLER=install-cmake.sh && \
+        curl -sSL https://github.com/Kitware/CMake/releases/download/v3.13.0/cmake-3.13.0-Linux-x86_64.sh -o ${CMAKE_INSTALLER} && \
+        chmod +x ${CMAKE_INSTALLER} && \
+        sudo ./${CMAKE_INSTALLER} --prefix=/usr/local --skip-license
+    fi
+  - alias cmake=/usr/local/bin/cmake
+  - export PATH=/usr/local/bin/cmake/bin:/usr/local/bin:${PATH}
+  - |
+    if [ "$TRAVIS_OS_NAME" == "osx" ]; then
+      echo "need cmake 3.12" && \
+        brew update && \
+        brew install ccache && \
+        brew upgrade cmake && \
+        export PATH="/usr/local/opt/ccache/libexec:$PATH"
+    fi
+
+script:
+  - $CXX --version
+  - cmake --version
+  - mkdir -p build && cd build
+  - cmake .. -DCMAKE_BUILD_TYPE=${BUILD} -DBOOST_ROOT="$BOOST"
+  - make
+  - ./tests/test-hello-world
+  - ./src/sound-processing/sound-hello-world
