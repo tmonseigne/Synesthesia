@@ -1,5 +1,5 @@
-language:
-  - cpp
+sudo: false
+language: cpp
 
 os: 
   - linux
@@ -41,3 +41,6 @@ script:
   - make
   - ./src/sound-processing/sound-hello-world
   - ./tests/test-hello-world
+
+notifications:
+  email: false
