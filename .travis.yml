@@ -1,6 +1,9 @@
 language:
   - cpp
 
+os: 
+  - linux
+
 before_install:
   ############################################################################
   # Install a recent CMake
@@ -23,11 +26,13 @@ before_install:
         export PATH="/usr/local/opt/ccache/libexec:$PATH"
     fi
 
+#install:
+
 script:
   - $CXX --version
   - cmake --version
   - mkdir -p build && cd build
   - cmake .. -DCMAKE_BUILD_TYPE=${BUILD} -DBOOST_ROOT="$BOOST"
   - make
-  - ./tests/test-hello-world
   - ./src/sound-processing/sound-hello-world
+#  - ./tests/test-hello-world

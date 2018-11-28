@@ -9,8 +9,8 @@ project (Synesthesia
 set(CMAKE_CXX_STANDARD 17)		# Standard
 set(CMAKE_BUILD_TYPE Release)	# Default Build
 set(CMAKE_INSTALL_PREFIX "${CMAKE_SOURCE_DIR}/build")
+set(BUILD_TESTS  FALSE)
 set(BUILD_DOC TRUE)
-set(BUILD_TESTS  TRUE)
 
 message(STATUS "
 \tProject Name : ${PROJECT_NAME} ${VERSION}
