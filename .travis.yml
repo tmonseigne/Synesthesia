@@ -37,7 +37,7 @@ script:
   - $CXX --version
   - cmake --version
   - mkdir -p build && cd build
-  - cmake .. -DCMAKE_BUILD_TYPE=${BUILD} -DBOOST_ROOT="$BOOST"
+  - cmake ..
   - make
   - ./src/sound-processing/sound-hello-world
   - ./tests/test-hello-world
