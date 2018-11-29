@@ -1,5 +1,9 @@
-language:
-  - cpp
+sudo: false
+language: cpp
+
+git:
+  submodules:
+    true
 
 os: 
   - linux
@@ -26,13 +30,21 @@ before_install:
         export PATH="/usr/local/opt/ccache/libexec:$PATH"
     fi
 
-#install:
+install:
+  - ls -al
+  - git status 
+  - git submodule init 
+  - git submodule update
+  - ls -al
 
 script:
   - $CXX --version
   - cmake --version
   - mkdir -p build && cd build
-  - cmake .. -DCMAKE_BUILD_TYPE=${BUILD} -DBOOST_ROOT="$BOOST"
+  - cmake ..
   - make
   - ./src/sound-processing/sound-hello-world
-#  - ./tests/test-hello-world
+  - ./tests/test-hello-world
+
+notifications:
+  email: false

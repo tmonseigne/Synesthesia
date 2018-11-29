@@ -159,6 +159,5 @@ CMakeLists.txt.user*
 ################
 ~*
 Thumbs.db
-dependencies/
 *build*/
 .idea/
