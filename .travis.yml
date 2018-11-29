@@ -1,6 +1,10 @@
 sudo: false
 language: cpp
 
+git:
+  submodules:
+    true
+
 os: 
   - linux
 
