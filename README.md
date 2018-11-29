@@ -1,6 +1,6 @@
 # Synesthesia
 
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0) [![Build Status](https://travis-ci.com/tmonseigne/Synesthesia.svg?branch=master)](https://travis-ci.com/tmonseigne/Synesthesia)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0) [![Build Status](https://travis-ci.com/tmonseigne/Synesthesia.svg?branch=master)](https://travis-ci.com/tmonseigne/Synesthesia) [![Build status](https://ci.appveyor.com/api/projects/status/4q5jurmydigoumgs/branch/master?svg=true)](https://ci.appveyor.com/project/tmonseigne/synesthesia/branch/master)
 
 ## Synesthésia : projet de visualisation musicale avancé
 

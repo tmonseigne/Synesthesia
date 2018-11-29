@@ -1,0 +1,19 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+configuration: Release
+platform: x64
+init:
+- ps: >-
+    cmake --version
+
+    #choco install doxygen.install -y --limitoutput --no-progress
+before_build:
+- ps: git submodule update --init --recursive
+build:
+  project: sln/
+  verbosity: minimal
+after_build:
+- ps: >-
+    .\build\Release-x64\sound-hello-world.exe
+
+    .\build\Release-x64\test-hello-world.exe
