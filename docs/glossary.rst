@@ -1,0 +1,5 @@
+Glossaire
+=========
+
+.. glossary::
+   :sorted:

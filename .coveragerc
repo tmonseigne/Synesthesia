@@ -1,0 +1,25 @@
+[run]
+branch = True
+source = synesthesia
+omit =
+	*/shibokensupport/*      ; shiboken créer des fichiers virtuels qui n'existent pas
+    */signature_bootstrap.py ; idem
+    */pyscript*              ; idem
+	synesthesia/_tests/*
+	main.py
+    conftest.py
+    __init__.py
+
+[report]
+exclude_also =
+    if platform.system()
+    try
+	except
+	finally
+	GPU
+	# Cas particulier pour hack les importations cycliques
+	if TYPE_CHECKING:
+	# Aucun appel de fichier lors des tests pour le code coverage
+	if __name__ == "__main__":
+	# les if contenant _HAS_WEBENGINE sont la en cas de mauvaises installation donc non couvert à 100%
+	_HAS_WEBENGINE

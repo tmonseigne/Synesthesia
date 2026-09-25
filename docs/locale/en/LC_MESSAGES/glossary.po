@@ -1,0 +1,3 @@
+#: ../../glossary.rst:2
+msgid "Glossaire"
+msgstr "Glossary"

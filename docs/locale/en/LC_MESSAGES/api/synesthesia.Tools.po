@@ -1,0 +1,3 @@
+#: ../../api/synesthesia.Tools.rst:2 ../../api/synesthesia.Tools.rst:4
+msgid "Tools"
+msgstr ""

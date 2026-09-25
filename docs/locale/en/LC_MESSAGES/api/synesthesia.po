@@ -1,0 +1,3 @@
+#: ../../api/synesthesia.rst:2
+msgid "Synesthesia API Reference"
+msgstr ""
