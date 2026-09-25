@@ -13,6 +13,7 @@ repos:
       - id: end-of-file-fixer           # Assure que les fichiers se terminent par une nouvelle ligne et uniquement par une nouvelle ligne.
       - id: name-tests-test             # Vérifie que les fichiers de test sont nommés correctement.
         args: [ --pytest-test-first ]   # Assure que les tests correspondent au style test_.*\.py
+        exclude: ^tests/(Monitoring|Monitoring_tests|Utils)[.]py$  # Fichiers de support et test de monitoring lancé séparément.
       - id: trailing-whitespace         # Supprime les espaces de fin de ligne.
         args: [ --markdown-linebreak-ext=md ] # Exception pour les fichiers Markdown
   - repo: https://github.com/pre-commit/mirrors-mypy

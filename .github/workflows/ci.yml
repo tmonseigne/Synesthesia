@@ -1,0 +1,219 @@
+name: Synesthesia Tests, Documentation and Deploy
+
+# Ce workflow est déclenché lors d'un push vers les branches « main », lors de pull requests vers ces branches, et peut également être déclenché manuellement via `workflow_dispatch`.
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+# Des autorisations sont nécessaires pour que le déploiement sur GitHub Pages fonctionne
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Groupe de concurrence pour éviter les déploiements simultanés
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Exécute des tests sur plusieurs plateformes et versions de Python
+  Tests:
+    name: Tests on ${{ matrix.platform }} for Python ${{ matrix.python-version }}
+    runs-on: ${{ matrix.platform }} # Plateforme sur laquelle le job s'exécute (Ubuntu, Windows, macOS).
+    timeout-minutes: 30 # .           Limite de temps pour chaque job de test (30 minutes).
+    strategy:
+      fail-fast: false  # .           Poursuivre les autres tâches si une matrice échoue.
+      matrix: # .                     Définition de la matrice pour exécuter les tests sur différentes plateformes et versions de Python.
+        platform: [ ubuntu-latest, windows-latest, macos-latest ]
+        python-version: [ "3.13" ] # .[ "3.13", "3.14" ]
+
+    # Environnement spécifique pour contourner les alertes Homebrew sur macOS
+    env:
+      HOMEBREW_NO_REQUIRE_TAP_TRUST: "1"
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      # Purge complète des paquets Cloud tiers encombrant l'image macOS et peut provoquer des erreurs de dépendances lors de l'installation de Homebrew.
+      - name: Force cleanup stale Homebrew dependencies (macOS only)
+        if: matrix.platform == 'macos-latest'
+        run: |
+          # Désinstaller les outils pour détruire les dépendances qui bloquent le untap
+          brew uninstall --force packer || true
+          brew uninstall --force aws-sam-cli || true
+          brew uninstall --force bicep || true
+          # Supprimer les taps obsolètes maintenant qu'ils sont vides
+          brew untap hashicorp/tap aws/tap azure/bicep || true
+
+      # Configurer un écran sans interface utilisateur pour PyVista (nécessaire pour certains tests)
+      - name: Setup headless display
+        uses: pyvista/setup-headless-display-action@v3
+        with:
+          qt: true
+
+      # Installation de Python et mise en cache des dépendances pour accélérer la CI
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'          # Garde la CI rapide (réutilise les packages téléchargés)
+          # Force l'invalidation du cache obsolète/corrompu sur GitHub
+          cache-dependency-path: |
+            **/setup.py
+            **/pyproject.toml
+            **/*requirements*.txt
+
+      # Installation de vcredist2010 ; en cas de problème, installez l'ensemble des composants (vcredist-all)
+      - name: Install Dependencies and Libraries Windows
+        if: runner.os == 'Windows'
+        run: |
+          choco install vcredist2010 -y
+
+      # Mise à jour de Homebrew et installation de libomp sur macOS
+      - name: Install Dependencies
+        if: runner.os == 'macOS'
+        run: |
+          brew update
+          brew install libomp
+
+      # Installation des dépendances Python nécessaires pour exécuter les tests
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install setuptools tox tox-gh-actions ansi2html
+          python -m pip install .[test]
+
+      # Exécute les tests
+      - name: Run tests
+        env:
+          PLATFORM: ${{ matrix.platform }}
+          QT_QPA_PLATFORM: offscreen
+          QT_API: pyside6
+          QTWEBENGINE_CHROMIUM_FLAGS: --no-sandbox --disable-gpu
+          PYTHONFAULTHANDLER: "1"
+          MPLBACKEND: Agg
+        run: python -m pytest
+
+      # Gérer les rapports de test et les déplacer dans le répertoire des rapports
+      - name: Manage Test Reports
+        run: |
+          python ./docs/tools/pytest_json_to_rst.py ./reports/test_report.json ./reports/test_report_ci_${{ matrix.platform }}_${{ matrix.python-version }}.rst
+          mv ./reports/monitoring.html ./reports/monitoring_ci_${{ matrix.platform }}_${{ matrix.python-version }}.html
+        continue-on-error: true  # Permet de continuer même si cette étape échoue
+
+      # Télécharge les rapports de test en tant qu'artefacts pour une consultation ultérieure.
+      - name: Upload Test Reports as Artifacts
+        uses: actions/upload-artifact@v7
+        with:
+          name: reports-${{ matrix.platform }}_${{ matrix.python-version }}
+          path: |
+            reports/test_report_ci_*.rst
+            reports/monitoring_ci_*.html
+        continue-on-error: true  # Permet de continuer même si cette étape échoue
+
+      # Télécharge les rapports de couverture de code vers Codecov pour l'analyse et la visualisation.
+      - name: Upload coverage reports to Codecov
+        if: matrix.platform == 'windows-latest' && matrix.python-version == '3.13'
+        uses: codecov/codecov-action@v7
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          slug: tmonseigne/synesthesia
+
+  # Construction et déploiement de la documentation Sphinx
+  Documentation:
+    name: Build and Deploy Sphinx Documentation
+    needs: [ Tests ]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      # Installation de Python et mise en cache des dépendances pour accélérer la CI
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+          cache: 'pip'          # Garde la CI rapide (réutilise les packages téléchargés)
+          # Force l'invalidation du cache obsolète/corrompu sur GitHub
+          cache-dependency-path: |
+            **/setup.py
+            **/pyproject.toml
+            **/*requirements*.txt
+
+      # Installation des bibliothèques d'exécution Qt nécessaires pour la génération de la documentation sur Linux
+      - name: Install Qt runtime libs
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+              sudo apt-get install -y libegl1 libgl1 libopengl0 libxkbcommon-x11-0 libxcb-xinerama0 libxcb-cursor0 libdbus-1-3 libnss3 libfontconfig1
+          # Ubuntu 24.04 : libasound2 => libasound2t64
+          sudo apt-get install -y libasound2t64 || sudo apt-get install -y libasound2
+
+      # Installation de Graphviz et cloc pour la génération de la documentation et le calcul des lignes de code
+      - name: Install Graphviz system package
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y graphviz cloc
+
+      # Installation des dépendances Python nécessaires pour générer la documentation
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install .[documentation]
+
+      # Télécharge les rapports de test générés par le job "Test" pour les inclure dans la documentation.
+      - name: Download Test Reports
+        uses: actions/download-artifact@v8
+        with:
+          path: docs/reports/
+          pattern: reports-*
+          merge-multiple: true
+
+      # Génération de la documentation Sphinx en français et en anglais
+      - name: Build documentation
+        run: |
+          python ./docs/tools/generate_api_files.py  # Génération de l'API
+          python ./docs/tools/generate_test_reports_toc.py  # Mise à jour du fichier principal des rapports de test
+          sphinx-build -b html -D language=fr docs docs/_build/html
+          sphinx-build -b html -D language=en docs docs/_build/html/en
+
+      # Calcul du badge de lignes de code
+      - name: Compute LOC badge
+        run: |
+          git ls-files | cloc --json --list-file=- --out=cloc_raw.json --exclude-dir=input,output --exclude-ext=json,html,xml,csv,po
+
+          python3 - << 'PY'
+          import json, pathlib
+
+          raw = json.load(open("cloc_raw.json", encoding="utf-8"))
+          s = raw["SUM"]
+          message = f"files {int(s['nFiles'])} | comment {int(s['comment'])} | code {int(s['code'])}"
+          print("CLOC Summary:", message)
+          badge = { "schemaVersion": 1, "label": "CLOC SUM", "message": message, "color": "blue"}
+
+          out = pathlib.Path("docs/_build/html/cloc.json")
+          out.write_text(json.dumps(badge), encoding="utf-8")
+          PY
+
+      # Déploiement de la documentation sur GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v6
+
+      # Télécharge la documentation générée en tant qu'artefact pour le déploiement sur GitHub Pages
+      - name: Upload documentation to GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: 'docs/_build/html'
+
+      # Déploiement de la documentation sur GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

@@ -1,0 +1,55 @@
+#: ../../index.rst:49
+msgid "Sommaire"
+msgstr "Table of contents"
+
+#: ../../index.rst:2
+msgid "Documentation Synesthesia"
+msgstr "Synesthesia documentation"
+
+#: ../../index.rst:4
+msgid "License"
+msgstr ""
+
+#: ../../index.rst:8
+msgid "Main Language"
+msgstr ""
+
+#: ../../index.rst:12
+msgid "GitHub"
+msgstr ""
+
+#: ../../index.rst:16
+msgid "Workflow"
+msgstr ""
+
+#: ../../index.rst:20
+msgid "Documentation"
+msgstr ""
+
+#: ../../index.rst:24
+msgid "codecov"
+msgstr ""
+
+#: ../../index.rst:28
+msgid "Lines of Code"
+msgstr ""
+
+#: ../../index.rst:33
+msgid "Synesthesia est un projet de visualiseur audio interactif inspiré de la chromesthésie. Il vise à transformer des caractéristiques d'un signal musical en une représentation visuelle animée, à partir de correspondances perceptives documentées et de règles que l'utilisateur pourra personnaliser."
+msgstr "Synesthesia is an interactive audio visualizer project inspired by chromesthesia. It aims to transform the characteristics of a musical signal into an animated visual representation, based on documented perceptual correspondences and rules that the user can customize."
+
+#: ../../index.rst
+msgid "Utilisation d'outils d'intelligence artificielle"
+msgstr "Use of Artificial Intelligence Tools"
+
+#: ../../index.rst:39
+msgid "Des outils d'intelligence artificielle sont utilisés comme aide à la recherche, à la rédaction et au développement de ce projet. Leurs propositions sont examinées, corrigées ou écartées par l'auteur. Celui-ci reste responsable des choix méthodologiques, de l'interprétation des sources, de l'implémentation et des conclusions."
+msgstr "Artificial intelligence tools are used to assist in the research, writing, and development of this project. Their suggestions are reviewed, corrected, or rejected by the author. The author remains responsible for methodological choices, the interpretation of sources, implementation, and conclusions."
+
+#: ../../index.rst:43
+msgid "L'usage de ces outils ne constitue ni une source de preuve ni une validation scientifique. Toute affirmation scientifique destinée à une publication doit être étayée par des sources vérifiées et, lorsque cela s'applique, par des méthodes et des résultats reproductibles."
+msgstr "The use of these tools does not constitute a source of evidence or scientific validation. Any scientific claim intended for publication must be supported by verified sources and, where applicable, by reproducible methods and results."
+
+#: ../../index.rst:46
+msgid "Les modalités précises de l'assistance reçue seront décrites dans chaque publication selon les exigences de la revue ou de l'éditeur concerné."
+msgstr "The specific details of the assistance received will be described in each publication in accordance with the requirements of the relevant journal or publisher."

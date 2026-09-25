@@ -1,0 +1,85 @@
+[project]
+name = "synesthesia"
+version = "0.0.1"
+description = "Visualiseur audio interactif inspiré de la chromesthésie."
+readme = "README.md"
+license = "AGPL-3.0-only"
+license-files = ["LICENSE.md"]
+authors = [{ name = "Thibaut Monseigne" }, { email = "monseignethibaut@gmail.com" }]
+requires-python = ">=3.13"
+dependencies = [
+	"colorama",
+	"datetime",
+	"numpy",
+	# Dépendances pour les graphiques
+	"plotly",
+	# Dépendances pour l'interface
+	"PySide6",
+	# "PySide6-Addons",
+	# Dépendances pour les infos cross plateforme
+	"psutil",
+	"py-cpuinfo",
+	"nvidia-ml-py"
+]
+
+[project.optional-dependencies]
+test = [
+	"pytest", # https://docs.pytest.org/en/latest/contents.html
+	"pytest-cov", # https://pytest-cov.readthedocs.io/en/latest/
+	"pytest-qt", # https://pytest-qt.readthedocs.io/en/latest/
+	"pytest-json",
+	"pytest-json-report",
+	"pytest-metadata"]
+documentation = [
+	"sphinx",
+	"sphinxcontrib-bibtex",
+	"sphinx-autobuild",
+	"sphinx-copybutton",
+	"sphinx-design",
+	"sphinx-rtd-theme",
+	"sphinx-qt-documentation",
+	"ansi2html", # Utile pour transformer les rapports
+	"sphinx-intl"  # Outil de traduction pour Sphinx
+]
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["synesthesia*"]
+exclude = ["docs"]
+
+[tool.black]
+line-length = 160
+
+[tool.ruff]
+line-length = 160
+fix = true
+exclude = [".bzr", ".direnv", ".eggs", ".git", ".mypy_cache", ".pants.d", ".ruff_cache", ".svn", ".tox", ".venv", "__pypackages__", "_build",
+	"buck-out", "build", "dist", "node_modules", "venv", "*vendored*", "*_vendor*", ]
+
+
+[tool.ruff.lint]
+select = [
+	"E", "F", "W", # flake8
+	"UP", # pyupgrade
+	"I", # isort
+	"BLE", # flake8-blind-exception
+	"B", # flake8-bugbear
+	"A", # flake8-builtins
+	"C4", # flake8-comprehensions
+	"ISC", # flake8-implicit-str-concat
+	"G", # flake8-logging-format
+	"PIE", # flake8-pie
+	"SIM", # flake8-simplify
+]
+
+ignore = [
+	"E501", # line too long. let black handle this
+	"UP006", "UP007", # type annotation. As using magicgui require runtime type annotation then we disable this.
+	"SIM117", # flake8-simplify - some of merged with statements are not looking great with black, reanble after drop python 3.9
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["synesthesia"]

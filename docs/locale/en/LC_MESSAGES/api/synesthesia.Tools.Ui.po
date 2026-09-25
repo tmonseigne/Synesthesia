@@ -1,0 +1,44 @@
+#: ../../api/synesthesia.Tools.Ui.rst:2
+msgid "Ui"
+msgstr ""
+
+#: of synesthesia.Tools.Ui:1
+msgid "Fournit les utilitaires d'interface."
+msgstr "Provides interfaces utilities."
+
+#: of synesthesia.Tools.Ui.print_error:1
+msgid "Affiche un message avec une couleur rouge."
+msgstr "Displays a message in red."
+
+#: ../../api/synesthesia.Tools.Ui.rst
+msgid "Paramètres"
+msgstr "Parameters"
+
+#: of synesthesia.Tools.Ui.print_error:3 synesthesia.Tools.Ui.print_success:3
+#: synesthesia.Tools.Ui.print_warning:3
+msgid "Message à afficher."
+msgstr "Message to display."
+
+#: of synesthesia.Tools.Ui.print_warning:1
+msgid "Affiche un message avec une couleur jaune."
+msgstr "Displays a message in yellow."
+
+#: of synesthesia.Tools.Ui.print_success:1
+msgid "Affiche un message avec une couleur verte."
+msgstr "Displays a message in green."
+
+#: of synesthesia.Tools.Ui.format_time:1
+msgid "Fonction pour formater le temps en secondes en HH:MM:SS."
+msgstr "Function to format time in seconds as HH:MM:SS."
+
+#: of synesthesia.Tools.Ui.format_time:3
+msgid "Temps en secondes."
+msgstr "Time in seconds."
+
+#: ../../api/synesthesia.Tools.Ui.rst
+msgid "Renvoie"
+msgstr "Return"
+
+#: of synesthesia.Tools.Ui.format_time:4
+msgid "Chaîne de caractère représentant le temps au format HH:MM:SS."
+msgstr "String representing the time in HH:MM:SS format."

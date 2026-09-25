@@ -1,7 +1,11 @@
 # Synesthesia
 
-![GitHub License](https://img.shields.io/github/license/tmonseigne/synesthesia)
-![GitHub top language](https://img.shields.io/github/languages/top/tmonseigne/synesthesia)
+![GitHub License](https://img.shields.io/github/license/tmonseigne/Synesthesia)
+![GitHub top language](https://img.shields.io/github/languages/top/tmonseigne/Synesthesia)
+[![Documentation Status](https://img.shields.io/badge/Documentation-Online-brightgreen)](https://tmonseigne.github.io/Synesthesia/)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/tmonseigne/Synesthesia/ci.yml)](https://github.com/tmonseigne/Synesthesia/actions)
+[![codecov](https://codecov.io/gh/tmonseigne/Synesthesia/graph/badge.svg?token=5oDCSBI5sO)](https://codecov.io/gh/tmonseigne/Synesthesia)
+![CLOC](https://img.shields.io/endpoint?url=https://tmonseigne.github.io/Synesthesia/cloc.json)
 
 Synesthesia est un projet de visualiseur audio interactif inspiré de la chromesthésie. Il vise à transformer des caractéristiques d'un signal musical en une représentation visuelle animée, à partir de correspondances perceptives documentées et de règles que l'utilisateur pourra personnaliser.
 

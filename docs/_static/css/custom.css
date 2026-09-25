@@ -1,0 +1,86 @@
+.wy-nav-content {
+    max-width: 1200px !important;
+}
+
+.test-page table.docutils.align-default th:nth-child(2),
+.test-page table.docutils.align-default td:nth-child(2) {
+    text-align: center;
+}
+
+.test-page details {
+    margin-bottom: 1em;
+}
+
+.test-page details > summary {
+  padding: 2px 6px;
+  width: 100%;
+  background-color: #ddd;
+  border: none;
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;
+}
+
+.test-page details > pre {
+  border-radius: 0 0 10px 10px;
+  background-color: #ddd;
+  padding: 1em 2em 1em 2em;
+  margin: 0;
+  box-shadow: 3px 3px 4px black;
+}
+
+.test-page details[open] > summary {
+  background-color: #ccf;
+}
+
+/* Centre et met en gras la légende des figures */
+.centered-caption figcaption,
+.centered-caption .caption,
+.centered-caption .caption-text {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Tableaux "image-grid" : layout uniquement, sans style visuel */
+table.image-grid {
+  border: none !important;
+  border-collapse: collapse !important;
+  margin: 0 !important;
+  background: transparent !important;
+}
+
+table.image-grid tr,
+table.image-grid td,
+table.image-grid th {
+  border: none !important;
+  padding: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Évite les espacements internes imposés par certains thèmes */
+table.image-grid td > * {
+  margin: 0 !important;
+  margin-bottom: 1em !important;  /* ajustement ici  en cas de lignes multiples*/
+}
+
+/* Optionnel : centre le contenu des cellules */
+table.image-grid td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Masque le préfixe de la classe dans les signatures (RTD/Furo selon markup) */
+.sig .sig-prename.descclassname,
+.sig .sig-prename.descclassname + .sig-name.descname::before {
+  display: none;
+}
+
+/* Encadré concernant l'utilisation d'outils d'intelligence artificielle. */
+.ai-disclaimer {
+    background-color: rgba(100, 140, 200, 0.06);
+    border-color: rgba(100, 140, 200, 0.25);
+}
+
+.ai-disclaimer > summary {
+    background-color: rgba(100, 140, 200, 0.10);
+}
