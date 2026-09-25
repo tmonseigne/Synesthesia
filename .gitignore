@@ -146,6 +146,5 @@ cython_debug/
 *.docx
 
 # For the moment, DLLs won't go to the repository
-tests/
 docs/api/
 docs/articles/
