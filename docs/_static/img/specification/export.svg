@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title description">
+<title id="title">Synesthesia — esquisse de l&#x27;export vidéo</title>
+<desc id="description">Préparation et suivi d&#x27;un export vidéo à partir de la source, du profil et des mesures analysées.</desc>
+<defs><linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#91EAD2"/><stop offset=".55" stop-color="#82D2E6"/><stop offset="1" stop-color="#C5AAF8"/></linearGradient><linearGradient id="preview" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#13233F"/><stop offset="1" stop-color="#272044"/></linearGradient><radialGradient id="glow"><stop stop-color="#91EAD2" stop-opacity=".45"/><stop offset="1" stop-color="#91EAD2" stop-opacity="0"/></radialGradient></defs>
+<rect x="0" y="0" width="1440" height="900" fill="#0B1020"/>
+<rect x="0" y="0" width="228" height="900" fill="#11182B"/>
+<line x1="228" y1="0" x2="228" y2="900" stroke="#26314B" stroke-width="1"/>
+<circle cx="39" cy="41" r="16" fill="#91EAD2"/>
+<path d="M31 42c5-14 10 14 16 0" fill="none" stroke="#14243A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="66" y="48" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="19" font-weight="700">Synesthesia</text>
+<text x="28" y="104" fill="#7F8CA8" font-family="Arial, sans-serif" font-size="11" font-weight="700">ESPACE DE TRAVAIL</text>
+<rect x="16" y="126" width="196" height="46" fill="#25354C" rx="12"/>
+<rect x="16" y="126" width="4" height="46" fill="#91EAD2" rx="2"/>
+<circle cx="41" cy="149" r="7" fill="#91EAD2"/>
+<text x="62" y="154" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="14" font-weight="700">Visualisateur</text>
+<circle cx="41" cy="203" r="7" fill="#91A0B9"/>
+<text x="62" y="208" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="14">Configurateur</text>
+<circle cx="41" cy="257" r="7" fill="#91A0B9"/>
+<text x="62" y="262" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="14">Profils</text>
+<text x="28" y="828" fill="#7584A0" font-family="Arial, sans-serif" font-size="11">Prototype d&#x27;interface · v0.1</text>
+<text x="264" y="57" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="28" font-weight="700">Exporter la visualisation</text>
+<text x="264" y="84" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="14">Vérifiez la source, le profil et les paramètres avant de lancer l&#x27;encodage.</text>
+<rect x="264" y="112" width="704" height="763" fill="#172138" rx="18" stroke="#35425C" stroke-width="1"/>
+<text x="290" y="151" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="18" font-weight="700">Préparation</text>
+<text x="290" y="190" fill="#8E9FBA" font-family="Arial, sans-serif" font-size="10" font-weight="700">SOURCE ET PROFIL</text>
+<rect x="290" y="204" width="652" height="92" fill="#202D44" rx="12"/>
+<text x="310" y="236" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="15" font-weight="700">Exemple audio.wav</text>
+<text x="310" y="260" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="12">03:42 · analyse terminée</text>
+<rect x="735" y="223" width="182" height="35" fill="#2C4457" rx="9"/>
+<text x="749" y="245" fill="#91EAD2" font-family="Arial, sans-serif" font-size="12" font-weight="700">Mon profil</text>
+<text x="290" y="339" fill="#8E9FBA" font-family="Arial, sans-serif" font-size="10" font-weight="700">DESTINATION</text>
+<rect x="290" y="352" width="652" height="49" fill="#202D44" rx="10" stroke="#4B5E78" stroke-width="1"/>
+<text x="309" y="383" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="13">Choisir le fichier de sortie…</text>
+<text x="290" y="449" fill="#8E9FBA" font-family="Arial, sans-serif" font-size="10" font-weight="700">PARAMÈTRES DE SORTIE</text>
+<rect x="290" y="467" width="652" height="47" fill="#202D44" rx="10" stroke="#3F526D" stroke-width="1"/>
+<text x="309" y="496" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="13">Résolution</text>
+<text x="792" y="496" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="12">À choisir</text>
+<rect x="290" y="527" width="652" height="47" fill="#202D44" rx="10" stroke="#3F526D" stroke-width="1"/>
+<text x="309" y="556" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="13">Cadence</text>
+<text x="792" y="556" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="12">À choisir</text>
+<rect x="290" y="587" width="652" height="47" fill="#202D44" rx="10" stroke="#3F526D" stroke-width="1"/>
+<text x="309" y="616" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="13">Encodage</text>
+<text x="792" y="616" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="12">À choisir</text>
+<rect x="290" y="667" width="652" height="74" fill="#1C3046" rx="12" stroke="#48687B" stroke-width="1"/>
+<text x="309" y="695" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="12">Le rendu reprend les mesures et les règles du profil actif.</text>
+<text x="309" y="718" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="11">Les images sont calculées aux instants de la cadence choisie.</text>
+<rect x="290" y="791" width="181" height="42" fill="#273750" rx="11" stroke="#53647F" stroke-width="1"/>
+<text x="307" y="818" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="12" font-weight="700">Retour à l&#x27;aperçu</text>
+<rect x="761" y="791" width="181" height="42" fill="#91EAD2" rx="11"/>
+<text x="778" y="818" fill="#172638" font-family="Arial, sans-serif" font-size="12" font-weight="700">Lancer l&#x27;export</text>
+<rect x="984" y="112" width="432" height="763" fill="#172138" rx="18" stroke="#35425C" stroke-width="1"/>
+<text x="1008" y="151" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="18" font-weight="700">Aperçu et suivi</text>
+<rect x="1008" y="175" width="384" height="242" fill="url(#preview)" rx="13" stroke="#435671" stroke-width="1"/>
+<circle cx="1200" cy="292" r="122" fill="url(#glow)"/>
+<path d="M1063 337c56-104 91-91 131-49s78 27 139-35" fill="none" stroke="url(#accent)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1167" cy="296" r="24" fill="#C5AAF8"/>
+<circle cx="1279" cy="275" r="34" fill="#91EAD2"/>
+<text x="1008" y="451" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="14" font-weight="700">Avant le lancement</text>
+<text x="1008" y="478" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="12">L&#x27;aperçu permet de contrôler le profil choisi.</text>
+<line x1="1008" y1="510" x2="1392" y2="510" stroke="#3B4B65" stroke-width="1"/>
+<text x="1008" y="548" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="14" font-weight="700">Progression de l&#x27;export</text>
+<rect x="1008" y="570" width="384" height="9" fill="#34445E" rx="4"/>
+<rect x="1008" y="570" width="130" height="9" fill="#91EAD2" rx="4"/>
+<text x="1008" y="610" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="12">État illustratif : encodage en cours · 34 %</text>
+<rect x="1008" y="649" width="384" height="88" fill="#1B2D43" rx="12" stroke="#425B72" stroke-width="1"/>
+<text x="1026" y="680" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="13" font-weight="700">En cas d&#x27;échec</text>
+<text x="1026" y="706" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="12">Afficher la cause et conserver le profil.</text>
+<text x="1008" y="795" fill="#8698B2" font-family="Arial, sans-serif" font-size="11">Les formats effectifs restent à définir.</text>
+</svg>

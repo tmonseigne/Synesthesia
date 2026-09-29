@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title description">
+  <title id="title">Synesthesia — maquette du visualisateur</title>
+  <desc id="description">Interface de lecture avec rendu 2D central, source et profil visibles, commandes de transport et réglages de confort.</desc>
+  <defs>
+    <linearGradient id="stage" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111C38"/><stop offset="0.52" stop-color="#17213D"/><stop offset="1" stop-color="#15102D"/></linearGradient>
+    <radialGradient id="aura"><stop stop-color="#97F2D5" stop-opacity=".72"/><stop offset=".42" stop-color="#5CC9CC" stop-opacity=".25"/><stop offset="1" stop-color="#5CC9CC" stop-opacity="0"/></radialGradient>
+    <radialGradient id="violet"><stop stop-color="#B7A5FB" stop-opacity=".57"/><stop offset="1" stop-color="#B7A5FB" stop-opacity="0"/></radialGradient>
+    <linearGradient id="ribbon" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#92EDD2"/><stop offset=".5" stop-color="#78CFE5"/><stop offset="1" stop-color="#C8A9F9"/></linearGradient>
+    <clipPath id="canvasClip"><rect x="264" y="136" width="1152" height="572" rx="20"/></clipPath>
+  </defs>
+  <rect width="1440" height="900" fill="#0B1020"/>
+  <rect x="0" y="0" width="228" height="900" fill="#11182B"/>
+  <line x1="228" y1="0" x2="228" y2="900" stroke="#26314B"/>
+  <g id="brand">
+    <circle cx="39" cy="41" r="16" fill="#90EAD1"/>
+    <path d="M31 42c5-14 10 14 16 0" fill="none" stroke="#14243A" stroke-width="3" stroke-linecap="round"/>
+    <text x="66" y="48" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="19" font-weight="700">Synesthesia</text>
+    <text x="28" y="104" fill="#7F8CA8" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2">ESPACE DE TRAVAIL</text>
+  </g>
+  <g id="navigation" font-family="Arial, sans-serif" font-size="14">
+    <rect x="16" y="126" width="196" height="46" rx="12" fill="#25354C"/>
+    <rect x="16" y="126" width="4" height="46" rx="2" fill="#8DEAD0"/>
+    <circle cx="41" cy="149" r="8" fill="none" stroke="#91EAD2" stroke-width="2"/><path d="M39 145l6 4-6 4z" fill="#91EAD2"/>
+    <text x="62" y="154" fill="#F5F7FD" font-weight="700">Visualisateur</text>
+    <path d="M33 201h17m-17 6h17m-17 6h11" stroke="#8E9DB8" stroke-width="2" stroke-linecap="round"/>
+    <text x="62" y="212" fill="#AAB6CC">Configurateur</text>
+    <circle cx="41" cy="265" r="9" fill="none" stroke="#8E9DB8" stroke-width="2"/><path d="M41 258v14m-7-7h14" stroke="#8E9DB8" stroke-width="2"/>
+    <text x="62" y="270" fill="#AAB6CC">Profils</text>
+  </g>
+  <g id="sidebar-source" font-family="Arial, sans-serif">
+    <text x="28" y="348" fill="#7F8CA8" font-size="11" font-weight="700" letter-spacing="2">SOURCE AUDIO</text>
+    <rect x="16" y="364" width="196" height="112" rx="14" fill="#1B263D" stroke="#34415B"/>
+    <rect x="29" y="379" width="34" height="34" rx="9" fill="#344159"/>
+    <path d="M39 389v15m8-19v19m8-12v12" stroke="#90EAD1" stroke-width="2" stroke-linecap="round"/>
+    <text x="73" y="394" fill="#F5F7FD" font-size="12" font-weight="700">Exemple audio.wav</text>
+    <text x="73" y="410" fill="#91A0B9" font-size="11">Fichier analysé · 03:42</text>
+    <line x1="29" y1="426" x2="199" y2="426" stroke="#36435C"/>
+    <text x="30" y="452" fill="#91EAD2" font-size="12" font-weight="700">Changer de fichier</text>
+    <path d="M183 447l5 5-5 5" fill="none" stroke="#91EAD2" stroke-width="2"/>
+    <text x="28" y="523" fill="#7F8CA8" font-size="11" font-weight="700" letter-spacing="2">PROFIL ACTIF</text>
+    <rect x="16" y="540" width="196" height="64" rx="14" fill="#1B263D" stroke="#34415B"/>
+    <circle cx="40" cy="572" r="9" fill="#88E2CE"/><text x="61" y="569" fill="#F4F7FD" font-size="12" font-weight="700">Profil proposé</text><text x="61" y="585" fill="#91A0B9" font-size="11">Correspondances initiales</text>
+    <text x="28" y="828" fill="#7584A0" font-size="11">Prototype d'interface · v0.1</text>
+  </g>
+  <g id="header" font-family="Arial, sans-serif">
+    <text x="264" y="57" fill="#F7F8FC" font-size="28" font-weight="700">Visualisateur</text>
+    <text x="264" y="84" fill="#9EACC5" font-size="14">Écoutez votre musique et observez le rendu en temps réel.</text>
+    <rect x="1241" y="36" width="175" height="42" rx="11" fill="#91EAD2"/>
+    <path d="M1264 48v16m-7-7h14" stroke="#15263A" stroke-width="2" stroke-linecap="round"/>
+    <text x="1282" y="62" fill="#15263A" font-size="13" font-weight="700">Ouvrir un fichier</text>
+  </g>
+  <g id="visualization" clip-path="url(#canvasClip)">
+    <rect x="264" y="136" width="1152" height="572" fill="url(#stage)"/>
+    <circle cx="1050" cy="480" r="350" fill="url(#violet)"/>
+    <circle cx="781" cy="410" r="320" fill="url(#aura)"/>
+    <g opacity=".32" fill="none" stroke="#7794B6"><path d="M264 283h1152M264 422h1152M264 561h1152" stroke-width="1"/><path d="M494 136v572M724 136v572M954 136v572M1184 136v572" stroke-width="1"/></g>
+    <path d="M558 483c65-182 140-184 198-119 67 75 95 7 162-26 85-41 123 31 217 5" fill="none" stroke="#7CCFE0" stroke-width="84" stroke-linecap="round" opacity=".07"/>
+    <path d="M558 483c65-182 140-184 198-119 67 75 95 7 162-26 85-41 123 31 217 5" fill="none" stroke="url(#ribbon)" stroke-width="21" stroke-linecap="round" opacity=".38"/>
+    <path d="M558 483c65-182 140-184 198-119 67 75 95 7 162-26 85-41 123 31 217 5" fill="none" stroke="url(#ribbon)" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="659" cy="390" r="74" fill="#89E2D4" opacity=".08"/><circle cx="659" cy="390" r="52" fill="none" stroke="#A1F0E0" stroke-width="2" opacity=".7"/><circle cx="659" cy="390" r="33" fill="#A5F1E0" opacity=".18"/>
+    <circle cx="933" cy="345" r="91" fill="#B9A8F7" opacity=".08"/><circle cx="933" cy="345" r="62" fill="none" stroke="#BEADFB" stroke-width="2" opacity=".7"/><circle cx="933" cy="345" r="40" fill="#B6A3FA" opacity=".17"/>
+    <circle cx="1114" cy="350" r="37" fill="none" stroke="#82D6E4" stroke-width="2" opacity=".65"/>
+    <circle cx="579" cy="486" r="8" fill="#A1F1DF"/><circle cx="765" cy="370" r="6" fill="#9ADFEA"/><circle cx="1040" cy="359" r="7" fill="#C6B5FF"/>
+    <g fill="#E8F4FF" opacity=".6"><circle cx="490" cy="315" r="2"/><circle cx="730" cy="522" r="2"/><circle cx="873" cy="246" r="3"/><circle cx="1231" cy="510" r="2"/><circle cx="1190" cy="285" r="3"/><circle cx="413" cy="557" r="2"/></g>
+  </g>
+  <rect x="264" y="136" width="1152" height="572" rx="20" fill="none" stroke="#36405B"/>
+  <g id="canvas-overlay" font-family="Arial, sans-serif">
+    <rect x="284" y="156" width="128" height="32" rx="9" fill="#1F2B45" stroke="#475570"/>
+    <circle cx="301" cy="172" r="4" fill="#8FE8D1"/><text x="313" y="177" fill="#DFE9F7" font-size="12">Lecture en cours</text>
+    <rect x="1235" y="156" width="160" height="32" rx="9" fill="#1F2B45" stroke="#475570"/>
+    <text x="1250" y="177" fill="#DFE9F7" font-size="12">Rendu 2D · Ajusté</text>
+    <text x="292" y="670" fill="#D5E1F2" font-size="12">Aperçu du profil proposé</text>
+    <text x="1285" y="670" fill="#D5E1F2" font-size="12">Plein écran</text><path d="M1390 652v-6h-6m6 6l-9-9m-1 25v6h6m-6-6l9 9" fill="none" stroke="#D5E1F2" stroke-width="1.5"/>
+  </g>
+  <g id="transport" font-family="Arial, sans-serif">
+    <rect x="264" y="726" width="1152" height="149" rx="18" fill="#172138" stroke="#35425C"/>
+    <text x="287" y="758" fill="#F5F7FD" font-size="14" font-weight="700">Exemple audio.wav</text>
+    <text x="1306" y="758" fill="#A4B2C9" font-size="12">01:24 / 03:42</text>
+    <rect x="288" y="778" width="1104" height="5" rx="2.5" fill="#34435C"/>
+    <rect x="288" y="778" width="420" height="5" rx="2.5" fill="#8DE7D0"/>
+    <circle cx="708" cy="780.5" r="8" fill="#C0F6E7" stroke="#172138" stroke-width="3"/>
+    <g fill="#4D6079" opacity=".85"><rect x="308" y="766" width="2" height="12" rx="1"/><rect x="316" y="770" width="2" height="8" rx="1"/><rect x="324" y="761" width="2" height="17" rx="1"/><rect x="332" y="766" width="2" height="12" rx="1"/><rect x="340" y="756" width="2" height="22" rx="1"/><rect x="348" y="763" width="2" height="15" rx="1"/><rect x="356" y="768" width="2" height="10" rx="1"/></g>
+    <path d="M307 820v29m-7-19l7-7 7 7" fill="none" stroke="#9EACC5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="330" y="840" fill="#B8C5D9" font-size="12">Revenir au début</text>
+    <rect x="758" y="807" width="56" height="50" rx="14" fill="#8FE9D1"/>
+    <rect x="778" y="821" width="5" height="22" rx="1" fill="#172638"/><rect x="789" y="821" width="5" height="22" rx="1" fill="#172638"/>
+    <rect x="698" y="822" width="10" height="20" rx="2" fill="#ACBAD0"/>
+    <path d="M854 822v20m-5-10h10" stroke="#ACBAD0" stroke-width="2" stroke-linecap="round"/>
+    <path d="M1050 834h10l9-8v17l-9-8h-10z" fill="none" stroke="#A8B7CD" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M1080 826q9 9 0 18" fill="none" stroke="#A8B7CD" stroke-width="2"/>
+    <rect x="1105" y="833" width="93" height="4" rx="2" fill="#52637C"/><rect x="1105" y="833" width="62" height="4" rx="2" fill="#91EAD2"/><circle cx="1167" cy="835" r="6" fill="#D6FAF0"/>
+    <rect x="1227" y="811" width="163" height="42" rx="11" fill="#25334D" stroke="#475775"/>
+    <text x="1245" y="837" fill="#E7EDF8" font-size="12" font-weight="700">Exporter la vidéo</text>
+  </g>
+</svg>

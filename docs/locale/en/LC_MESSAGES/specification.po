@@ -1,0 +1,1434 @@
+# English translations for Synesthesia.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the Synesthesia project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Synesthesia 0.0.1\n"
+"POT-Creation-Date: 2026-10-09 18:23+0200\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../specification.rst:3
+msgid "Cahier des charges Synesthesia"
+msgstr "Synesthesia specification"
+
+#: ../../specification.rst
+msgid "Statut"
+msgstr "Status"
+
+#: ../../specification.rst:5
+msgid "Projet de spécification"
+msgstr "Draft specification"
+
+#: ../../specification.rst
+msgid "Version"
+msgstr ""
+
+#: ../../specification.rst:6
+msgid "0.1"
+msgstr ""
+
+#: ../../specification.rst
+msgid "Date"
+msgstr ""
+
+#: ../../specification.rst:7
+msgid "24 septembre 2026"
+msgstr "24 September 2026"
+
+#: ../../specification.rst
+msgid "Objet"
+msgstr "Purpose"
+
+#: ../../specification.rst:8
+msgid "Visualiseur audio interactif inspiré de la :term:`chromesthésie <Chromesthésie>`"
+msgstr "An interactive audio visualizer inspired by :term:`chromesthesia <Chromesthésie>`"
+
+#: ../../specification.rst:11
+msgid "Présentation et objectifs"
+msgstr "Overview and objectives"
+
+#: ../../specification.rst:13
+msgid "Synesthesia vise à transformer un signal musical en une représentation visuelle animée inspirée de travaux sur les correspondances auditives et visuelles, notamment sur la :term:`chromesthésie <Chromesthésie>`. Les relations entre caractéristiques acoustiques et attributs visuels partiront d'hypothèses documentées, resteront personnalisables et devront être évaluées pour le rendu effectivement produit. Le cœur du logiciel doit permettre d'écouter et de visualiser un fichier audio, puis de produire une vidéo à partir d'une analyse préalable. L'analyse d'une source en direct est envisagée dans un second temps."
+msgstr "Synesthesia aims to transform a musical signal into an animated visual representation inspired by research on auditory and visual correspondences, particularly :term:`chromesthesia <Chromesthésie>`. Relationships between acoustic characteristics and visual attributes will start from documented hypotheses, remain customizable and require evaluation of the rendering actually produced. The software's core must allow an audio file to be played and visualized, then a video to be produced from prior analysis. Analysis of a live source is envisaged at a later stage."
+
+#: ../../specification.rst:17
+msgid "Le projet s'adresse aux personnes intéressées par la visualisation musicale et aux personnes présentant une synesthésie son-couleur qui souhaitent définir leurs propres associations. Une première version pourrait aussi être proposée à des chercheurs intéressés ; son adaptation à une étude dépendra des besoins et du protocole de recherche qui émergeront. **Il ne prétend ni reproduire une expérience synesthésique universelle, ni établir un diagnostic clinique.**"
+msgstr "The project is intended for people interested in music visualization and people with sound-color synesthesia who wish to define their own associations. An initial version could also be offered to interested researchers; adapting it to a study will depend on the needs and research protocol that emerge. **It claims neither to reproduce a universal synesthetic experience nor to establish a clinical diagnosis.**"
+
+#: ../../specification.rst:21
+msgid "Les objectifs sont les suivants :"
+msgstr "The objectives are to:"
+
+#: ../../specification.rst:23
+msgid "proposer un rendu réactif et synchronisé avec l'audio ;"
+msgstr "provide responsive rendering synchronized with audio;"
+
+#: ../../specification.rst:24
+msgid "rendre les règles de correspondance visibles, modifiables et sauvegardables ;"
+msgstr "make mapping rules visible, editable and saveable;"
+
+#: ../../specification.rst:25
+msgid "permettre la comparaison entre un profil prédéfini et un profil personnel ;"
+msgstr "allow comparison between a predefined profile and a personal profile;"
+
+#: ../../specification.rst:26
+msgid "garantir qu'un rendu exporté corresponde aux paramètres utilisés à l'écran ;"
+msgstr "ensure that exported rendering matches the settings used on screen;"
+
+#: ../../specification.rst:27
+msgid "conserver la provenance scientifique et le statut expérimental de chaque règle proposée."
+msgstr "retain the scientific provenance and experimental status of each proposed rule."
+
+#: ../../specification.rst:30
+msgid "Orientations de conception"
+msgstr "Design directions"
+
+#: ../../specification.rst:32
+msgid "Les arbitrages suivants donnent une direction au premier prototype. Ils resteront révisables lorsque l'implémentation et les mesures feront apparaître des contraintes nouvelles."
+msgstr "The following decisions guide the first prototype. They will remain open to revision as implementation and measurements reveal new constraints."
+
+#: ../../specification.rst:34
+msgid "L'interface sera une application autonome fondée sur Qt, pensée pour une utilisation sans connaissances en programmation ni en traitement du signal."
+msgstr "The interface will be a standalone Qt application, designed for use without programming or signal processing knowledge."
+
+#: ../../specification.rst:35
+msgid "Le premier rendu sera en 2D. Une autre technique de rendu ne sera introduite que si les besoins observés et les mesures le justifient."
+msgstr "The initial rendering will be 2D. Another rendering technique will be introduced only if observed needs and measurements justify it."
+
+#: ../../specification.rst:36
+msgid "Les règles proposées au démarrage seront explicites et modifiables ; les choix personnels seront enregistrables dans des profils."
+msgstr "The initial rules will be explicit and editable; personal choices will be saveable in profiles."
+
+#: ../../specification.rst:37
+msgid "Le premier prototype suivra la voie Python décrite plus loin. Un composant pourra être porté en C++20 si son coût mesuré le nécessite."
+msgstr "The first prototype will follow the Python approach described below. A component may be ported to C++20 if its measured cost requires it."
+
+#: ../../specification.rst:38
+msgid "Les correspondances issues de la littérature serviront à formuler des hypothèses de rendu, non à promettre la restitution fidèle d'une expérience synesthésique."
+msgstr "Correspondences from the literature will inform rendering hypotheses rather than promise faithful reproduction of a synesthetic experience."
+
+#: ../../specification.rst:39
+msgid "L'entrée audio en direct est envisagée après le cœur lecture–visualisation–personnalisation–export. Une adaptation à des études perceptives est une ambition ultérieure, sans engagement de développement pour la première version."
+msgstr "Live audio input is envisaged after the playback–visualization–customization–export core. Adaptation to perceptual studies is a later ambition, with no development commitment for the first version."
+
+#: ../../specification.rst:43
+msgid "Périmètre et priorités"
+msgstr "Scope and priorities"
+
+#: ../../specification.rst:45
+msgid "Le premier périmètre fonctionnel comprend la lecture d'un fichier audio, l'analyse de caractéristiques acoustiques, un rendu visuel 2D, l'édition de correspondances, la gestion de profils et l'export vidéo. L'entrée audio en direct est envisagée après ce premier périmètre. La première version pourra être proposée à des chercheurs intéressés, sans intégrer de recueil de réponses ni imposer d'étude auprès de participants. Une adaptation à un protocole de recherche pourra être étudiée ensuite avec les personnes concernées. La 3D, la classification automatique d'instruments, les traitements GPU avancés et le traitement par lots sont des évolutions possibles ; leur présence dans l'ébauche ne constitue pas encore un engagement pour la première version."
+msgstr "The initial functional scope includes audio file playback, acoustic feature analysis, 2D visual rendering, mapping editing, profile management and video export. Live audio input is envisaged after this initial scope. The first version may be offered to interested researchers, without collecting responses or requiring a participant study. Adaptation to a research protocol may subsequently be examined with the people involved. 3D, automatic instrument classification, advanced GPU processing and batch processing are possible developments; their presence in the draft does not yet constitute a commitment for the first version."
+
+#: ../../specification.rst:51
+msgid "Les formats audio d'entrée, les :term:`codecs <Codec>` vidéo, les systèmes d'exploitation cibles et les résolutions de sortie ne sont pas encore arrêtés."
+msgstr "Input audio formats, video :term:`codecs <Codec>`, target operating systems and output resolutions have not yet been decided."
+
+#: ../../specification.rst:54
+msgid "Licence et diffusion"
+msgstr "License and distribution"
+
+#: ../../specification.rst:56
+msgid "Synesthesia est destiné à être diffusé comme logiciel libre et open source sous la licence GNU Affero General Public License version 3 (:term:`AGPLv3 <AGPLv3 (GNU Affero General Public License version 3)>`), dont le texte figure dans `LICENSE.md <../LICENSE.md>`_. Ce choix permet l'utilisation, l'étude, la modification et la redistribution du logiciel, y compris dans un cadre commercial, sous réserve du respect des conditions de la licence. Lorsqu'une version couverte est redistribuée, le code source correspondant doit être mis à disposition selon les modalités de l'AGPLv3 ; une version modifiée accessible à des utilisateurs par un réseau doit également leur proposer ce code source conformément à la section 13. Ces obligations concernent le logiciel couvert et son code source correspondant, et ne signifient pas que tous les logiciels ou toutes les données d'un utilisateur doivent être publiés."
+msgstr "Synesthesia is intended to be distributed as free and open source software under the GNU Affero General Public License version 3 (:term:`AGPLv3 <AGPLv3 (GNU Affero General Public License version 3)>`), whose text appears in `LICENSE.md <../LICENSE.md>`_. This permits use, study, modification and redistribution of the software, including commercially, subject to the license terms. When a covered version is redistributed, the corresponding source code must be made available under the AGPLv3 provisions; a modified version accessible to users over a network must also offer that source code in accordance with section 13. These obligations concern the covered software and its corresponding source code and do not mean that all of a user's software or data must be published."
+
+#: ../../specification.rst:61
+msgid "L'auteur ne prévoit pas de commercialiser le visualiseur. Si une organisation souhaite intégrer du code dont l'auteur détient les droits dans un produit distribué sous des conditions incompatibles avec l'AGPLv3, elle pourra solliciter un accord de licence distinct. Un tel accord n'est ni automatique ni nécessaire pour une utilisation commerciale conforme à l'AGPLv3 ; il suppose que les droits requis sur les contributions et les dépendances concernées soient disponibles. Les licences de la pile logicielle et les options de compilation de FFmpeg seront vérifiées avant la distribution."
+msgstr "The author does not plan to commercialize the visualizer. If an organization wishes to incorporate code whose rights are held by the author into a product distributed under terms incompatible with AGPLv3, it may request a separate licensing agreement. Such an agreement is neither automatic nor necessary for commercial use that complies with AGPLv3; it requires the necessary rights over the contributions and dependencies involved to be available. The software stack's licenses and FFmpeg build options will be checked before distribution."
+
+#: ../../specification.rst:67
+msgid "Fondements scientifiques"
+msgstr "Scientific foundations"
+
+#: ../../specification.rst:69
+msgid "Il faut distinguer une correspondance observée lors d'une tâche expérimentale, une couleur effectivement éprouvée par une personne :term:`synesthète <Synesthète>`, et une règle de génération d'images choisie pour le logiciel. Une association de groupe ne définit pas la perception d'un individu et ne démontre pas qu'un rendu sera « naturel » ou apprécié par tous."
+msgstr "A correspondence observed during an experimental task, a color actually experienced by a :term:`synesthete <Synesthète>` and an image generation rule chosen for the software must be distinguished. A group association does not define an individual's perception and does not demonstrate that a rendering will feel natural or appeal to everyone."
+
+#: ../../specification.rst:72
+msgid "Les notices et limites de chaque étude mobilisée sont conservées dans l':ref:`annexe-etudes`."
+msgstr "The findings and limitations of each study used are retained in :ref:`annexe-etudes`."
+
+#: ../../specification.rst:74
+msgid "Les correspondances observées à l'échelle d'un groupe ne définissent pas une perception universelle. Lors de présentations répétées des mêmes sons, les personnes synesthètes choisissent en moyenne des couleurs plus constantes que les témoins, mais le contenu de leurs associations peut varier sensiblement d'un individu à l'autre :cite:p:`ward_sound-colour_2006,ward_synaesthesia_2025`. Plusieurs études portant spécifiquement sur des synesthètes reposent par ailleurs sur des effectifs restreints — 10 synesthètes dans :cite:p:`zamm_pathways_2013`, 14 dans :cite:p:`neufeld_feedback_2012` et 20 personnes recrutées, dont 10 retenues pour les analyses comparatives, dans :cite:p:`reuter_rainbows_2025` — ce qui impose de rester prudent quant à la généralisation de leurs résultats."
+msgstr "Correspondences observed at group level do not define a universal perception. When the same sounds are presented repeatedly, synesthetes choose more consistent colors on average than controls, but the content of their associations can vary substantially between individuals :cite:p:`ward_sound-colour_2006,ward_synaesthesia_2025`. Several studies specifically involving synesthetes also rely on small samples—10 synesthetes in :cite:p:`zamm_pathways_2013`, 14 in :cite:p:`neufeld_feedback_2012` and 20 recruited individuals, including 10 retained for comparative analyses, in :cite:p:`reuter_rainbows_2025`—requiring caution when generalizing their findings."
+
+#: ../../specification.rst:78
+msgid "Des régularités partagées existent néanmoins dans certaines tâches. Par exemple, l'association entre hauteur tonale et clarté apparaît chez les synesthètes comme chez les témoins dans :cite:p:`ward_sound-colour_2006`. Plus généralement, l'apprentissage et l'environnement peuvent contribuer au **contenu** de certaines associations : :cite:t:`witthoft_learned_2015` identifient notamment des profils graphème–couleur compatibles avec l'influence d'un même jeu de lettres colorées durant l'enfance. La langue influe sur certaines associations graphème–couleur chez des synesthètes :cite:p:`root_language_2021`. Dans d'autres populations, les associations entre mots de couleur et émotions varient entre pays :cite:p:`jonauskaite_color_emotion_2020`, et l'exposition à la musique occidentale est liée aux jugements de bonheur suscités par des cadences majeures ou mineures :cite:p:`smit_papua_2022`. Ces résultats ne démontrent toutefois ni l'existence d'une palette synesthésique commune à une culture, ni l'existence de correspondances musique–couleur universelles."
+msgstr "Shared regularities nevertheless exist in some tasks. For example, an association between pitch and lightness appears in both synesthetes and controls in :cite:p:`ward_sound-colour_2006`. More generally, learning and environment can contribute to the **content** of some associations: :cite:t:`witthoft_learned_2015` identify grapheme–color profiles consistent with the influence of the same colored letter set during childhood. Language influences some grapheme–color associations in synesthetes :cite:p:`root_language_2021`. In other populations, associations between color words and emotions vary between countries :cite:p:`jonauskaite_color_emotion_2020`, and exposure to Western music is related to happiness judgments elicited by major or minor cadences :cite:p:`smit_papua_2022`. These findings demonstrate neither a synesthetic palette shared by a culture nor universal music–color correspondences."
+
+#: ../../specification.rst:84
+msgid "Ces résultats justifient des *hypothèses de rendu* configurables, à comparer empiriquement avec d'autres correspondances et avec les choix individuels. Ils ne justifient ni une palette « scientifiquement exacte » ni un test diagnostique."
+msgstr "These findings justify configurable *rendering hypotheses* to be compared empirically with other mappings and individual choices. They justify neither a scientifically exact palette nor a diagnostic test."
+
+#: ../../specification.rst:86
+msgid "Synesthesia utilisera donc par défaut des correspondances choisies parmi les régularités les mieux étayées par la littérature, tout en permettant à l'utilisateur de modifier ces associations afin de représenter ses propres correspondances perceptives. À plus long terme, la comparaison anonymisée de profils individuels pourrait permettre d'étudier leur variabilité et de rechercher d'éventuelles régularités entre utilisateurs ; cette possibilité constitue cependant une perspective de recherche et ne fait pas partie du périmètre de la première version."
+msgstr "Synesthesia will therefore use default mappings selected from the regularities best supported by the literature, while allowing users to modify these associations to represent their own perceptual correspondences. In the longer term, anonymized comparison of individual profiles could help study their variability and investigate potential regularities among users; this remains a research prospect outside the scope of the first version."
+
+#: ../../specification.rst:91
+msgid "Parcours utilisateur"
+msgstr "User journeys"
+
+#: ../../specification.rst:94
+msgid "Lecture et personnalisation d'un fichier"
+msgstr "File playback and customization"
+
+#: ../../specification.rst:96
+msgid "L'utilisateur ouvre un fichier audio et voit sa durée, son état de chargement et les éventuelles erreurs de décodage."
+msgstr "The user opens an audio file and sees its duration, loading status and any decoding errors."
+
+#: ../../specification.rst:97
+msgid "L'application analyse le fichier, puis affiche une prévisualisation synchronisée avec les commandes de lecture, pause et recherche temporelle."
+msgstr "The application analyzes the file, then displays a preview synchronized with playback, pause and seeking controls."
+
+#: ../../specification.rst:98
+msgid "L'utilisateur choisit un :term:`profil de correspondance <Profil de correspondance>` et ajuste les paramètres tout en observant leur effet."
+msgstr "The user selects a :term:`mapping profile <Profil de correspondance>` and adjusts settings while observing their effects."
+
+#: ../../specification.rst:99
+msgid "Il enregistre son profil et peut exporter la visualisation avec la piste audio, selon les formats retenus."
+msgstr "The user saves their profile and may export the visualization with the audio track, using the selected formats."
+
+#: ../../specification.rst:102
+msgid "Visualisation d'une entrée audio en direct"
+msgstr "Live audio input visualization"
+
+#: ../../specification.rst:104
+msgid "L'utilisateur choisit une source audio autorisée par le système."
+msgstr "The user selects an audio source permitted by the system."
+
+#: ../../specification.rst:105
+msgid "Le rendu réagit au flux disponible, avec indication explicite de l'état de capture, de la latence et des éventuelles pertes de données."
+msgstr "The rendering reacts to the available stream, explicitly indicating capture status, latency and any data loss."
+
+#: ../../specification.rst:106
+msgid "L'utilisateur peut arrêter la capture sans fermer l'application."
+msgstr "The user may stop capture without closing the application."
+
+#: ../../specification.rst:109 ../../specification.rst:254
+msgid "Usage de recherche éventuel"
+msgstr "Potential research use"
+
+#: ../../specification.rst:111
+msgid "Si un projet de recherche le justifie, une version adaptée pourrait présenter des :term:`stimuli <Stimulus>` dans un ordre contrôlé et recueillir des réponses. Le parcours, les consignes, le consentement et l'interprétation dépendraient alors du protocole défini pour cette étude. Il faudrait notamment distinguer association ressentie, couleur jugée adéquate et appréciation esthétique, qui ne mesurent pas le même phénomène (:cite:p:`ward_synaesthesia_2025` ; :cite:p:`isbilen_color_2016`)."
+msgstr "If a research project warrants it, an adapted version could present :term:`stimuli <Stimulus>` in a controlled order and collect responses. The journey, instructions, consent and interpretation would depend on the protocol defined for that study. Felt association, perceived color suitability and aesthetic preference would need to be distinguished, as they do not measure the same phenomenon (:cite:p:`ward_synaesthesia_2025`; :cite:p:`isbilen_color_2016`)."
+
+#: ../../specification.rst:116
+msgid "Exigences fonctionnelles"
+msgstr "Functional requirements"
+
+#: ../../specification.rst:118
+msgid "Les identifiants ci-dessous servent à suivre le périmètre du logiciel. « P1 » désigne le cœur de la première livraison ; « P2 » une extension envisagée ; « P3 » une possibilité de recherche sans engagement de réalisation."
+msgstr "The identifiers below track the software's scope. P1 denotes the core of the first release; P2 a prospective extension; P3 a research possibility without a commitment to implementation."
+
+#: ../../specification.rst:120
+msgid "Fonctions et pistes d'évolution"
+msgstr "Functions and possible developments"
+
+#: ../../specification.rst:125
+msgid "ID"
+msgstr ""
+
+#: ../../specification.rst:126
+msgid "Priorité"
+msgstr "Priority"
+
+#: ../../specification.rst:127
+msgid "Exigence"
+msgstr "Requirement"
+
+#: ../../specification.rst:128
+msgid "F-01"
+msgstr ""
+
+#: ../../specification.rst:129 ../../specification.rst:132
+#: ../../specification.rst:135 ../../specification.rst:138
+#: ../../specification.rst:141 ../../specification.rst:144
+#: ../../specification.rst:147 ../../specification.rst:150
+msgid "P1"
+msgstr ""
+
+#: ../../specification.rst:130
+msgid "Charger un fichier audio pris en charge et signaler clairement les fichiers illisibles ou incompatibles."
+msgstr "Load a supported audio file and clearly identify unreadable or incompatible files."
+
+#: ../../specification.rst:131
+msgid "F-02"
+msgstr ""
+
+#: ../../specification.rst:133
+msgid "Fournir lecture, pause, arrêt et déplacement dans la durée du fichier, avec synchronisation du rendu après chaque déplacement."
+msgstr "Provide playback, pause, stop and seeking within the file, synchronizing rendering after each seek."
+
+#: ../../specification.rst:134
+msgid "F-03"
+msgstr ""
+
+#: ../../specification.rst:136
+msgid "Pré-analyser le fichier et conserver des mesures indexées dans le temps pour la lecture et l'export."
+msgstr "Pre-analyze the file and retain time-indexed measurements for playback and export."
+
+#: ../../specification.rst:137
+msgid "F-04"
+msgstr ""
+
+#: ../../specification.rst:139
+msgid "Calculer au minimum l'énergie :term:`RMS <RMS (Root Mean Square)>`, une mesure de hauteur lorsque celle-ci est estimable, le centroïde et le flux spectraux ; expliciter les valeurs absentes ou peu fiables."
+msgstr "Calculate at least :term:`RMS <RMS (Root Mean Square)>` energy, a pitch measure when estimable, the spectral centroid and spectral flux; explicitly identify missing or unreliable values."
+
+#: ../../specification.rst:140
+msgid "F-05"
+msgstr ""
+
+#: ../../specification.rst:142
+msgid "Appliquer un profil de règles audio-visuelles et afficher le résultat en 2D pendant la lecture."
+msgstr "Apply an audiovisual mapping profile and display the result in 2D during playback."
+
+#: ../../specification.rst:143
+msgid "F-06"
+msgstr ""
+
+#: ../../specification.rst:145
+msgid "Modifier les plages, seuils, :term:`courbes de transfert <Courbe de transfert>`, :term:`palettes <Palette>` et attributs visuels exposés par le profil."
+msgstr "Modify ranges, thresholds, :term:`transfer curves <Courbe de transfert>`, :term:`palettes <Palette>` and visual attributes exposed by the profile."
+
+#: ../../specification.rst:146
+msgid "F-07"
+msgstr ""
+
+#: ../../specification.rst:148
+msgid "Créer, dupliquer, charger, enregistrer et exporter un profil personnel ; distinguer ce profil du profil proposé par défaut."
+msgstr "Create, duplicate, load, save and export a personal profile; distinguish it from the default profile."
+
+#: ../../specification.rst:149
+msgid "F-08"
+msgstr ""
+
+#: ../../specification.rst:151
+msgid "Exporter une vidéo synchronisée avec le fichier audio et fournir un message d'erreur exploitable en cas d'échec."
+msgstr "Export a video synchronized with the audio file and provide an actionable error message if export fails."
+
+#: ../../specification.rst:152
+msgid "F-09"
+msgstr ""
+
+#: ../../specification.rst:153
+msgid "P2"
+msgstr ""
+
+#: ../../specification.rst:154
+msgid "Visualiser une entrée audio en direct, avec choix de la source et retour sur l'état de capture."
+msgstr "Visualize a live audio input, with source selection and capture status feedback."
+
+#: ../../specification.rst:155
+msgid "F-10"
+msgstr ""
+
+#: ../../specification.rst:156
+msgid "P3"
+msgstr ""
+
+#: ../../specification.rst:157
+msgid "Étudier, si un projet de recherche le demande, l'adaptation du logiciel à une session de comparaison perceptive avec :term:`stimuli <Stimulus>` et recueil de réponses selon un protocole défini séparément."
+msgstr "If a research project requests it, investigate adapting the software to a perceptual comparison session with :term:`stimuli <Stimulus>` and response collection under a separately defined protocol."
+
+#: ../../specification.rst:159
+msgid "Le format des profils reste à définir. Un format de réponses perceptives ne serait étudié que si une adaptation à la recherche était décidée. Le JSON est proposé par l'ébauche comme format d'échange ; son schéma, ses versions et ses règles de migration devront être spécifiés avant de figer une API ou des données persistantes."
+msgstr "The profile format remains to be defined. A perceptual response format would be investigated only if research adaptation were decided. The draft proposes JSON as an interchange format; its schema, versions and migration rules must be specified before an API or persistent data is finalized."
+
+#: ../../specification.rst:163
+msgid "Chaîne d'analyse et règles de rendu"
+msgstr "Analysis pipeline and rendering rules"
+
+#: ../../specification.rst:165
+msgid "Le traitement sépare l'acquisition ou le décodage, l'extraction des mesures, leur :term:`normalisation <Normalisation>`, l'application des règles et le rendu. La pré-analyse conserve des repères temporels permettant de retrouver les mesures à tout instant du fichier. Pour un morceau polyphonique, la hauteur estimée ne doit pas être présentée comme une note unique toujours identifiable : l'unité représentée, le niveau de confiance et la réponse visuelle en l'absence de hauteur fiable seront définis avant d'implémenter F-04. Le direct utilise la même :term:`sémantique <Sémantique>` de mesures, avec des contraintes de calcul et de mémoire adaptées au flux continu."
+msgstr "Processing separates acquisition or decoding, measurement extraction, :term:`normalization <Normalisation>`, rule application and rendering. Pre-analysis retains time references allowing measurements to be retrieved at any instant in the file. For a polyphonic piece, estimated pitch must not be presented as a single invariably identifiable note: the represented unit, confidence level and visual response when no reliable pitch is available will be defined before F-04 is implemented. Live processing uses the same measurement :term:`semantics <Sémantique>`, with computation and memory constraints suited to continuous streams."
+
+#: ../../specification.rst:169
+msgid "Hypothèses de correspondance initiales"
+msgstr "Initial mapping hypotheses"
+
+#: ../../specification.rst:174
+msgid "Mesure audio"
+msgstr "Audio measurement"
+
+#: ../../specification.rst:175
+msgid "Attribut visuel candidat"
+msgstr "Candidate visual attribute"
+
+#: ../../specification.rst:176
+msgid "Niveau de preuve et précaution"
+msgstr "Evidence level and precaution"
+
+#: ../../specification.rst:177
+msgid "Article"
+msgstr ""
+
+#: ../../specification.rst:178
+msgid ":term:`Hauteur fondamentale <Hauteur fondamentale>` :math:`f_0`"
+msgstr ":term:`Fundamental pitch <Hauteur fondamentale>` :math:`f_0`"
+
+#: ../../specification.rst:179
+msgid "Clarté, taille ou position verticale"
+msgstr "Lightness, size or vertical position"
+
+#: ../../specification.rst:180
+msgid "Tendances de groupe ; association positionnelle dépendante de la tâche. Ne pas créer de hauteur pour le silence ou un signal sans estimation fiable."
+msgstr "Group tendencies; positional association depends on the task. Do not create a pitch for silence or a signal without a reliable estimate."
+
+#: ../../specification.rst:182
+msgid ":cite:p:`ward_sound-colour_2006` ; :cite:p:`spence_crossmodal_2011` ; :cite:p:`adeli_audiovisual_2014`"
+msgstr ":cite:p:`ward_sound-colour_2006`; :cite:p:`spence_crossmodal_2011`; :cite:p:`adeli_audiovisual_2014`"
+
+#: ../../specification.rst:183
+msgid "Énergie :term:`RMS <RMS (Root Mean Square)>`"
+msgstr ":term:`RMS <RMS (Root Mean Square)>` energy"
+
+#: ../../specification.rst:184
+msgid "Taille ou intensité de l'animation"
+msgstr "Animation size or intensity"
+
+#: ../../specification.rst:185
+msgid "Choix de conception à évaluer ; le RMS n'est pas identique à la :term:`sonie <Sonie>` perçue. Prévoir seuils et compression visuelle."
+msgstr "A design choice requiring evaluation; RMS is not the same as perceived :term:`loudness <Sonie>`. Provide thresholds and visual compression."
+
+#: ../../specification.rst:187 ../../specification.rst:196
+msgid "Pas de validation directe dans les études retenues"
+msgstr "No direct validation in the selected studies"
+
+#: ../../specification.rst:188
+msgid ":term:`Centroïde spectral <Centroïde spectral>`"
+msgstr ":term:`Spectral centroid <Centroïde spectral>`"
+
+#: ../../specification.rst:189
+msgid "Paramètre à tester pour la forme ou la couleur"
+msgstr "A parameter to test for shape or color"
+
+#: ../../specification.rst:190
+msgid "Des corrélations avec des couleurs sont rapportées pour certains :term:`stimuli <Stimulus>`, sans loi universelle ni preuve d'un lien avec l'angularité."
+msgstr "Correlations with colors are reported for some :term:`stimuli <Stimulus>`, without a universal law or evidence of a relationship with angularity."
+
+#: ../../specification.rst:191
+msgid ":cite:p:`reuter_rainbows_2025` ; :cite:p:`reymore_color_2025`"
+msgstr ":cite:p:`reuter_rainbows_2025`; :cite:p:`reymore_color_2025`"
+
+#: ../../specification.rst:192
+msgid ":term:`Flux spectral <Flux spectral>`"
+msgstr ":term:`Spectral flux <Flux spectral>`"
+
+#: ../../specification.rst:193
+msgid ":term:`Attaques <Attaque>`, vitesse ou déformation temporaire"
+msgstr ":term:`Onsets <Attaque>`, speed or temporary deformation"
+
+#: ../../specification.rst:194
+msgid "Choix de conception temporelle, sans correspondance perceptive directe établie par les articles cités. Séparer attaques et bruit."
+msgstr "A temporal design choice, without a direct perceptual correspondence established by the cited papers. Separate onsets from noise."
+
+#: ../../specification.rst:197
+msgid "Descripteurs de :term:`timbre <Timbre>`, dont :term:`MFCC <MFCC (Mel-Frequency Cepstral Coefficients)>` si retenus"
+msgstr ":term:`Timbre <Timbre>` descriptors, including :term:`MFCCs <MFCC (Mel-Frequency Cepstral Coefficients)>` if selected"
+
+#: ../../specification.rst:198
+msgid "Forme arrondie ou anguleuse"
+msgstr "Rounded or angular shape"
+
+#: ../../specification.rst:199
+msgid "Correspondance démontrée pour les timbres testés, mais aucune formule reliant les MFCC ou le centroïde à la forme n'a été validée."
+msgstr "A demonstrated correspondence for the tested timbres, but no formula relating MFCCs or the centroid to shape has been validated."
+
+#: ../../specification.rst:200
+msgid ":cite:p:`adeli_audiovisual_2014` ; :cite:p:`richan_proposal_2021`"
+msgstr ":cite:p:`adeli_audiovisual_2014`; :cite:p:`richan_proposal_2021`"
+
+#: ../../specification.rst:201
+msgid "Indices musicaux globaux, si estimables"
+msgstr "Global musical cues, if estimable"
+
+#: ../../specification.rst:202
+msgid ":term:`Palette <Palette>` ou ambiance"
+msgstr ":term:`Palette <Palette>` or atmosphere"
+
+#: ../../specification.rst:203
+msgid "Effet observé sur les choix de couleurs pour des extraits précis ; ne pas déduire une émotion d'un mode ou d'une seule mesure."
+msgstr "An observed effect on color choices for specific excerpts; do not infer emotion from a mode or a single measurement."
+
+#: ../../specification.rst:204
+msgid ":cite:p:`palmer_musiccolor_2013` ; :cite:p:`palmer_melodies_2016` ; :cite:p:`isbilen_color_2016`"
+msgstr ":cite:p:`palmer_musiccolor_2013`; :cite:p:`palmer_melodies_2016`; :cite:p:`isbilen_color_2016`"
+
+#: ../../specification.rst:206
+msgid "Pour chaque mesure, spécifier avant implémentation les unités, le domaine de valeurs, le traitement des canaux et du rééchantillonnage, la position temporelle de la fenêtre, l'interpolation entre fenêtres et la représentation d'une valeur absente ou peu fiable. Les paramètres de :term:`fenêtre d'analyse <Fenêtre d'analyse>`, de :term:`pas temporel <Pas temporel>`, de :term:`lissage <Lissage>`, de normalisation et de traitement des silences doivent être documentés avec les résultats. Les couleurs et les formes configurées par l'utilisateur priment sur les valeurs proposées. Les effets de persistance visuelle sont une option de rendu réglable, et leur impact sur la lisibilité doit être évalué."
+msgstr "For each measurement, specify units, value ranges, channel handling and resampling, the window's temporal position, interpolation between windows and representation of missing or unreliable values before implementation. :term:`Analysis window <Fenêtre d'analyse>`, :term:`hop size <Pas temporel>`, :term:`smoothing <Lissage>`, normalization and silence handling parameters must be documented with the results. User-configured colors and shapes take precedence over proposed values. Visual persistence effects are an adjustable rendering option, and their impact on readability must be evaluated."
+
+#: ../../specification.rst:211
+msgid "Interface et ergonomie"
+msgstr "Interface and usability"
+
+#: ../../specification.rst:213
+msgid "L'interface doit permettre à une personne non programmeuse de démarrer une lecture avec un profil prédéfini sans manipuler de paramètres :term:`DSP <DSP (Digital Signal Processing)>`. Les réglages détaillés seront accessibles progressivement, avec unités, valeurs courantes, possibilité de réinitialiser et aperçu immédiat. Les commandes de lecture, l'état du fichier, le profil actif et l'état de l'export doivent rester identifiables. Les mouvements rapides, la luminosité et les contrastes du rendu doivent pouvoir être réduits."
+msgstr "The interface must allow a non-programmer to start playback with a predefined profile without manipulating :term:`DSP <DSP (Digital Signal Processing)>` parameters. Detailed settings will be progressively accessible, with units, current values, reset options and immediate previews. Playback controls, file status, the active profile and export status must remain identifiable. Rapid movements, brightness and rendering contrast must be reducible."
+
+#: ../../specification.rst:219
+msgid "Maquettes des écrans"
+msgstr "Screen mockups"
+
+#: ../../specification.rst:221
+msgid "Les esquisses ci-dessous proposent une organisation initiale des parcours. Elles ne fixent ni la disposition finale des widgets ni les valeurs des réglages ; leur ergonomie sera reprise pendant le prototypage."
+msgstr "The sketches below propose an initial organization of the user journeys. They establish neither the final widget layout nor setting values; usability will be revisited during prototyping."
+
+#: ../../specification.rst:224
+msgid "Visualisateur"
+msgstr "Visualizer"
+
+#: ../../specification.rst:226
+msgid "Esquisse du visualiseur avec source audio, profil, rendu et commandes de lecture."
+msgstr "A visualizer sketch with audio source, profile, rendering and playback controls."
+
+#: ../../specification.rst:231
+msgid "Lecture d'un fichier et aperçu du rendu."
+msgstr "File playback and rendering preview."
+
+#: ../../specification.rst:234
+msgid "Configurateur"
+msgstr "Configurator"
+
+#: ../../specification.rst:236
+msgid "Esquisse de l'éditeur de correspondances avec paramètres et aperçu immédiat."
+msgstr "A mapping editor sketch with settings and immediate preview."
+
+#: ../../specification.rst:241
+msgid "Édition des règles d'un profil."
+msgstr "Editing a profile's rules."
+
+#: ../../specification.rst:244
+msgid "Gestion des profils"
+msgstr "Profile management"
+
+#: ../../specification.rst:246
+msgid "Esquisse de la bibliothèque de profils et du détail d'un profil personnel."
+msgstr "A profile library sketch and the details of a personal profile."
+
+#: ../../specification.rst:251
+msgid "Création, duplication, chargement et export des profils."
+msgstr "Creating, duplicating, loading and exporting profiles."
+
+#: ../../specification.rst:256
+msgid "Esquisse d'une session de réponse perceptive avec consigne, stimulus et réponse aucune couleur."
+msgstr "A perceptual response session sketch with instructions, stimulus and a no-color response."
+
+#: ../../specification.rst:261
+msgid "Esquisse d'un usage de recherche possible, hors première livraison ; elle ne fixe ni les consignes ni le protocole."
+msgstr "A sketch of potential research use outside the first release; it establishes neither instructions nor protocol."
+
+#: ../../specification.rst:264 ../../specification.rst:564
+#: ../../specification.rst:597 ../../specification.rst:624
+msgid "Export vidéo"
+msgstr "Video export"
+
+#: ../../specification.rst:266
+msgid "Esquisse de l'export vidéo avec source, profil, paramètres de sortie et suivi de progression."
+msgstr "A video export sketch with source, profile, output settings and progress tracking."
+
+#: ../../specification.rst:271
+msgid "Préparation et suivi d'un export."
+msgstr "Export preparation and progress tracking."
+
+#: ../../specification.rst:275
+msgid "Architecture et choix techniques"
+msgstr "Architecture and technical choices"
+
+#: ../../specification.rst:277
+msgid "L'architecture sépare le décodage et la lecture audio, l'acquisition en direct, l'analyse :term:`DSP <DSP (Digital Signal Processing)>`, les :term:`profils de correspondance <Profil de correspondance>`, le rendu et l'export vidéo. Les mesures calculées en direct et hors ligne partagent une représentation horodatée, avec une définition commune des unités, :term:`fenêtres d'analyse <Fenêtre d'analyse>` et règles de correspondance. La lecture audio fournit l'horloge de référence à la prévisualisation ; l'export construit ses images à partir des mêmes mesures et du même profil, aux instants déterminés par la cadence vidéo. Les effets à mémoire devront préciser leur état initial et leur reconstruction après un déplacement temporel. Cette séparation permet de remplacer un composant mesuré comme insuffisant sans réécrire les profils ni les règles de rendu."
+msgstr "The architecture separates audio decoding and playback, live acquisition, :term:`DSP <DSP (Digital Signal Processing)>` analysis, :term:`mapping profiles <Profil de correspondance>`, rendering and video export. Measurements calculated live and offline share a timestamped representation, with common definitions of units, :term:`analysis windows <Fenêtre d'analyse>` and mapping rules. Audio playback provides the preview's reference clock; export constructs images from the same measurements and profile at instants determined by the video frame rate. Effects with memory must specify their initial state and reconstruction after seeking. This separation allows a component whose measured performance is insufficient to be replaced without rewriting profiles or rendering rules."
+
+#: ../../specification.rst:283
+msgid "Découpage logiciel provisoire"
+msgstr "Provisional software decomposition"
+
+#: ../../specification.rst:285
+msgid "La structure ci-dessous décrit les responsabilités et les échanges entre couches, sans arrêter l'arborescence des modules, les classes ni les signatures des fonctions. L'API évoquée ici est d'abord une interface interne entre composants ; l'exposition d'une API publique pour des logiciels tiers reste une décision distincte."
+msgstr "The structure below describes responsibilities and exchanges between layers without fixing the module tree, classes or function signatures. The API discussed here is primarily an internal interface between components; exposing a public API for third-party software remains a separate decision."
+
+#: ../../specification.rst:288
+msgid "Quatre couches logicielles : présentation Qt, orchestration des usages, cœur de traitement et adaptateurs techniques. Le flux audio traverse l'analyse, les mesures horodatées, les règles de correspondance et l'état visuel avant le rendu."
+msgstr "Four software layers: Qt presentation, use-case orchestration, processing core and technical adapters. The audio stream passes through analysis, timestamped measurements, mapping rules and visual state before rendering."
+
+#: ../../specification.rst:293
+msgid "Architecture logique envisagée. Les flèches indiquent les appels entre couches ; les composants et leurs interfaces exactes restent à définir."
+msgstr "Proposed logical architecture. Arrows indicate calls between layers; the exact components and interfaces remain to be defined."
+
+#: ../../specification.rst:295
+msgid "Responsabilités des couches"
+msgstr "Layer responsibilities"
+
+#: ../../specification.rst:300
+msgid "Couche"
+msgstr "Layer"
+
+#: ../../specification.rst:301
+msgid "Responsabilité"
+msgstr "Responsibility"
+
+#: ../../specification.rst:302
+msgid "Frontière proposée"
+msgstr "Proposed boundary"
+
+#: ../../specification.rst:303
+msgid "Présentation"
+msgstr "Presentation"
+
+#: ../../specification.rst:304
+msgid "Afficher le lecteur, le rendu, l'éditeur de profils et les états des opérations ; transmettre les actions de l'utilisateur."
+msgstr "Display the player, rendering, profile editor and operation states; relay user actions."
+
+#: ../../specification.rst:305
+msgid "Qt via ``qtpy`` avec PySide6 ; aucun calcul DSP ni accès direct au stockage depuis les widgets."
+msgstr "Qt through ``qtpy`` with PySide6; no DSP computation or direct storage access from widgets."
+
+#: ../../specification.rst:306
+msgid "Application"
+msgstr ""
+
+#: ../../specification.rst:307
+msgid "Orchestrer l'ouverture, la pré-analyse, la lecture, la recherche temporelle, la gestion des profils et l'export ; suivre la progression et les erreurs."
+msgstr "Orchestrate opening, pre-analysis, playback, seeking, profile management and export; track progress and errors."
+
+#: ../../specification.rst:308
+msgid "Dépend des contrats du cœur et pilote les adaptateurs ; préserve la réactivité de l'interface pendant les opérations longues."
+msgstr "Depends on core contracts and controls adapters; maintains interface responsiveness during long operations."
+
+#: ../../specification.rst:309
+msgid "Cœur"
+msgstr "Core"
+
+#: ../../specification.rst:310
+msgid "Définir les mesures horodatées, leur validité et leurs unités ; calculer les descripteurs, appliquer un profil et produire un état visuel indépendant de l'affichage."
+msgstr "Define timestamped measurements, their validity and units; compute descriptors, apply a profile and produce a display-independent visual state."
+
+#: ../../specification.rst:311
+msgid "Les règles de correspondance ne dépendent ni de Qt, ni du format JSON, ni de FFmpeg."
+msgstr "Mapping rules depend on neither Qt, JSON format nor FFmpeg."
+
+#: ../../specification.rst:312
+msgid "Adaptateurs"
+msgstr "Adapters"
+
+#: ../../specification.rst:313
+msgid "Décoder et lire l'audio, *capter une source directe si retenue*, enregistrer les profils, dessiner les images et encoder la vidéo."
+msgstr "Decode and play audio, *capture a live source if selected*, save profiles, draw images and encode video."
+
+#: ../../specification.rst:314
+msgid "Encapsulent les bibliothèques et les formats concrets derrière les contrats utilisés par l'application et le cœur."
+msgstr "Encapsulate concrete libraries and formats behind contracts used by the application and core."
+
+#: ../../specification.rst:316
+msgid "Les frontières de données à préciser en premier sont les suivantes :"
+msgstr "The first data boundaries to clarify are:"
+
+#: ../../specification.rst:318
+msgid "**Audio :** échantillons et métadonnées nécessaires à l'analyse, avec définition du nombre de canaux, de la fréquence d':term:`échantillonnage <Échantillonnage>` et de l'origine temporelle."
+msgstr "**Audio:** samples and metadata required for analysis, defining channel count, :term:`sampling <Échantillonnage>` rate and temporal origin."
+
+#: ../../specification.rst:319
+msgid "**Mesures :** valeurs horodatées, unités, paramètres d'analyse et indicateur explicite d'absence ou de fiabilité insuffisante ; la pré-analyse et le direct doivent conserver la même :term:`sémantique <Sémantique>`."
+msgstr "**Measurements:** timestamped values, units, analysis parameters and an explicit indicator of absence or insufficient reliability; pre-analysis and live processing must retain the same :term:`semantics <Sémantique>`."
+
+#: ../../specification.rst:320
+msgid "**Profil :** règles et paramètres de correspondance validés, séparés de leur représentation JSON ; un numéro de version permettra de faire évoluer le format persistant."
+msgstr "**Profile:** validated mapping rules and parameters, separate from their JSON representation; a version number will allow the persistent format to evolve."
+
+#: ../../specification.rst:321
+msgid "**État visuel :** description des attributs à dessiner pour un instant donné, indépendante du widget, de la résolution et de l'encodeur."
+msgstr "**Visual state:** a description of the attributes to draw at a given instant, independent of the widget, resolution and encoder."
+
+#: ../../specification.rst:322
+msgid "**Résultat d'opération :** progression, annulation possible lorsque pertinente et erreur exploitable par l'interface, sans exposer directement les exceptions des bibliothèques tierces."
+msgstr "**Operation result:** progress, cancellation where appropriate and an actionable interface error, without directly exposing third-party library exceptions."
+
+#: ../../specification.rst:324
+msgid "Pour la prévisualisation, l'horloge de lecture audio détermine l'instant interrogé dans les mesures pré-analysées ; les règles du profil produisent l'état visuel correspondant. Pour l'export, les instants sont déterminés par la cadence vidéo et interrogent les mêmes mesures et règles ; le même contrat de rendu doit être utilisé pour obtenir les images, même si la cible d'affichage diffère. La capture directe, *si elle est développée*, alimentera le cœur avec des mesures de même forme, mais sans exiger de conserver toute l'histoire du flux en mémoire."
+msgstr "For the preview, the audio playback clock determines the instant queried in pre-analyzed measurements; the profile rules produce the corresponding visual state. For export, instants are determined by the video frame rate and query the same measurements and rules; the same rendering contract must produce the images even when the display target differs. Live capture, *if developed*, will feed the core with measurements of the same form without requiring the entire stream history to be retained in memory."
+
+#: ../../specification.rst:328
+msgid "Les dépendances doivent rester orientées vers les contrats du cœur et de l'application : un adaptateur concret peut être remplacé sans modifier les règles de correspondance. Un portage ciblé en C++20 pourra être placé derrière une frontière mesurée comme coûteuse, par exemple l'extraction d'un descripteur, sans imposer le C++ au reste de l'application. Le traitement audio continu, l'analyse longue et l'export ne doivent pas bloquer la boucle d'événements Qt ; la stratégie d'exécution et les échanges entre tâches seront choisis après mesure."
+msgstr "Dependencies must remain directed toward core and application contracts: a concrete adapter can be replaced without modifying mapping rules. A targeted C++20 port may be placed behind a boundary measured to be costly, such as descriptor extraction, without imposing C++ on the rest of the application. Continuous audio processing, long analysis and export must not block the Qt event loop; the execution strategy and exchanges between tasks will be selected after measurement."
+
+#: ../../specification.rst:333
+msgid "Organisation prévisionnelle du code"
+msgstr "Planned code organization"
+
+#: ../../specification.rst:335
+msgid "Le paquet ``synesthesia`` reste à la racine du dépôt. Les noms ci-dessous désignent des responsabilités possibles, et non des sous-dossiers à créer dès le départ :"
+msgstr "The ``synesthesia`` package remains at the repository root. The names below denote possible responsibilities, not subdirectories to create immediately:"
+
+#: ../../specification.rst:337
+msgid "``analysis`` : extraction des mesures et descripteurs audio ;"
+msgstr "``analysis``: extraction of audio measurements and descriptors;"
+
+#: ../../specification.rst:338
+msgid "``mapping`` : profils, règles de correspondance et état visuel ;"
+msgstr "``mapping``: profiles, mapping rules and visual state;"
+
+#: ../../specification.rst:339
+msgid "``rendering`` : production d'une image à partir de l'état visuel ;"
+msgstr "``rendering``: production of an image from the visual state;"
+
+#: ../../specification.rst:340
+msgid "``io`` : fichiers et flux audio, persistance des profils et export vidéo ;"
+msgstr "``io``: audio files and streams, profile persistence and video export;"
+
+#: ../../specification.rst:341
+msgid "``ui`` : fenêtres et widgets Qt ;"
+msgstr "``ui``: Qt windows and widgets;"
+
+#: ../../specification.rst:342
+msgid "``tools`` : utilitaires transversaux réutilisables."
+msgstr "``tools``: reusable cross-cutting utilities."
+
+#: ../../specification.rst:344
+msgid "Le code peut commencer dans quelques modules du paquet existant. Une fonction courte de lecture ou d'écriture peut rejoindre un module d'entrées-sorties commun ; elle ne justifie pas à elle seule un fichier ou un dossier. Les fonctions liées seront séparées lorsque leur volume, leurs dépendances ou leurs cycles de vie rendront cette séparation utile. La lecture audio continue et l'encodage vidéo pourront notamment évoluer indépendamment des simples fonctions d'ouverture et de sauvegarde. Les couches du schéma précédent restent des responsabilités logiques : leur nombre ne détermine pas celui des paquets Python."
+msgstr "Code may start in a few modules within the existing package. A short reading or writing function may belong in a shared input/output module; it does not alone justify a file or directory. Related functions will be separated when their size, dependencies or lifecycles make separation useful. In particular, continuous audio playback and video encoding may evolve independently of simple opening and saving functions. The layers in the preceding diagram remain logical responsibilities: their number does not determine the number of Python packages."
+
+#: ../../specification.rst:349
+msgid "Le détail des bibliothèques envisagées, des solutions écartées pour le prototype et de la comparaison Python/C++ figure dans l':ref:`annexe-choix-techniques`."
+msgstr "Details of the libraries considered, solutions excluded from the prototype and Python/C++ comparison appear in :ref:`annexe-choix-techniques`."
+
+#: ../../specification.rst:352
+msgid "Décision de pile logicielle"
+msgstr "Software stack decision"
+
+#: ../../specification.rst:354
+msgid "La voie envisagée pour le premier prototype est **Python 3.14**, avec ``NumPy`` / ``SciPy`` pour le socle DSP, ``librosa`` pour les fonctions musicales utiles, ``soundfile`` pour les fichiers, ``sounddevice`` pour la lecture et la capture, ``Qt`` via ``qtpy`` avec ``PySide6`` pour l'interface, et ``FFmpeg`` externe pour l'export. Le rendu commence en 2D avec Qt ; ``ModernGL`` sera évalué si les besoins de rendu dépassent les capacités mesurées de cette première solution. Ce choix favorise l'itération sur les correspondances perceptives et la cohérence entre aperçu et export, tout en conservant la possibilité de porter en C++20 un composant dont le profilage démontre le besoin. Il ne présume ni qu'un portage sera nécessaire, ni que son coût sera négligeable."
+msgstr "The proposed approach for the first prototype is **Python 3.14**, with ``NumPy`` / ``SciPy`` for the DSP foundation, ``librosa`` for useful musical functions, ``soundfile`` for files, ``sounddevice`` for playback and capture, ``Qt`` through ``qtpy`` with ``PySide6`` for the interface and external ``FFmpeg`` for export. Rendering starts in 2D with Qt; ``ModernGL`` will be evaluated if rendering needs exceed this initial solution's measured capabilities. This choice supports iteration on perceptual correspondences and consistency between preview and export while retaining the option to port a component to C++20 if profiling demonstrates the need. It presumes neither that a port will be necessary nor that its cost will be negligible."
+
+#: ../../specification.rst:359
+msgid "Python 3.14 sert de cible initiale de développement ; la version minimale déclarée du paquet reste Python 3.13. Les bibliothèques graphiques ou d'analyse optionnelles ne déterminent pas à elles seules la compatibilité avec Python 3.14 ; celle-ci sera évaluée sur la pile effectivement nécessaire et les plateformes retenues, y compris la liaison Qt et les dépendances transitives. Les versions exactes des bibliothèques ne seront pas figées par principe. Des versions minimales seront indiquées uniquement lorsqu'une fonctionnalité, une correction ou la compatibilité avec Python l'exige, avec une vérification d'installation sur chaque plateforme cible."
+msgstr "Python 3.14 is the initial development target; the package's declared minimum version remains Python 3.13. Optional graphics or analysis libraries do not alone determine compatibility with Python 3.14; this will be evaluated for the stack actually required and selected platforms, including the Qt binding and transitive dependencies. Exact library versions will not be pinned as a matter of principle. Minimum versions will be stated only when required by a feature, fix or Python compatibility, with installation verified on each target platform."
+
+#: ../../specification.rst:365
+msgid "Avant distribution, la compatibilité des licences de la pile effectivement retenue et des options de compilation de ``FFmpeg`` avec l':term:`AGPLv3 <AGPLv3 (GNU Affero General Public License version 3)>` devra être vérifiée. Les formats audio, codecs vidéo, systèmes d'exploitation et matériels de référence restent à fixer comme indiqué dans les décisions ouvertes du CDC. Cette pile décrit une intention de conception : les dépendances applicatives ne seront déclarées dans le paquet qu'au fur et à mesure de leur usage et de leur vérification sur les plateformes cibles."
+msgstr "Before distribution, compatibility of the selected stack's licenses and ``FFmpeg`` build options with :term:`AGPLv3 <AGPLv3 (GNU Affero General Public License version 3)>` must be checked. Audio formats, video codecs, operating systems and reference hardware remain to be determined as stated in the specification's open decisions. This stack describes a design intention: application dependencies will be declared in the package as they are used and verified on target platforms."
+
+#: ../../specification.rst:369
+msgid "Exigences non fonctionnelles"
+msgstr "Non-functional requirements"
+
+#: ../../specification.rst:371
+msgid "**Synchronisation :** l'audio sert de référence temporelle en lecture ; les événements visuels et les images exportées portent un :term:`horodatage <Horodatage>` cohérent, y compris après pause ou déplacement dans le fichier. La validation distinguera le décalage fixe, la gigue et la durée des images, en lecture de fichier comme en capture directe."
+msgstr "**Synchronization:** audio is the playback time reference; visual events and exported frames carry consistent :term:`timestamps <Horodatage>`, including after pausing or seeking. Validation will distinguish fixed offset, jitter and frame duration in both file playback and live capture."
+
+#: ../../specification.rst:372
+msgid "**Réactivité :** viser un affichage fluide à 60 images par seconde sur une configuration de référence à définir. La cible de latence audio-visuel inférieure à 20 ms mentionnée dans l'ébauche doit être précisée par une méthode de mesure, un mode d'exécution et un matériel de référence avant de devenir un critère d'acceptation."
+msgstr "**Responsiveness:** aim for smooth display at 60 frames per second on a reference configuration to be defined. The audiovisual latency target below 20 ms mentioned in the draft must be specified through a measurement method, execution mode and reference hardware before becoming an acceptance criterion."
+
+#: ../../specification.rst:374
+msgid "**Robustesse :** les entrées invalides, le silence, les fichiers longs, les interruptions de capture et les échecs d'export produisent un état compréhensible sans perdre un profil enregistré."
+msgstr "**Robustness:** invalid inputs, silence, long files, capture interruptions and export failures produce an understandable state without losing a saved profile."
+
+#: ../../specification.rst:375
+msgid "**Reproductibilité :** à source, profil, paramètres, graines aléatoires et versions des composants identiques, l'export hors ligne doit produire le même enchaînement d'états visuels. Cette exigence ne promet pas des fichiers vidéo identiques bit à bit entre encodeurs ou plateformes."
+msgstr "**Reproducibility:** with identical source, profile, parameters, random seeds and component versions, offline export must produce the same sequence of visual states. This requirement does not promise bit-for-bit identical video files between encoders or platforms."
+
+#: ../../specification.rst:376
+msgid "**Confidentialité :** les fichiers audio restent locaux par défaut ; tout partage futur nécessite une décision explicite. Si un module de recherche recueille des réponses perceptives, leur conservation et leur partage devront être définis par le protocole correspondant."
+msgstr "**Privacy:** audio files remain local by default; any future sharing requires an explicit decision. If a research module collects perceptual responses, their retention and sharing must be defined by the relevant protocol."
+
+#: ../../specification.rst:377
+msgid "**Accessibilité :** les réglages ne doivent pas dépendre uniquement de la couleur ; les libellés et indicateurs de statut doivent rester lisibles."
+msgstr "**Accessibility:** settings must not rely solely on color; labels and status indicators must remain readable."
+
+#: ../../specification.rst:380
+msgid "Vérification du logiciel"
+msgstr "Software verification"
+
+#: ../../specification.rst:382
+msgid "La première livraison devra être vérifiée sur les fonctions qu'elle annonce : ouverture des formats retenus, lecture et déplacement temporel, traitement du silence et des erreurs, sauvegarde puis rechargement d'un profil, et cohérence de l'aperçu avec l'export. Des signaux simples et des fichiers de référence reproductibles seront choisis au moment d'implémenter ces fonctions. Les mesures de performance accompagneront les fonctionnalités effectivement livrées et préciseront la machine, la source audio, la résolution, la cadence et la méthode de chronométrage. Les seuils chiffrés seront fixés lorsque les formats, plateformes et matériels cibles seront connus ; ce CDC n'impose pas dès maintenant une matrice exhaustive de tests d'acceptation."
+msgstr "The first release must be verified against the functions it advertises: opening selected formats, playback and seeking, handling silence and errors, saving and reloading a profile, and preview/export consistency. Simple signals and reproducible reference files will be selected when these functions are implemented. Performance measurements will accompany the features actually delivered and specify the machine, audio source, resolution, frame rate and timing method. Numerical thresholds will be set once target formats, platforms and hardware are known; this specification does not impose an exhaustive acceptance test matrix at this stage."
+
+#: ../../specification.rst:387
+msgid "Une étude perceptive destinée à évaluer les correspondances ou l'effet du visualiseur reste une possibilité de recherche, distincte de ces vérifications et sans conditionner la première livraison. Les pistes méthodologiques déjà relevées sont conservées dans l':ref:`annexe-etude-optionnelle`."
+msgstr "A perceptual study evaluating mappings or the visualizer's effect remains a research possibility, distinct from these checks and not a condition of the first release. The methodological directions already identified are retained in :ref:`annexe-etude-optionnelle`."
+
+#: ../../specification.rst:391
+msgid "Livrables et feuille de route provisoire"
+msgstr "Deliverables and provisional roadmap"
+
+#: ../../specification.rst:393
+msgid "Le développement est mené en autonomie, sur le temps libre de l'auteur, sans calendrier imposé ni revue externe planifiée. Les étapes ci-dessous décrivent un ordre de travail provisoire, sans date ni engagement de durée. Les livrables envisagés sont l'application, les profils fournis, la documentation utilisateur et technique, des exemples reproductibles servant aux vérifications fonctionnelles, ainsi qu'un exemple de vidéo exportée. D'éventuels résultats d'étude perceptive constitueraient un livrable distinct."
+msgstr "Development is conducted independently in the author's spare time, without an imposed schedule or planned external review. The stages below describe a provisional order of work, without dates or duration commitments. Planned deliverables are the application, included profiles, user and technical documentation, reproducible examples for functional checks and an example exported video. Any perceptual study results would be a separate deliverable."
+
+#: ../../specification.rst:397
+msgid "Étapes envisagées"
+msgstr "Proposed stages"
+
+#: ../../specification.rst:402
+msgid "Étape"
+msgstr "Stage"
+
+#: ../../specification.rst:403
+msgid "Travail principal"
+msgstr "Main work"
+
+#: ../../specification.rst:404
+msgid "Résultat attendu"
+msgstr "Expected result"
+
+#: ../../specification.rst:405
+msgid "Cadrage"
+msgstr "Scoping"
+
+#: ../../specification.rst:406
+msgid "Fixer progressivement les formats, plateformes et matériels cibles, le périmètre de la première livraison et les vérifications fonctionnelles associées."
+msgstr "Progressively determine target formats, platforms and hardware, the scope of the first release and associated functional checks."
+
+#: ../../specification.rst:407
+msgid "Choix nécessaires à l'implémentation explicités, sans figer prématurément le calendrier."
+msgstr "Implementation choices made explicit without prematurely fixing the schedule."
+
+#: ../../specification.rst:408
+msgid "Chaîne audio et analyse"
+msgstr "Audio pipeline and analysis"
+
+#: ../../specification.rst:409
+msgid "Charger et lire un fichier ; produire les mesures horodatées, traiter les silences et les erreurs, et vérifier les résultats sur des signaux de référence."
+msgstr "Load and play a file; produce timestamped measurements, handle silence and errors, and check results against reference signals."
+
+#: ../../specification.rst:410
+msgid "Analyse reproductible exploitable pendant la lecture et l'export."
+msgstr "Reproducible analysis usable during playback and export."
+
+#: ../../specification.rst:411
+msgid "Visualiseur 2D"
+msgstr "2D visualizer"
+
+#: ../../specification.rst:412
+msgid "Synchroniser lecture, déplacement temporel, profil prédéfini et rendu ; construire une interface utilisable sans connaissance du :term:`DSP <DSP (Digital Signal Processing)>`."
+msgstr "Synchronize playback, seeking, a predefined profile and rendering; build an interface usable without knowledge of :term:`DSP <DSP (Digital Signal Processing)>`."
+
+#: ../../specification.rst:413
+msgid "Première prévisualisation interactive couvrant le parcours de lecture."
+msgstr "Initial interactive preview covering the playback journey."
+
+#: ../../specification.rst:414
+msgid "Personnalisation"
+msgstr "Customization"
+
+#: ../../specification.rst:415
+msgid "Définir le schéma versionné des profils, puis permettre l'édition des règles et :term:`palettes <Palette>` ainsi que l'enregistrement et le rechargement des profils."
+msgstr "Define the versioned profile schema, then allow rules and :term:`palettes <Palette>` to be edited and profiles saved and reloaded."
+
+#: ../../specification.rst:416
+msgid "Un profil personnel rechargé reproduit le même rendu."
+msgstr "Reloading a personal profile reproduces the same rendering."
+
+#: ../../specification.rst:417
+msgid "Export et finition"
+msgstr "Export and finishing"
+
+#: ../../specification.rst:418
+msgid "Produire la vidéo à partir des mêmes mesures et règles que l'aperçu ; vérifier les cas difficiles, l'ergonomie, l'accessibilité et les performances sur le matériel retenu."
+msgstr "Produce video from the same measurements and rules as the preview; check difficult cases, usability, accessibility and performance on the selected hardware."
+
+#: ../../specification.rst:419
+msgid "Première version aboutie couvrant les exigences P1 et accompagnée de sa documentation."
+msgstr "A complete initial version covering P1 requirements with accompanying documentation."
+
+#: ../../specification.rst:420
+msgid "Diffusion et publication éventuelle"
+msgstr "Distribution and potential publication"
+
+#: ../../specification.rst:421
+msgid "Mettre l'outil et sa documentation à disposition ; si une publication est entreprise, présenter les fondements scientifiques, les choix de conception, l'implémentation et les limites du visualiseur."
+msgstr "Make the tool and documentation available; if publication is undertaken, present the scientific foundations, design choices, implementation and limitations of the visualizer."
+
+#: ../../specification.rst:422
+msgid "Logiciel diffusé selon le périmètre retenu ; article éventuel décrivant le projet, distinct d'une étude scientifique des correspondances qui exigerait un protocole propre."
+msgstr "Software distributed within the selected scope; a potential paper describing the project, distinct from a scientific study of correspondences that would require its own protocol."
+
+#: ../../specification.rst:424
+msgid "L'entrée audio en direct (F-09) reste une extension envisagée. La diffusion de la première version pourra permettre de recueillir l'intérêt de chercheurs pour l'outil ; une adaptation à leurs protocoles (F-10) et une étude perceptive feraient l'objet de décisions et d'un calendrier distincts."
+msgstr "Live audio input (F-09) remains a prospective extension. Distribution of the first version may gather researchers' interest in the tool; adaptation to their protocols (F-10) and a perceptual study would require separate decisions and schedules."
+
+#: ../../specification.rst:427
+msgid "Décisions encore ouvertes"
+msgstr "Open decisions"
+
+#: ../../specification.rst:429
+msgid "Avant de préciser les vérifications fonctionnelles, il reste à décider :"
+msgstr "Before functional checks can be specified, decisions remain on:"
+
+#: ../../specification.rst:431
+msgid "des plateformes, formats, matériels cibles et modalités de distribution de FFmpeg ;"
+msgstr "target platforms, formats and hardware, and FFmpeg distribution arrangements;"
+
+#: ../../specification.rst:432
+msgid "du périmètre exact de la première livraison et des démonstrations attendues à chaque jalon ;"
+msgstr "the exact scope of the first release and demonstrations expected at each milestone;"
+
+#: ../../specification.rst:433
+msgid "de la compatibilité des dépendances retenues avec l':term:`AGPLv3 <AGPLv3 (GNU Affero General Public License version 3)>` ;"
+msgstr "compatibility of selected dependencies with :term:`AGPLv3 <AGPLv3 (GNU Affero General Public License version 3)>`;"
+
+#: ../../specification.rst:434
+msgid "du schéma des profils ;"
+msgstr "the profile schema;"
+
+#: ../../specification.rst:435
+msgid "du comportement détaillé des écrans et de l'évaluation ergonomique des esquisses ;"
+msgstr "detailed screen behavior and usability evaluation of the sketches;"
+
+#: ../../specification.rst:436
+msgid "des seuils de latence, fluidité, durée d'analyse et qualité d'export, avec matériel et méthode de mesure."
+msgstr "latency, smoothness, analysis duration and export quality thresholds, with hardware and measurement methods."
+
+#: ../../specification.rst:438
+msgid "Si une adaptation à une étude est décidée, il faudra alors définir le format des réponses perceptives, les modalités de consentement, de conservation et de suppression des données, avant toute collecte auprès de tiers."
+msgstr "If adaptation to a study is decided, the perceptual response format and consent, data retention and deletion arrangements must then be defined before any third-party data is collected."
+
+#: ../../specification.rst:444
+msgid "Annexe A — Notices des études citées"
+msgstr "Appendix A — Findings of the cited studies"
+
+#: ../../specification.rst:446
+msgid "Ces notices explicitent les résultats et leurs limites pour le projet. Elles documentent les sources utilisées dans les fondements et les hypothèses de rendu ; elles ne constituent pas une validation du visualiseur."
+msgstr "These notes explain the findings and limitations of the studies for the project. They document the sources used for the foundations and rendering hypotheses; they do not validate the visualizer."
+
+#: ../../specification.rst:448
+msgid ":cite:t:`ward_sound-colour_2006` (`article <https://doi.org/10.1016/S0010-9452(08)70352-6>`_) comparent des personnes présentant une :term:`synesthésie <Synesthésie>` son-couleur à des témoins. Les deux groupes emploient notamment une association entre :term:`hauteur tonale <Hauteur tonale>` et clarté de la couleur ; les réponses synesthétiques sont plus précises et plus cohérentes. L'article ne fixe aucune fonction mathématique reliant la hauteur à la clarté ni une teinte par note."
+msgstr ":cite:t:`ward_sound-colour_2006` (`paper <https://doi.org/10.1016/S0010-9452(08)70352-6>`_) compare people with sound-color :term:`synesthesia <Synesthésie>` against controls. Both groups use an association between :term:`pitch <Hauteur tonale>` and color lightness; synesthetic responses are more precise and consistent. The paper establishes neither a mathematical function relating pitch to lightness nor a hue for each note."
+
+#: ../../specification.rst:451
+msgid ":cite:t:`zamm_pathways_2013` (`article <https://doi.org/10.1016/j.neuroimage.2013.02.024>`_) comparent 10 synesthètes musique–couleur confirmés par des tâches répétées à 10 témoins appariés. Une :term:`anisotropie fractionnelle <Anisotropie fractionnelle>` plus élevée du faisceau fronto-occipital inférieur droit est associée au groupe et à la constance des réponses. Cette mesure de diffusion ne montre ni le sens des connexions, ni une cause de la synesthésie, ni une règle de correspondance musicale. L'effectif exige une :term:`réplication <Réplication>`."
+msgstr ":cite:t:`zamm_pathways_2013` (`paper <https://doi.org/10.1016/j.neuroimage.2013.02.024>`_) compare 10 music–color synesthetes confirmed through repeated tasks with 10 matched controls. Higher :term:`fractional anisotropy <Anisotropie fractionnelle>` in the right inferior fronto-occipital fasciculus is associated with the group and response consistency. This diffusion measure shows neither connection direction, a cause of synesthesia nor a musical mapping rule. The sample size calls for :term:`replication <Réplication>`."
+
+#: ../../specification.rst:455
+msgid ":cite:t:`neufeld_feedback_2012` (`article <https://doi.org/10.1016/j.neuropsychologia.2012.02.032>`_) comparent, en :term:`IRMf <IRMf (Imagerie par Résonance Magnétique fonctionnelle)>` pendant des sons non verbaux, 14 synesthètes audio–visuels associateurs et 14 témoins. La :term:`connectivité fonctionnelle <Connectivité fonctionnelle>` du cortex pariétal inférieur gauche avec des régions auditives et visuelles primaires est plus élevée chez les synesthètes ; aucune différence directe entre régions auditives et visuelles **examinées** n'est détectée. Cette corrélation ne révèle ni le sens des échanges, ni une désinhibition effective, ni une cause. Les résultats de Neufeld et les mesures de diffusion de Zamm portent sur des indicateurs différents et ne démontrent pas un mécanisme neural unique."
+msgstr ":cite:t:`neufeld_feedback_2012` (`paper <https://doi.org/10.1016/j.neuropsychologia.2012.02.032>`_) compare 14 audiovisual associator synesthetes with 14 controls using :term:`fMRI <IRMf (Imagerie par Résonance Magnétique fonctionnelle)>` during nonverbal sounds. :term:`Functional connectivity <Connectivité fonctionnelle>` of the left inferior parietal cortex with primary auditory and visual regions is higher in synesthetes; no direct difference between the auditory and visual regions **examined** is detected. This correlation reveals neither exchange direction, effective disinhibition nor a cause. Neufeld's findings and Zamm's diffusion measurements involve different indicators and do not demonstrate a single neural mechanism."
+
+#: ../../specification.rst:460
+msgid ":cite:t:`witthoft_learned_2015` (`article <https://doi.org/10.1371/journal.pone.0118996>`_) trouvent, parmi 6 588 synesthètes graphème–couleur recrutés en ligne, 400 profils dont au moins dix associations lettre–couleur correspondent à un jeu de lettres colorées de l'enfance. La distribution des dates de naissance renforce l'hypothèse d'un apprentissage du **contenu** des associations. La possession du jeu n'est pas établie pour chaque personne et ce résultat ne mesure ni la prévalence en population générale, ni la cause de la synesthésie, ni des associations musique–couleur."
+msgstr ":cite:t:`witthoft_learned_2015` (`paper <https://doi.org/10.1371/journal.pone.0118996>`_) find, among 6,588 grapheme–color synesthetes recruited online, 400 profiles in which at least ten letter–color associations match a childhood colored letter set. The birth-date distribution strengthens the hypothesis that the **content** of associations was learned. Ownership of the set is not established for every participant, and the finding measures neither general-population prevalence, the cause of synesthesia nor music–color associations."
+
+#: ../../specification.rst:463
+msgid ":cite:t:`spence_crossmodal_2011` (`article <https://doi.org/10.3758/s13414-010-0073-7>`_) rapporte des associations fréquentes entre sons aigus et objets petits, clairs et placés haut. Il s'agit de tendances dépendant des tâches et des :term:`stimuli <Stimulus>`, sans rapport mathématique universel."
+msgstr ":cite:t:`spence_crossmodal_2011` (`paper <https://doi.org/10.3758/s13414-010-0073-7>`_) reports frequent associations between high-pitched sounds and small, light-colored, elevated objects. These are task- and :term:`stimulus <Stimulus>`-dependent tendencies, without a universal mathematical relationship."
+
+#: ../../specification.rst:465
+msgid ":cite:t:`spence_distefano_2022` (`article <https://doi.org/10.1177/20416695221092802>`_) distinguent l'analogie entre octave et cercle chromatique d'une correspondance perceptive démontrée. Elle ne valide aucune conversion physique note–teinte ; elle présente l'émotion comme une explication plausible des choix musique–couleur, sans preuve causale exclusive ni nouvelle cohorte."
+msgstr ":cite:t:`spence_distefano_2022` (`paper <https://doi.org/10.1177/20416695221092802>`_) distinguish the analogy between an octave and the color circle from a demonstrated perceptual correspondence. The review validates no physical note-to-hue conversion; it presents emotion as a plausible explanation for music–color choices without exclusive causal evidence or a new cohort."
+
+#: ../../specification.rst:468
+msgid ":cite:t:`chiou_cross-modality_2012` (`article <https://doi.org/10.1068/p7161>`_) montrent que le lien hauteur-position peut guider l'attention, tout en étant sensible au contexte et au contrôle volontaire."
+msgstr ":cite:t:`chiou_cross-modality_2012` (`paper <https://doi.org/10.1068/p7161>`_) show that the pitch–position relationship can guide attention while remaining sensitive to context and voluntary control."
+
+#: ../../specification.rst:469
+msgid ":cite:t:`adeli_audiovisual_2014` (`article <https://doi.org/10.3389/fnhum.2014.00352>`_) ne retrouvent pas d'association ordonnée entre :term:`hauteur fondamentale <Hauteur fondamentale>` et position verticale avec leurs sons instrumentaux : cette divergence doit être prise en compte. Ils observent, auprès de 119 participants et avec 23 sons de niveau égalisé, une association plus forte entre :term:`timbres <Timbre>` doux et formes arrondies, ou timbres rudes et formes anguleuses, qu'entre timbre et couleur, dans un choix parmi trois formes imposées. Le registre modifie aussi les choix pour certains instruments. Les expériences « synesthésie-like » déclarées par 31 participants n'ont pas été confirmées par un test diagnostique dans cette étude. L'étude ne valide aucun pilotage direct de l'angularité par le centroïde ou les :term:`MFCC <MFCC (Mel-Frequency Cepstral Coefficients)>`."
+msgstr ":cite:t:`adeli_audiovisual_2014` (`paper <https://doi.org/10.3389/fnhum.2014.00352>`_) find no ordered association between :term:`fundamental pitch <Hauteur fondamentale>` and vertical position with their instrumental sounds: this discrepancy must be considered. With 119 participants and 23 level-equalized sounds, they observe a stronger association between soft :term:`timbres <Timbre>` and rounded shapes, or harsh timbres and angular shapes, than between timbre and color, in a choice among three imposed shapes. Register also changes choices for some instruments. The synesthesia-like experiences reported by 31 participants were not confirmed by a diagnostic test in this study. The study validates no direct control of angularity through the centroid or :term:`MFCCs <MFCC (Mel-Frequency Cepstral Coefficients)>`."
+
+#: ../../specification.rst:473
+msgid ":cite:t:`griscom_visualizing_nodate` (`thèse <https://escholarship.org/uc/item/7px9h0gg>`_) observe, dans des tâches de choix contraints, des liens entre intervalles/accords et couleurs, et entre timbres instrumentaux et couleurs, flou ou dynamique lumineuse. Les associations aux couleurs covarient surtout avec les jugements émotionnels ou sémantiques ; le flou et la dynamique lumineuse répondent davantage à certaines propriétés acoustiques. Les résultats sur les mélanges de timbres concernent un petit ensemble de deux ou trois sources, et ne définissent pas de règle générale de fusion colorée."
+msgstr ":cite:t:`griscom_visualizing_nodate` (`thesis <https://escholarship.org/uc/item/7px9h0gg>`_) observes, in constrained choice tasks, relationships between intervals/chords and colors, and between instrumental timbres and colors, blur or luminance dynamics. Color associations covary mainly with emotional or semantic judgments; blur and luminance dynamics respond more to certain acoustic properties. Findings on timbre mixtures concern a small set of two or three sources and define no general rule for color fusion."
+
+#: ../../specification.rst:476
+msgid ":cite:t:`palmer_musiccolor_2013` (`article <https://doi.org/10.1073/pnas.1212562110>`_) étudient les choix de couleurs de participants non synesthètes pour 18 extraits orchestraux. Les correspondances observées sont compatibles avec une :term:`médiation <Médiation>` par les émotions associées à la musique et aux couleurs. Les extraits rapides en mode majeur et les extraits lents en mode mineur diffèrent sur plusieurs dimensions ; le mode seul ne détermine pas une :term:`palette <Palette>` et l'étude ne fournit pas de classificateur d'émotion audio."
+msgstr ":cite:t:`palmer_musiccolor_2013` (`paper <https://doi.org/10.1073/pnas.1212562110>`_) study color choices by non-synesthetic participants for 18 orchestral excerpts. The observed correspondences are consistent with :term:`mediation <Médiation>` through emotions associated with music and colors. Fast major-mode and slow minor-mode excerpts differ across several dimensions; mode alone does not determine a :term:`palette <Palette>`, and the study provides no audio emotion classifier."
+
+#: ../../specification.rst:479
+msgid ":cite:t:`palmer_melodies_2016` (`article <https://doi.org/10.1163/22134808-00002486>`_) manipulent séparément :term:`tempo <Tempo>`, densité de notes, mode et registre dans 64 versions de quatre thèmes de piano, auprès de 21 personnes non synesthètes. Ils observent des effets du tempo et du mode sur les choix de couleur, compatibles avec une médiation émotionnelle. L'étude permet d'attribuer des effets à ces manipulations dans ce matériel, sans définir une palette pour tout morceau ou valider l'estimation automatique de l'émotion."
+msgstr ":cite:t:`palmer_melodies_2016` (`paper <https://doi.org/10.1163/22134808-00002486>`_) independently manipulate :term:`tempo <Tempo>`, note density, mode and register in 64 versions of four piano themes with 21 non-synesthetic participants. They observe tempo and mode effects on color choices consistent with emotional mediation. The study attributes effects to these manipulations within this material without defining a palette for every piece or validating automatic emotion estimation."
+
+#: ../../specification.rst:482
+msgid ":cite:t:`smit_papua_2022` (`article <https://doi.org/10.1371/journal.pone.0269597>`_) comparent les réponses à des cadences majeures et mineures de groupes différant par leur exposition à la musique occidentale ou apparentée, en Papouasie-Nouvelle-Guinée et à Sydney. L'association entre cadences majeures et bonheur rapporté est plus nette dans les groupes exposés ; le groupe le moins exposé reste trop incertain pour conclure à un effet nul ou universel. Les mélodies de l'étude ne séparent pas le mode de la hauteur moyenne. Aucune couleur n'est mesurée : une règle automatique « majeur = palette joyeuse » n'en découle pas."
+msgstr ":cite:t:`smit_papua_2022` (`paper <https://doi.org/10.1371/journal.pone.0269597>`_) compare responses to major and minor cadences among groups with different exposure to Western or related music in Papua New Guinea and Sydney. The association between major cadences and reported happiness is clearer in exposed groups; the least-exposed group's results remain too uncertain to conclude either a null or universal effect. The study's melodies do not separate mode from mean pitch. No color is measured: an automatic major-mode-equals-happy-palette rule does not follow."
+
+#: ../../specification.rst:487
+msgid ":cite:t:`isbilen_color_2016` (`article <https://doi.org/10.1037/pmu0000147>`_) retrouvent, avec des préludes de Bach et huit couleurs proposées, des regroupements liés au tempo, au mode, au registre et aux :term:`attaques <Attaque>`. Des évaluations émotionnelles séparées de la musique et des couleurs prédisent les choix observés. Les variables musicales varient ensemble ; le résultat ne donne pas une règle de couleur propre à chacune. La synesthésie déclarée n'a pas été vérifiée indépendamment dans cette étude."
+msgstr ":cite:t:`isbilen_color_2016` (`paper <https://doi.org/10.1037/pmu0000147>`_) find, with Bach preludes and eight offered colors, groupings related to tempo, mode, register and :term:`onsets <Attaque>`. Separate emotional ratings of music and colors predict the observed choices. Musical variables covary; the result provides no independent color rule for each. Self-reported synesthesia was not independently verified in this study."
+
+#: ../../specification.rst:491
+msgid ":cite:t:`whiteford_color_2018` (`article <https://doi.org/10.1177/2041669518808535>`_) étendent les choix statiques de couleurs à 34 extraits instrumentaux plus variés. Après contrôle des évaluations émotionnelles et correction des :term:`comparaisons multiples <Comparaisons multiples>`, leurs corrélations entre propriétés perceptives musicales et couleurs ne restent plus significatives. Ce résultat soutient une interprétation émotionnelle dans ce corpus, sans prouver une médiation causale : chaque genre n'est représenté que par un extrait et la direction de certains liens tempo–teinte diffère des corpus classiques."
+msgstr ":cite:t:`whiteford_color_2018` (`paper <https://doi.org/10.1177/2041669518808535>`_) extend static color choices to 34 more varied instrumental excerpts. After controlling for emotional ratings and correcting for :term:`multiple comparisons <Comparaisons multiples>`, their correlations between musical perceptual properties and colors are no longer significant. This supports an emotional interpretation in this corpus without proving causal mediation: each genre is represented by only one excerpt, and the direction of some tempo–hue relationships differs from classic corpora."
+
+#: ../../specification.rst:494
+msgid ":cite:t:`hamilton_fletcher_sound_2017` (`article <https://doi.org/10.1163/22134808-00002567>`_) fixent la luminance dans une tâche d'ajustement de couleur à des sons isolés. La fréquence relative aux sons présentés est associée à un :term:`chroma <Chroma>` plus élevé ; les tendances de teinte sont plus variables entre personnes et stimuli. L'étude ne valide donc ni teinte fixe par note ni conversion absolue entre fréquence et saturation pour un morceau."
+msgstr ":cite:t:`hamilton_fletcher_sound_2017` (`paper <https://doi.org/10.1163/22134808-00002567>`_) hold luminance constant in a color adjustment task for isolated sounds. Frequency relative to the presented sounds is associated with higher :term:`chroma <Chroma>`; hue tendencies vary more between individuals and stimuli. The study therefore validates neither a fixed hue per note nor an absolute frequency-to-saturation conversion for a piece."
+
+#: ../../specification.rst:497
+msgid ":cite:t:`cowen_music_2020` (`article <https://doi.org/10.1073/pnas.1910704117>`_) identifient au moins 13 dimensions de ressenti associées à des extraits musicaux, partagées entre leurs groupes américains et chinois. Dans leurs tâches, les catégories précises prédisent entre groupes les jugements activation–valence au moins aussi bien que ces deux échelles. Ce résultat concerne l'émotion musicale, pas les couleurs choisies : les deux facteurs de :cite:p:`whiteford_color_2018` restent une simplification utile à tester pour leur tâche, pas une description exhaustive à imposer à tout morceau."
+msgstr ":cite:t:`cowen_music_2020` (`paper <https://doi.org/10.1073/pnas.1910704117>`_) identify at least 13 dimensions of feelings associated with musical excerpts, shared by their American and Chinese groups. In their tasks, specific categories predict arousal–valence judgments across groups at least as well as those two scales. This concerns musical emotion, not selected colors: the two factors in :cite:p:`whiteford_color_2018` remain a useful simplification to test for their task, not an exhaustive description to impose on every piece."
+
+#: ../../specification.rst:500
+msgid ":cite:t:`jonauskaite_color_emotion_2020` (`article <https://doi.org/10.1177/0956797620948810>`_) observent des associations entre 12 **mots de couleur** et 20 concepts émotionnels auprès de 4 598 personnes dans 30 pays. Les profils présentent une similarité moyenne élevée, mais des différences liées au pays, à la proximité linguistique et géographique demeurent. L'étude ne montre ni l'émotion produite par des couleurs affichées, ni une palette musique–couleur universelle."
+msgstr ":cite:t:`jonauskaite_color_emotion_2020` (`paper <https://doi.org/10.1177/0956797620948810>`_) observe associations between 12 **color words** and 20 emotional concepts in 4,598 people across 30 countries. Profiles have high average similarity, but differences associated with country and linguistic and geographical proximity remain. The study demonstrates neither emotion produced by displayed colors nor a universal music–color palette."
+
+#: ../../specification.rst:504
+msgid ":cite:t:`pillay_intervals_2026` (`article <https://doi.org/10.3389/fpsyg.2026.1744946>`_) trouvent des différences de jugements de clarté, rugosité, chaleur de couleur et émotion pour 13 intervalles harmoniques présentés à 303 personnes au Royaume-Uni. Le choix de couleur est binaire (chaud/froid) et aucun visualiseur n'est évalué. Le codage chaud/froid est contradictoire entre le tableau 3 et la section d'analyse ; aucun coefficient ou sens de codage ne doit être repris sans vérification des données et scripts."
+msgstr ":cite:t:`pillay_intervals_2026` (`paper <https://doi.org/10.3389/fpsyg.2026.1744946>`_) find differences in judgments of brightness, roughness, color warmth and emotion for 13 harmonic intervals presented to 303 people in the United Kingdom. Color choice is binary (warm/cool), and no visualizer is evaluated. Warm/cool coding contradicts itself between Table 3 and the analysis section; no coefficient or coding direction should be reused without checking the data and scripts."
+
+#: ../../specification.rst:507
+msgid ":cite:t:`ward_synaesthesia_2025` (`article <https://doi.org/10.1177/03057356241250020>`_) comparent les réponses répétées à 24 notes isolées variant en hauteur et en timbre. Les associations des personnes synesthètes sont en moyenne plus constantes, mais la constance seule discrimine imparfaitement les groupes (AUC 0,723 dans ce protocole). L'étude sépare hauteur, :term:`classe de hauteur <Classe de hauteur>` et timbre, et propose une réponse « aucune couleur » aux témoins dans une des conditions. Elle ne fournit pas de test diagnostique prêt à intégrer."
+msgstr ":cite:t:`ward_synaesthesia_2025` (`paper <https://doi.org/10.1177/03057356241250020>`_) compare repeated responses to 24 isolated notes varying in pitch and timbre. Synesthetes' associations are more consistent on average, but consistency alone imperfectly discriminates groups (AUC 0.723 in this protocol). The study separates pitch, :term:`pitch class <Classe de hauteur>` and timbre, and offers controls a no-color response in one condition. It provides no diagnostic test ready for integration."
+
+#: ../../specification.rst:511
+msgid ":cite:t:`williamson_prevalence_2026` (`article <https://doi.org/10.1177/03010066251390106>`_) comparent 395 musiciens et 608 non-musiciens recrutés principalement dans la région d'Austin et sur une plateforme en ligne ciblant les États-Unis. Une déclaration initiale de synesthésie précède les tests ; le test son–couleur combine plusieurs indices sur 24 notes isolées. Au seuil principal, l'association avec l'activité musicale est positive (rapport de cotes 4,211 pour la forme son–couleur), mais la fréquence estimée varie avec le seuil. Cette étude transversale ne montre ni causalité, ni palette partagée, ni réponse à de la musique complexe."
+msgstr ":cite:t:`williamson_prevalence_2026` (`paper <https://doi.org/10.1177/03010066251390106>`_) compare 395 musicians and 608 non-musicians recruited mainly in the Austin area and through an online platform targeting the United States. Initial self-reported synesthesia precedes testing; the sound–color test combines several indices across 24 isolated notes. At the main threshold, association with musical activity is positive (odds ratio 4.211 for sound–color synesthesia), but estimated frequency varies with the threshold. This cross-sectional study shows neither causality, a shared palette nor responses to complex music."
+
+#: ../../specification.rst:516
+msgid ":cite:t:`giannakis_comparative_2006` (`article <https://doi.org/10.1017/S1355771806001531>`_) compare deux systèmes de correspondances visuelles pour reconnaître des séquences sonores. Les résultats, obtenus avec huit non-musiciens, montrent que l'efficacité dépend du mapping et de la tâche."
+msgstr ":cite:t:`giannakis_comparative_2006` (`paper <https://doi.org/10.1017/S1355771806001531>`_) compares two visual mapping systems for recognizing sound sequences. Results from eight non-musicians show that effectiveness depends on the mapping and task."
+
+#: ../../specification.rst:518
+msgid ":cite:t:`richan_proposal_2021` (`article <https://doi.org/10.1007/s00779-020-01388-1>`_) évaluent des repères de forme, couleur et texture dans une recherche de sons par timbre. Les formes réduisent le nombre de sons inspectés dans leur étude contrôlée, sans gain significatif de durée ; ce bénéfice ne se transpose pas automatiquement au rendu temporel de Synesthesia."
+msgstr ":cite:t:`richan_proposal_2021` (`paper <https://doi.org/10.1007/s00779-020-01388-1>`_) evaluate shape, color and texture cues in a timbre-based sound search. Shapes reduce the number of sounds inspected in their controlled study without a significant time improvement; this benefit does not automatically transfer to Synesthesia's temporal rendering."
+
+#: ../../specification.rst:520
+msgid ":cite:t:`reymore_color_2025` (`article <https://doi.org/10.3389/fpsyg.2024.1520131>`_) relient des jugements sémantiques de timbre à des choix de couleur pour des gammes instrumentales. En fixant le registre dans leur seconde expérience, les effets sur la clarté sont petits et la différence globale de clarté entre instruments n'est pas significative au seuil retenu ; certains effets subsistent sur la saturation et l'indice chaud–froid. Les résultats dépendent de l'instrument et ne définissent aucune couleur par timbre. Les auteurs signalent leurs nombreuses comparaisons non corrigées."
+msgstr ":cite:t:`reymore_color_2025` (`paper <https://doi.org/10.3389/fpsyg.2024.1520131>`_) relate semantic timbre judgments to color choices for instrumental scales. With register fixed in their second experiment, lightness effects are small and the overall lightness difference between instruments is not significant at the selected threshold; some effects remain for saturation and the warm–cool index. Results depend on the instrument and define no color for each timbre. The authors acknowledge their many uncorrected comparisons."
+
+#: ../../specification.rst:524
+msgid ":cite:t:`reuter_rainbows_2025` (`article <https://doi.org/10.3389/fpsyg.2025.1697918>`_) examinent des sons instrumentaux isolés de même note, dont les partiels sont retirés ou le timbre transformé. Sur les 20 personnes recrutées comme synesthètes timbre-couleur, 10 satisfont leur critère de cohérence pour les analyses comparatives. La baisse de saturation lors du retrait de partiels apparaît pour la flûte et le piano, tandis que la tendance est inverse pour le violon. Les auteurs signalent les comparaisons multiples et le caractère exploratoire des corrélations avec les descripteurs audio. Le résumé et certains passages d'interprétation de l'article contredisent en outre le tableau des résultats pour le violon. Il n'existe donc pas de loi générale « plus de partiels = plus de saturation » à reprendre dans un profil prédéfini."
+msgstr ":cite:t:`reuter_rainbows_2025` (`paper <https://doi.org/10.3389/fpsyg.2025.1697918>`_) examine isolated instrumental sounds of the same note with partials removed or timbre transformed. Of 20 people recruited as timbre–color synesthetes, 10 meet the consistency criterion for comparative analyses. Removing partials lowers saturation for flute and piano, while the violin tendency is reversed. The authors note multiple comparisons and the exploratory nature of correlations with audio descriptors. The abstract and some interpretive passages also contradict the violin results table. There is therefore no general more-partials-equals-more-saturation law to reuse in a predefined profile."
+
+#: ../../specification.rst:534
+msgid "Annexe B — Options techniques examinées"
+msgstr "Appendix B — Technical options examined"
+
+#: ../../specification.rst:536
+msgid "Les options ci-dessous conservent le détail du cadrage technique. La décision applicable au prototype figure dans la section « Décision de pile logicielle »."
+msgstr "The options below retain the technical scoping details. The decision applicable to the prototype appears in the Software stack decision section."
+
+#: ../../specification.rst:539
+msgid "Composants de la voie Python"
+msgstr "Python components"
+
+#: ../../specification.rst:541
+msgid "Bibliothèques envisagées pour l'application Python"
+msgstr "Libraries considered for the Python application"
+
+#: ../../specification.rst:546 ../../specification.rst:585
+msgid "Fonction"
+msgstr "Function"
+
+#: ../../specification.rst:547
+msgid "Choix de départ"
+msgstr "Initial choice"
+
+#: ../../specification.rst:548
+msgid "Portée et conditions"
+msgstr "Scope and conditions"
+
+#: ../../specification.rst:549
+msgid "Décodage de fichiers"
+msgstr "File decoding"
+
+#: ../../specification.rst:550
+msgid "``soundfile`` et ``NumPy``."
+msgstr "``soundfile`` and ``NumPy``."
+
+#: ../../specification.rst:551
+msgid "Lecture de fichiers et tableaux d'échantillons pour l'analyse. Vérifier les formats effectivement décodés par la version de ``libsndfile`` distribuée et traiter les fichiers longs par blocs lorsque nécessaire."
+msgstr "File reading and sample arrays for analysis. Check formats actually decoded by the distributed ``libsndfile`` version and process long files in blocks when necessary."
+
+#: ../../specification.rst:552
+msgid "Lecture et capture audio"
+msgstr "Audio playback and capture"
+
+#: ../../specification.rst:553
+msgid "``sounddevice`` sur ``PortAudio``."
+msgstr "``sounddevice`` over ``PortAudio``."
+
+#: ../../specification.rst:554
+msgid "Gérer les périphériques absents, le changement de source, la taille des blocs, les sous-alimentations et l':term:`horodatage <Horodatage>`. La latence dépend du périphérique, du pilote et de la configuration, pas du seul langage."
+msgstr "Handle missing devices, source changes, block size, underruns and :term:`timestamping <Horodatage>`. Latency depends on the device, driver and configuration, not the language alone."
+
+#: ../../specification.rst:555 ../../specification.rst:591
+msgid "Analyse DSP"
+msgstr "DSP analysis"
+
+#: ../../specification.rst:556
+msgid "``NumPy`` et ``scipy.signal`` pour les opérations de base ; ``librosa`` lorsque ses descripteurs ou algorithmes musicaux apportent un gain fonctionnel."
+msgstr "``NumPy`` and ``scipy.signal`` for basic operations; ``librosa`` when its musical descriptors or algorithms provide a functional benefit."
+
+#: ../../specification.rst:557
+msgid "Distinguer les caractéristiques peu coûteuses (:term:`RMS <RMS (Root Mean Square)>`, :term:`spectre <Spectre>`, centroïde, :term:`flux spectral <Flux spectral>`) des estimations plus complexes (hauteur dans un mélange :term:`polyphonique <Polyphonie>`, :term:`attaques <Attaque>`, :term:`tempo <Tempo>`). Documenter fenêtre, pas, :term:`normalisation <Normalisation>` et traitement du silence."
+msgstr "Distinguish inexpensive features (:term:`RMS <RMS (Root Mean Square)>`, :term:`spectrum <Spectre>`, centroid, :term:`spectral flux <Flux spectral>`) from more complex estimates (pitch in a :term:`polyphonic <Polyphonie>` mixture, :term:`onsets <Attaque>`, :term:`tempo <Tempo>`). Document window, hop size, :term:`normalization <Normalisation>` and silence handling."
+
+#: ../../specification.rst:558
+msgid "Interface"
+msgstr ""
+
+#: ../../specification.rst:559
+msgid "Qt via ``qtpy`` avec ``PySide6`` comme liaison Qt."
+msgstr "Qt through ``qtpy`` with ``PySide6`` as the Qt binding."
+
+#: ../../specification.rst:560
+msgid "Conserver une interface utilisable sans connaissance DSP."
+msgstr "Maintain an interface usable without DSP knowledge."
+
+#: ../../specification.rst:561
+msgid "Rendu 2D"
+msgstr "2D rendering"
+
+#: ../../specification.rst:562
+msgid "Rendu Qt pour le prototype ; accélération OpenGL seulement si les mesures ou les effets retenus la justifient."
+msgstr "Qt rendering for the prototype; OpenGL acceleration only if measurements or selected effects justify it."
+
+#: ../../specification.rst:563
+msgid "ModernGL est une option pour des shaders ou un grand nombre d'éléments animés, sous réserve de la disponibilité du contexte graphique et de sa compatibilité avec la version de Python ciblée. ``Taichi`` reste une option de simulation avancée, hors du premier périmètre."
+msgstr "ModernGL is an option for shaders or large numbers of animated elements, subject to graphics context availability and compatibility with the target Python version. ``Taichi`` remains an advanced simulation option outside the initial scope."
+
+#: ../../specification.rst:565
+msgid "``subprocess`` et ``FFmpeg`` en ligne de commande."
+msgstr "``subprocess`` and command-line ``FFmpeg``."
+
+#: ../../specification.rst:566
+msgid "Produire des images à horodatage déterministe, puis les encoder avec la piste audio. Le pipe évite les fichiers image intermédiaires, mais une lecture de framebuffer peut transférer les pixels du GPU vers la RAM. Gérer le code de retour, les erreurs et l'absence d'encodeur matériel."
+msgstr "Produce images with deterministic timestamps, then encode them with the audio track. A pipe avoids intermediate image files, but framebuffer readback may transfer pixels from GPU to RAM. Handle return codes, errors and lack of a hardware encoder."
+
+#: ../../specification.rst:567 ../../specification.rst:600
+msgid "Profils JSON"
+msgstr "JSON profiles"
+
+#: ../../specification.rst:568
+msgid "Module ``json`` de la bibliothèque standard au départ."
+msgstr "The standard library's ``json`` module initially."
+
+#: ../../specification.rst:569
+msgid "Définir le schéma et sa version avant de choisir une validation dédiée. ``Pydantic`` peut être ajouté si la complexité du schéma le justifie ; ``orjson`` uniquement si une mesure révèle un coût de sérialisation significatif."
+msgstr "Define the schema and version before selecting dedicated validation. ``Pydantic`` may be added if schema complexity justifies it; ``orjson`` only if measurement reveals significant serialization cost."
+
+#: ../../specification.rst:571
+msgid "``torchaudio`` et ``nnAudio`` peuvent être réévalués si des calculs fondés sur ``PyTorch`` ou une exécution GPU deviennent nécessaires. Ils ajoutent une pile lourde et, pour ``torchaudio``, un couplage avec les versions de ``PyTorch`` et ``TorchCodec`` non justifié par les besoins DSP actuellement retenus. ``Essentia`` fournit des algorithmes spécialisés, mais sa licence, ses dépendances et la disponibilité de ses binaires sur les plateformes cibles doivent être examinées avant son adoption. ``MoviePy`` n'est pas nécessaire au pipeline initial si ``FFmpeg`` suffit. ``imgui-bundle``, ``pyimgui`` et ``Pygame CE`` ne sont pas retenus comme base de l'interface : ils feraient doublon avec la voie Qt choisie pour le lecteur et l'éditeur de profils."
+msgstr "``torchaudio`` and ``nnAudio`` may be reconsidered if ``PyTorch``-based computation or GPU execution becomes necessary. They add a heavy stack and, for ``torchaudio``, coupling to ``PyTorch`` and ``TorchCodec`` versions not justified by current DSP needs. ``Essentia`` provides specialized algorithms, but its license, dependencies and binary availability on target platforms must be examined before adoption. ``MoviePy`` is unnecessary for the initial pipeline if ``FFmpeg`` suffices. ``imgui-bundle``, ``pyimgui`` and ``Pygame CE`` are not selected as the interface foundation: they would duplicate the Qt approach chosen for the player and profile editor."
+
+#: ../../specification.rst:578
+msgid "Composants de la voie C++"
+msgstr "C++ components"
+
+#: ../../specification.rst:580
+msgid "Options C++ si une partie du prototype doit être portée"
+msgstr "C++ options if part of the prototype must be ported"
+
+#: ../../specification.rst:586
+msgid "Bibliothèques envisageables"
+msgstr "Potential libraries"
+
+#: ../../specification.rst:587
+msgid "Point de décision"
+msgstr "Decision point"
+
+#: ../../specification.rst:588
+msgid "Décodage et lecture audio"
+msgstr "Audio decoding and playback"
+
+#: ../../specification.rst:589
+msgid "``libsndfile`` ou ``dr_libs`` pour les formats couverts ; ``miniaudio`` pour les flux ; ``FFmpeg`` pour des formats supplémentaires."
+msgstr "``libsndfile`` or ``dr_libs`` for supported formats; ``miniaudio`` for streams; ``FFmpeg`` for additional formats."
+
+#: ../../specification.rst:590
+msgid "``dr_wav`` seul ne couvre pas MP3, FLAC et AAC. Définir les formats d'entrée avant de cumuler plusieurs décodeurs et vérifier la configuration de chaque bibliothèque."
+msgstr "``dr_wav`` alone does not cover MP3, FLAC and AAC. Define input formats before combining several decoders, and check each library's configuration."
+
+#: ../../specification.rst:592
+msgid "Algorithmes ciblés en C++20 ; ``FFTW3`` ou ``KissFFT`` si une :term:`FFT <FFT (Fast Fourier Transform)>` dédiée est nécessaire ; ``Essentia`` ou ``aubio`` pour certains algorithmes musicaux."
+msgstr "Targeted C++20 algorithms; ``FFTW3`` or ``KissFFT`` if a dedicated :term:`FFT <FFT (Fast Fourier Transform)>` is needed; ``Essentia`` or ``aubio`` for some musical algorithms."
+
+#: ../../specification.rst:593
+msgid "Comparer précision, coût, intégration et licence sur les mêmes jeux audio. ``OpenMP`` peut paralléliser les traitements indépendants ; le gain sur un fichier et le coût de transfert doivent être mesurés."
+msgstr "Compare accuracy, cost, integration and licensing on the same audio datasets. ``OpenMP`` can parallelize independent processing; gains on a file and transfer costs must be measured."
+
+#: ../../specification.rst:594
+msgid "Fenêtrage et rendu"
+msgstr "Window management and rendering"
+
+#: ../../specification.rst:595
+msgid "``Qt`` et ``OpenGL`` si la continuité avec l'interface Python est prioritaire ; ``GLFW`` et un chargeur ``OpenGL`` pour une application graphique autonome."
+msgstr "``Qt`` and ``OpenGL`` if continuity with the Python interface is a priority; ``GLFW`` and an ``OpenGL`` loader for a standalone graphics application."
+
+#: ../../specification.rst:596
+msgid "``openFrameworks``, ``Cinder``, ``Vulkan`` et ``Dear ImGui`` sont des alternatives, pas des composants à empiler. Leur coût d'intégration et leur adéquation à une interface pour non-programmeurs doivent être justifiés."
+msgstr "``openFrameworks``, ``Cinder``, ``Vulkan`` and ``Dear ImGui`` are alternatives, not components to stack together. Their integration cost and suitability for a non-programmer interface must be justified."
+
+#: ../../specification.rst:598
+msgid "``FFmpeg`` en ligne de commande ou ``libavcodec`` / ``libavformat`` si un besoin mesuré impose leur intégration."
+msgstr "Command-line ``FFmpeg`` or ``libavcodec`` / ``libavformat`` if a measured need requires integration."
+
+#: ../../specification.rst:599
+msgid "``NVENC`` et ``Quick Sync`` dépendent du matériel, des pilotes et des formats. Un transfert direct des images GPU vers l'encodeur exige une interopérabilité et une synchronisation explicites ; il n'est pas acquis par l'usage de C++ ou de FFmpeg."
+msgstr "``NVENC`` and ``Quick Sync`` depend on hardware, drivers and formats. Direct transfer of GPU images to the encoder requires explicit interoperability and synchronization; using C++ or FFmpeg does not guarantee it."
+
+#: ../../specification.rst:601
+msgid "``simdjson`` si le volume ou la fréquence de lecture le justifie."
+msgstr "``simdjson`` if reading volume or frequency justifies it."
+
+#: ../../specification.rst:602
+msgid "Définir d'abord le schéma, la validation et les migrations. Les performances de parsing JSON ne devraient pas déterminer l'architecture du rendu."
+msgstr "First define the schema, validation and migrations. JSON parsing performance should not determine rendering architecture."
+
+#: ../../specification.rst:605
+msgid "Comparaison et performances"
+msgstr "Comparison and performance"
+
+#: ../../specification.rst:607
+msgid "Comparaison des deux voies pour le périmètre retenu"
+msgstr "Comparison of the two approaches for the selected scope"
+
+#: ../../specification.rst:612
+msgid "Critère"
+msgstr "Criterion"
+
+#: ../../specification.rst:613
+msgid "Python"
+msgstr ""
+
+#: ../../specification.rst:614
+msgid "C++"
+msgstr ""
+
+#: ../../specification.rst:615
+msgid "Analyse audio"
+msgstr "Audio analysis"
+
+#: ../../specification.rst:616
+msgid "Bibliothèques numériques et algorithmes disponibles pour prototyper les mesures et comparer les résultats. ``NumPy`` et ``SciPy`` exécutent déjà leurs calculs principaux en code natif."
+msgstr "Available numerical libraries and algorithms for prototyping measurements and comparing results. ``NumPy`` and ``SciPy`` already execute their main computations in native code."
+
+#: ../../specification.rst:617
+msgid "Contrôle plus direct des allocations et du parallélisme pour une portion identifiée comme critique, au prix d'une intégration et d'une maintenance supplémentaires."
+msgstr "More direct control of allocations and parallelism for a portion identified as critical, at the cost of additional integration and maintenance."
+
+#: ../../specification.rst:618
+msgid "Latence audio-visuel"
+msgstr "Audiovisual latency"
+
+#: ../../specification.rst:619
+msgid "Dépend du bloc audio, des fenêtres DSP, de la planification et de l'affichage ; à mesurer de bout en bout."
+msgstr "Depends on audio blocks, DSP windows, scheduling and display; measure end to end."
+
+#: ../../specification.rst:620
+msgid "Dépend des mêmes éléments ; le langage seul ne garantit pas un seuil inférieur à 10 ms."
+msgstr "Depends on the same factors; the language alone does not guarantee latency below 10 ms."
+
+#: ../../specification.rst:621
+msgid "Nombre d'éléments et régularité du rendu"
+msgstr "Element count and rendering consistency"
+
+#: ../../specification.rst:622
+msgid "Dépend de leur représentation, des transferts et de l'usage éventuel du GPU. Mesurer les durées d'image et leurs écarts, notamment avec l'interface active."
+msgstr "Depends on representation, transfers and potential GPU use. Measure frame times and their variation, particularly with the interface active."
+
+#: ../../specification.rst:623
+msgid "Les mêmes limites matérielles s'appliquent. Une implémentation native peut réduire certains surcoûts, sans garantir un nombre fixe de particules ou d'images par seconde."
+msgstr "The same hardware limits apply. Native implementation may reduce some overhead without guaranteeing a fixed particle count or frame rate."
+
+#: ../../specification.rst:625
+msgid "FFmpeg externe offre un chemin initial simple ; le transfert des images brutes et l'encodage peuvent dominer le temps total."
+msgstr "External FFmpeg provides a simple initial approach; raw image transfer and encoding may dominate total time."
+
+#: ../../specification.rst:626
+msgid "Une intégration native peut réduire certains transferts si elle est conçue et mesurée pour le matériel cible ; elle augmente la complexité de distribution."
+msgstr "Native integration may reduce some transfers if designed and measured for the target hardware; it increases distribution complexity."
+
+#: ../../specification.rst:627
+msgid "Distribution et maintenance"
+msgstr "Distribution and maintenance"
+
+#: ../../specification.rst:628
+msgid "Installation des paquets natifs, de la liaison Qt et de FFmpeg à vérifier par plateforme."
+msgstr "Verify installation of native packages, the Qt binding and FFmpeg on each platform."
+
+#: ../../specification.rst:629
+msgid "Compilation, binaires, pilotes graphiques et licences des bibliothèques à gérer par plateforme."
+msgstr "Manage compilation, binaries, graphics drivers and library licenses on each platform."
+
+#: ../../specification.rst:631
+msgid "Pour un audio de trois minutes exporté en 1080p à 60 images par seconde, il faut produire 10 800 images. En RGBA non compressé, ces images représentent environ 89,6 Go de données avant encodage ; ce volume explique pourquoi le transfert, la conversion des pixels et le :term:`codec <Codec>` peuvent limiter le débit. Il ne permet pas de déduire une durée d'export sans connaître le matériel, le rendu et les paramètres d'encodage. Les estimations de temps DSP, de plafond de particules, de latence et de vitesse d'export de l'ébauche ne sont donc pas retenues comme prévisions. Un prototype mesurera séparément décodage, extraction de chaque descripteur, coût de la fenêtre d'analyse, rendu, transfert des pixels et encodage, sur les plateformes et jeux audio de référence. Les mesures indiqueront au moins le matériel, le format et la durée du fichier, la résolution, la cadence, le codec, la configuration du GPU et la distribution des temps d'image."
+msgstr "Exporting three minutes of audio in 1080p at 60 frames per second requires 10,800 images. In uncompressed RGBA, these images represent approximately 89.6 GB of data before encoding; this volume explains why transfer, pixel conversion and the :term:`codec <Codec>` can limit throughput. It cannot predict export duration without knowing the hardware, rendering and encoding settings. The draft's estimates of DSP time, particle limits, latency and export speed are therefore not retained as forecasts. A prototype will separately measure decoding, extraction of each descriptor, analysis window cost, rendering, pixel transfer and encoding on reference platforms and audio datasets. Measurements will state at least the hardware, file format and duration, resolution, frame rate, codec, GPU configuration and frame-time distribution."
+
+#: ../../specification.rst:642
+msgid "Annexe C — Pistes pour une étude perceptive éventuelle"
+msgstr "Appendix C — Directions for a potential perceptual study"
+
+#: ../../specification.rst:644
+msgid "Cette annexe conserve des pistes de méthode pour un projet de recherche ultérieur. Aucune étude auprès de participants n'est requise pour développer ou diffuser la première version du logiciel ; la présente esquisse ne constitue pas un protocole arrêté."
+msgstr "This appendix retains methodological directions for a later research project. No participant study is required to develop or distribute the software's first version; this sketch is not a finalized protocol."
+
+#: ../../specification.rst:646
+msgid "Si une étude perceptive est engagée, son protocole devra définir séparément les :term:`stimuli <Stimulus>`, leur ordre, les consignes, les échelles de réponse, les critères de reproductibilité et le traitement des données. Pour les associations son–couleur, prévoir des répétitions à ordre aléatoire, une réponse « aucune couleur » lorsque la tâche le permet, et des stimuli permettant de séparer hauteur, :term:`classe de hauteur <Classe de hauteur>` et timbre. Mesurer la constance au sein d'une personne et documenter l'espace colorimétrique utilisé ; les résultats ne vaudront que pour le jeu de stimuli et la consigne employés. :cite:t:`rothen_diagnosing_2013` montrent, pour des **graphèmes** et avec 144 :term:`synesthètes <Synesthète>` auto-déclarés retenus et 96 témoins, que la distance euclidienne moyenne en :term:`CIELUV <CIELUV>` discrimine mieux leurs groupes que la métrique RGB classique (AUC 0,9308 dans leur échantillon). Le seuil CIELUV de 135,30 est dépendant de leur conversion et a été optimisé sur ces données : il ne doit pas être transféré aux sons. Tout seuil son–couleur exigerait une :term:`calibration <Calibration>` et une évaluation sur des personnes indépendantes, avec un statut synesthésique documenté séparément. La procédure s'inspire également de :cite:p:`ward_synaesthesia_2025` ; leur seuil de constance isolé n'est pas assez discriminant pour être repris comme diagnostic. Dans l'enquête de :cite:p:`williamson_prevalence_2026`, le classement son–couleur exige une déclaration préalable, une couleur à plus de la moitié des 72 essais sur notes isolées et au moins deux indices positifs parmi constance, :term:`palette <Palette>`, lien hauteur–luminance et structure des distances. La sensibilité et la spécificité de ce classement restent imparfaites ; préspécifier les seuils et rapporter une analyse de sensibilité, sans confondre ce classement de recherche avec un diagnostic clinique. Pour les choix de couleur associés à des extraits musicaux, recueillir si utile les jugements émotionnels séparément, suivant :cite:p:`palmer_musiccolor_2013` et :cite:p:`isbilen_color_2016`. Aucune interprétation clinique ne sera déduite automatiquement d'un score."
+msgstr "If a perceptual study is undertaken, its protocol must separately define :term:`stimuli <Stimulus>`, their order, instructions, response scales, reproducibility criteria and data processing. For sound–color associations, provide repetitions in randomized order, a no-color response when the task permits and stimuli that separate pitch, :term:`pitch class <Classe de hauteur>` and timbre. Measure within-person consistency and document the color space; results will apply only to the stimulus set and instructions used. :cite:t:`rothen_diagnosing_2013` show, for **graphemes** and with 144 retained self-reported :term:`synesthetes <Synesthète>` and 96 controls, that mean Euclidean distance in :term:`CIELUV <CIELUV>` discriminates their groups better than the classic RGB metric (AUC 0.9308 in their sample). The CIELUV threshold of 135.30 depends on their conversion and was optimized on these data: it must not be transferred to sounds. Any sound–color threshold would require :term:`calibration <Calibration>` and evaluation on independent participants with separately documented synesthetic status. The procedure is also informed by :cite:p:`ward_synaesthesia_2025`; their isolated consistency threshold is insufficiently discriminating to reuse diagnostically. In :cite:p:`williamson_prevalence_2026`, sound–color classification requires prior self-report, a color response in more than half the 72 isolated-note trials and at least two positive indices among consistency, :term:`palette <Palette>`, pitch–luminance association and distance structure. Sensitivity and specificity remain imperfect; prespecify thresholds and report a sensitivity analysis without confusing this research classification with a clinical diagnosis. For color choices associated with musical excerpts, collect emotional judgments separately if useful, following :cite:p:`palmer_musiccolor_2013` and :cite:p:`isbilen_color_2016`. No clinical interpretation will be automatically inferred from a score."
+
+#: ../../specification.rst:658
+msgid "Solidité scientifique et préparation d'une étude"
+msgstr "Scientific rigor and study preparation"
+
+#: ../../specification.rst:660
+msgid "Une éventuelle étude scientifique devra distinguer trois questions : les associations jugées appropriées par des personnes non synesthètes, les perceptions rapportées par des personnes synesthètes, et l'utilité ou l'agrément du visualiseur. Ces variables ne sont pas interchangeables. Les comparaisons de :cite:p:`ward_synaesthesia_2025` portent sur des notes isolées et des réponses répétées ; l'évaluation de :cite:p:`richan_proposal_2021` porte sur une recherche de sons, pas sur une animation musicale. La surreprésentation observée chez les musiciens par :cite:p:`williamson_prevalence_2026` impose de mesurer la pratique musicale, de recruter aussi hors des milieux musicaux et de stratifier les analyses. Le filtrage initial par auto-déclaration peut manquer des cas ; le résultat ne permet pas d'attribuer une cause ni de calculer une prévalence générale indépendante du recrutement."
+msgstr "Any scientific study must distinguish three questions: associations judged appropriate by non-synesthetes, perceptions reported by synesthetes, and the visualizer's usefulness or appeal. These variables are not interchangeable. Comparisons in :cite:p:`ward_synaesthesia_2025` concern isolated notes and repeated responses; evaluation in :cite:p:`richan_proposal_2021` concerns sound search, not music animation. Overrepresentation among musicians observed by :cite:p:`williamson_prevalence_2026` requires measuring musical practice, recruiting outside musical communities and stratifying analyses. Initial self-report filtering may miss cases; the result cannot establish a cause or calculate general prevalence independently of recruitment."
+
+#: ../../specification.rst:666
+msgid "Hypothèses encore faibles et stratégie de consolidation"
+msgstr "Weak hypotheses and a strategy for strengthening evidence"
+
+#: ../../specification.rst:671
+msgid "Question"
+msgstr ""
+
+#: ../../specification.rst:672
+msgid "Limite actuelle"
+msgstr "Current limitation"
+
+#: ../../specification.rst:673
+msgid "Étude à préparer et sources utiles"
+msgstr "Study to prepare and useful sources"
+
+#: ../../specification.rst:674
+msgid "Registre, timbre et couleur"
+msgstr "Register, timbre and color"
+
+#: ../../specification.rst:675
+msgid "Les effets dépendent des stimuli et des dimensions colorimétriques ; la teinte par note ou instrument n'est pas établie ; le lien fréquence–:term:`chroma <Chroma>` observé sur sons isolés dépend de la plage présentée."
+msgstr "Effects depend on stimuli and colorimetric dimensions; hue for each note or instrument is not established; the frequency–:term:`chroma <Chroma>` relationship observed for isolated sounds depends on the presented range."
+
+#: ../../specification.rst:676
+msgid "Manipuler indépendamment registre et timbre, fixer le niveau sonore, enregistrer des couleurs individuelles et leur constance. :cite:p:`reymore_color_2025` ; :cite:p:`ward_synaesthesia_2025`. Pour tester teinte et chroma indépendamment de la clarté, voir :cite:p:`hamilton_fletcher_sound_2017`."
+msgstr "Independently manipulate register and timbre, hold sound level constant and record individual colors and their consistency. :cite:p:`reymore_color_2025`; :cite:p:`ward_synaesthesia_2025`. To test hue and chroma independently of lightness, see :cite:p:`hamilton_fletcher_sound_2017`."
+
+#: ../../specification.rst:679
+msgid "Timbre et forme"
+msgstr "Timbre and shape"
+
+#: ../../specification.rst:680
+msgid "Le jugement « doux/rude → arrondi/anguleux » ne donne aucun transfert vérifié des :term:`MFCC <MFCC (Mel-Frequency Cepstral Coefficients)>`, du centroïde ou du :term:`flux spectral <Flux spectral>` vers une géométrie calculée."
+msgstr "A soft/harsh-to-rounded/angular judgment provides no verified transfer from :term:`MFCCs <MFCC (Mel-Frequency Cepstral Coefficients)>`, the centroid or :term:`spectral flux <Flux spectral>` to computed geometry."
+
+#: ../../specification.rst:681
+msgid "Tester plusieurs familles de timbres à hauteur et niveau contrôlés, puis comparer formes proposées, choix libres et exactitude d'identification, avec des sons non utilisés pour régler les seuils. :cite:p:`adeli_audiovisual_2014` ; :cite:p:`richan_proposal_2021`."
+msgstr "Test several timbre families at controlled pitch and level, then compare offered shapes, free choices and identification accuracy with sounds not used to tune thresholds. :cite:p:`adeli_audiovisual_2014`; :cite:p:`richan_proposal_2021`."
+
+#: ../../specification.rst:683
+msgid "Recrutement et confirmation de la :term:`synesthésie <Synesthésie>` son–couleur"
+msgstr "Recruitment and confirmation of sound–color :term:`synesthesia <Synesthésie>`"
+
+#: ../../specification.rst:684
+msgid "Les fréquences estimées dépendent des seuils, du recrutement et d'un questionnaire initial ; les témoins et musiciens ne constituent pas des échantillons culturels représentatifs. Un score unique de constance distingue mal les groupes sur les notes isolées."
+msgstr "Estimated frequencies depend on thresholds, recruitment and an initial questionnaire; controls and musicians are not culturally representative samples. A single consistency score poorly distinguishes groups for isolated notes."
+
+#: ../../specification.rst:685
+msgid "Recruter dans et hors des réseaux musicaux, mesurer la pratique et l'exposition musicales, conserver les réponses « aucune couleur », documenter la déclaration initiale, puis comparer les conclusions sous plusieurs seuils préspécifiés et sur un échantillon indépendant. :cite:p:`williamson_prevalence_2026`; :cite:p:`ward_synaesthesia_2025`."
+msgstr "Recruit inside and outside musical networks, measure musical practice and exposure, retain no-color responses, document initial self-report, then compare conclusions under several prespecified thresholds and on an independent sample. :cite:p:`williamson_prevalence_2026`; :cite:p:`ward_synaesthesia_2025`."
+
+#: ../../specification.rst:687
+msgid "Profils individuels"
+msgstr "Individual profiles"
+
+#: ../../specification.rst:688
+msgid "Une moyenne de groupe peut masquer des associations personnelles stables ; une session unique ne mesure pas leur persistance. Les tendances de teinte agrégées peuvent masquer des directions individuelles opposées."
+msgstr "A group average can hide stable personal associations; a single session does not measure their persistence. Aggregated hue tendencies may conceal opposite individual directions."
+
+#: ../../specification.rst:690
+msgid "Répéter les mêmes stimuli à distance, conserver « aucune couleur » et comparer un profil personnel à un profil commun sur des sons nouveaux. :cite:p:`ward_synaesthesia_2025` ; :cite:p:`reuter_rainbows_2025`. Pour le choix de la métrique, voir :cite:p:`rothen_diagnosing_2013` ; leur seuil graphème–couleur ne se transpose pas aux sons."
+msgstr "Repeat the same stimuli after an interval, retain no-color responses and compare a personal profile with a shared profile on new sounds. :cite:p:`ward_synaesthesia_2025`; :cite:p:`reuter_rainbows_2025`. For metric selection, see :cite:p:`rothen_diagnosing_2013`; their grapheme–color threshold does not transfer to sounds."
+
+#: ../../specification.rst:692
+msgid ":term:`Sonie <Sonie>` et taille"
+msgstr ":term:`Loudness <Sonie>` and size"
+
+#: ../../specification.rst:693
+msgid ":term:`RMS <RMS (Root Mean Square)>` mesure l'énergie du signal et ne définit ni la sonie ni une loi de taille perçue pour la musique."
+msgstr ":term:`RMS <RMS (Root Mean Square)>` measures signal energy and defines neither loudness nor a perceived-size law for music."
+
+#: ../../specification.rst:694
+msgid "Dissocier niveau, :term:`spectre <Spectre>` et émotion avant de tester la taille ou la clarté du rendu. :cite:t:`lindborg_colour_2015` testent des ajustements continus de couleur et de taille, mais avec des extraits musicaux complexes ; leur étude ne calibre pas une loi RMS–taille."
+msgstr "Separate level, :term:`spectrum <Spectre>` and emotion before testing rendering size or lightness. :cite:t:`lindborg_colour_2015` test continuous color and size adjustments with complex musical excerpts; their study does not calibrate an RMS-to-size law."
+
+#: ../../specification.rst:696
+msgid "Émotion et palette"
+msgstr "Emotion and palette"
+
+#: ../../specification.rst:697
+msgid "Des effets isolés du :term:`tempo <Tempo>` et du mode sont observés sur des mélodies de piano, mais leur généralisation et leur extraction automatique à partir d'une œuvre restent à démontrer. Les deux facteurs de Whiteford résument une tâche couleur ; Cowen identifie au moins 13 dimensions de ressenti musical, sans choix de couleur."
+msgstr "Isolated :term:`tempo <Tempo>` and mode effects are observed in piano melodies, but their generalization and automatic extraction from a work remain unproven. Whiteford's two factors summarize a color task; Cowen identifies at least 13 dimensions of musical feeling without color choices."
+
+#: ../../specification.rst:699
+msgid "Reprendre les facteurs contrôlés dans plusieurs styles et comparer les réponses avec les évaluations émotionnelles. :cite:p:`palmer_melodies_2016` ; :cite:p:`whiteford_color_2018` ; :cite:p:`cowen_music_2020` ; :cite:p:`smit_papua_2022`."
+msgstr "Reuse controlled factors across several styles and compare responses with emotional ratings. :cite:p:`palmer_melodies_2016`; :cite:p:`whiteford_color_2018`; :cite:p:`cowen_music_2020`; :cite:p:`smit_papua_2022`."
+
+#: ../../specification.rst:701
+msgid ":term:`Consonance <Consonance>`, chaleur et clarté"
+msgstr ":term:`Consonance <Consonance>`, warmth and lightness"
+
+#: ../../specification.rst:702
+msgid "Des jugements d'intervalles isolés ne définissent ni la couleur des modes complets ni l'effet visuel d'une animation ; la direction du codage chaud/froid doit être vérifiée dans l'étude disponible."
+msgstr "Judgments of isolated intervals define neither the color of full modes nor the visual effect of animation; the warm/cool coding direction must be checked in the available study."
+
+#: ../../specification.rst:703
+msgid "Manipuler consonance, registre et timbre indépendamment, demander des choix de couleurs affichées et distinguer :term:`émotion perçue <Émotion perçue>`, ressentie et préférence. :cite:p:`pillay_intervals_2026`."
+msgstr "Manipulate consonance, register and timbre independently, request displayed-color choices and distinguish :term:`perceived emotion <Émotion perçue>`, experienced emotion and preference. :cite:p:`pillay_intervals_2026`."
+
+#: ../../specification.rst:705
+msgid "Généralisation culturelle d'une palette"
+msgstr "Cultural generalization of a palette"
+
+#: ../../specification.rst:706
+msgid "Chez 263 synesthètes graphème–couleur de sept groupes linguistiques, certains effets du vocabulaire et de la :term:`sémantique <Sémantique>` sur les associations varient avec la langue. Une autre étude trouve 400 profils graphème–couleur compatibles avec l'influence d'un même jeu de lettres colorées dans un échantillon américain auto-sélectionné. Ces résultats soutiennent un rôle possible des apprentissages et de l'environnement partagé dans le contenu des associations, sans démontrer que la culture crée la synesthésie ou impose une palette commune. Chez des participants sans synesthésie musique–couleur rapportée, les choix couleur–musique de deux groupes recrutés aux États-Unis et au Mexique sont au contraire largement similaires pour des extraits orchestraux occidentaux, avec quelques écarts. Les associations mot de couleur–émotion varient entre pays, mais n'utilisent pas des pixels ; l'effet du mode majeur/mineur sur le bonheur rapporté varie avec l'exposition musicale dans l'étude de Smit."
+msgstr "Among 263 grapheme–color synesthetes in seven language groups, some effects of vocabulary and :term:`semantics <Sémantique>` on associations vary by language. Another study finds 400 grapheme–color profiles consistent with the influence of the same colored letter set in a self-selected American sample. These findings support a possible role for learning and shared environment in association content without demonstrating that culture creates synesthesia or imposes a common palette. Among participants without reported music–color synesthesia, color–music choices by two groups recruited in the United States and Mexico are, in contrast, broadly similar for Western orchestral excerpts, with some differences. Color-word–emotion associations vary between countries but do not use pixels; the major/minor-mode effect on reported happiness varies with musical exposure in Smit's study."
+
+#: ../../specification.rst:707
+msgid "Recueillir séparément langue maternelle, langues apprises, lieu de vie, exposition aux genres et formation musicale, ainsi que le statut synesthésique confirmé ou seulement déclaré. Employer les mêmes stimuli audio et couleurs calibrées dans les groupes, répéter les choix par personne, puis tester les interactions groupe × stimulus et la variabilité individuelle. L'hypothèse d'une similarité accrue des associations musique–couleur entre synesthètes partageant un contexte culturel est conservée comme question de recherche. Les preuves actuelles sont insuffisantes pour trancher son existence, son ampleur ou sa cause : aucune étude retenue ne compare directement ces profils synesthésiques entre plusieurs cultures avec des stimuli et des mesures harmonisés. Ne pas en déduire une palette collective avant cette vérification. :cite:p:`root_language_2021` ; :cite:p:`witthoft_learned_2015` ; :cite:p:`palmer_musiccolor_2013` ; :cite:p:`jonauskaite_color_emotion_2020` ; :cite:p:`cowen_music_2020` ; :cite:p:`smit_papua_2022`."
+msgstr "Separately collect native language, learned languages, residence, exposure to genres and musical training, as well as confirmed or self-reported synesthetic status. Use the same audio stimuli and calibrated colors across groups, repeat each individual's choices, then test group × stimulus interactions and individual variability. Increased similarity of music–color associations among synesthetes sharing a cultural context is retained as a research question. Current evidence is insufficient to determine its existence, magnitude or cause: no selected study directly compares these synesthetic profiles across cultures with harmonized stimuli and measurements. Do not infer a collective palette before this verification. :cite:p:`root_language_2021`; :cite:p:`witthoft_learned_2015`; :cite:p:`palmer_musiccolor_2013`; :cite:p:`jonauskaite_color_emotion_2020`; :cite:p:`cowen_music_2020`; :cite:p:`smit_papua_2022`."
+
+#: ../../specification.rst:709
+msgid "Mouvement, attaques et synchronisation"
+msgstr "Motion, onsets and synchronization"
+
+#: ../../specification.rst:710
+msgid "Aucun article retenu ne valide la règle « flux spectral → particules » ni un seuil de latence pour ce rendu."
+msgstr "No selected paper validates the spectral-flux-to-particles rule or a latency threshold for this rendering."
+
+#: ../../specification.rst:711
+msgid "Mesurer séparément congruence temporelle, préférence et précision de détection des attaques ; comparer à un rendu décalé ou aléatoire. :cite:t:`erdmann_visualization_2025` étudient un visualiseur piloté par l'audio face à une condition aléatoire, dans un contexte de réalité mixte et un seul morceau."
+msgstr "Separately measure temporal congruence, preference and onset detection accuracy; compare with delayed or random rendering. :cite:t:`erdmann_visualization_2025` study an audio-driven visualizer against a random condition in a mixed-reality setting with a single piece."
+
+#: ../../specification.rst:713
+msgid "Passage à la musique complexe"
+msgstr "Transition to complex music"
+
+#: ../../specification.rst:714
+msgid "Les notes, timbres isolés et petites sélections de genres ne suffisent pas à valider le rendu d'un morceau polyphonique."
+msgstr "Notes, isolated timbres and small genre selections are insufficient to validate rendering of a polyphonic piece."
+
+#: ../../specification.rst:715
+msgid "Prévoir des morceaux nouveaux et des écoutes de validation indépendantes de la mise au point ; mesurer les échecs d'estimation de hauteur, les changements de timbre et la variabilité individuelle. :cite:p:`whiteford_color_2018` ; :cite:p:`curwen_action_2024`."
+msgstr "Provide new pieces and validation listening sessions independent of tuning; measure pitch estimation failures, timbre changes and individual variability. :cite:p:`whiteford_color_2018`; :cite:p:`curwen_action_2024`."
+
+#: ../../specification.rst:717
+msgid "Effet propre du logiciel"
+msgstr "The software's own effect"
+
+#: ../../specification.rst:718
+msgid "Une correspondance entre deux stimuli n'établit pas que Synesthesia améliore l'expérience ou restitue une perception."
+msgstr "A correspondence between two stimuli does not establish that Synesthesia improves an experience or reproduces a perception."
+
+#: ../../specification.rst:719
+msgid "Comparer à rendu aléatoire, rendu simple synchronisé et profil personnel, avec ordre contrebalancé et critères distincts (congruence, utilité, agrément). L'étude de :cite:p:`erdmann_visualization_2025` est un précédent, mais ses effets sont petits et propres à son dispositif."
+msgstr "Compare against random rendering, simple synchronized rendering and a personal profile, with counterbalanced order and distinct criteria (congruence, usefulness, appeal). :cite:p:`erdmann_visualization_2025` provides a precedent, but its effects are small and specific to its setup."
+
+#: ../../specification.rst:722
+msgid "Une question de recherche possible, à définir avant l'implémentation du protocole, est la suivante : sur des extraits jamais utilisés pour régler les profils, un rendu personnalisé à partir de réponses répétées améliore-t-il la congruence perçue par rapport à un profil commun et à un rendu synchronisé de même complexité visuelle ? Il faudrait mesurer séparément cette congruence, l'agrément et la facilité d'interprétation, avec un ordre contrebalancé et des analyses distinctes pour les personnes synesthètes et non synesthètes. Cette proposition s'appuie sur les variations individuelles observées par :cite:p:`ward_synaesthesia_2025` et sur le précédent de comparaison de rendus d':cite:p:`erdmann_visualization_2025` ; elle n'a pas encore été testée pour Synesthesia."
+msgstr "One possible research question, to define before implementing the protocol, is: on excerpts never used to tune profiles, does rendering personalized from repeated responses improve perceived congruence compared with a shared profile and synchronized rendering of equal visual complexity? Congruence, appeal and ease of interpretation should be measured separately, with counterbalanced order and distinct analyses for synesthetes and non-synesthetes. This proposal builds on individual variation observed by :cite:p:`ward_synaesthesia_2025` and the rendering comparison precedent in :cite:p:`erdmann_visualization_2025`; it has not yet been tested for Synesthesia."
+
+#: ../../specification.rst:726
+msgid "Avant toute publication de résultats expérimentaux, consigner la question principale, les hypothèses, les critères primaires, les règles d'exclusion et le plan d'analyse avant la collecte. Prévoir un calcul de taille d'échantillon adapté à l'effet recherché, des stimuli et participants de validation distincts, des mesures d'incertitude et un traitement des :term:`comparaisons multiples <Comparaisons multiples>`. Documenter le matériel d'écoute, le niveau sonore, le :term:`gamut <Gamut>` et la calibration de l'écran, ainsi que le paramétrage exact du moteur. Ces éléments constituent ici une proposition de protocole, à arrêter avec les personnes compétentes en méthodologie expérimentale et en éthique de la recherche."
+msgstr "Before publishing experimental results, record the primary question, hypotheses, primary criteria, exclusion rules and analysis plan before data collection. Plan a sample-size calculation suited to the target effect, distinct validation stimuli and participants, uncertainty measures and treatment of :term:`multiple comparisons <Comparaisons multiples>`. Document listening equipment, sound level, display :term:`gamut <Gamut>` and calibration, and the engine's exact settings. These elements are a protocol proposal here, to be finalized with people competent in experimental methodology and research ethics."
+
+#: ../../specification.rst:733
+msgid "Références bibliographiques"
+msgstr "Bibliographic references"
+
+#: ../../specification.rst:735
+msgid "Cette bibliographie est générée depuis le fichier `references.bib <references.bib>`_. Elle regroupe les références de la revue de littérature ; un appel de type ``:cite:p:`williamson_prevalence_2026``` pointe vers la notice correspondante."
+msgstr "This bibliography is generated from `references.bib <references.bib>`_. It lists the literature review references; a citation such as ``:cite:p:`williamson_prevalence_2026``` points to the corresponding entry."

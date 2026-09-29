@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 320">
+  <!-- Generator: Adobe Illustrator 30.8.2, SVG Export Plug-In . SVG Version: 2.1.4 Build 7)  -->
+  <defs>
+    <style>
+      .st0 {
+        stroke-opacity: .59;
+      }
+
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8, .st9, .st10, .st11, .st12, .st13, .st14 {
+        stroke-linejoin: round;
+      }
+
+      .st0, .st1, .st3, .st15 {
+        stroke: #91ead2;
+      }
+
+      .st0, .st3, .st16 {
+        fill: #91ead2;
+      }
+
+      .st0, .st6 {
+        fill-opacity: .08;
+      }
+
+      .st0, .st6, .st12 {
+        stroke-width: 1.5px;
+      }
+
+      .st1 {
+        stroke-opacity: .32;
+      }
+
+      .st1, .st2, .st4, .st17, .st18, .st5, .st7, .st8, .st19, .st10, .st11, .st13, .st14, .st15 {
+        fill: none;
+      }
+
+      .st1, .st4 {
+        stroke-width: 1.1px;
+      }
+
+      .st20 {
+        fill: #a9b9cf;
+        font-family: ArialMT, Arial;
+        font-size: 20px;
+        letter-spacing: .07em;
+      }
+
+      .st20, .st21 {
+        isolation: isolate;
+      }
+
+      .st2 {
+        stroke-opacity: .4;
+      }
+
+      .st2, .st17, .st5, .st9, .st12 {
+        stroke: #84d4e3;
+      }
+
+      .st2, .st9 {
+        stroke-width: 1.2px;
+      }
+
+      .st22 {
+        fill: url(#Dégradé_sans_nom_2);
+      }
+
+      .st3 {
+        stroke-opacity: .58;
+        stroke-width: 1.4px;
+      }
+
+      .st3, .st9, .st12 {
+        fill-opacity: .09;
+      }
+
+      .st4 {
+        stroke-opacity: .33;
+      }
+
+      .st4, .st6, .st19 {
+        stroke: #c6a7f5;
+      }
+
+      .st23, .st6 {
+        fill: #c6a7f5;
+      }
+
+      .st17, .st18, .st19, .st15 {
+        stroke-miterlimit: 4.32;
+      }
+
+      .st17, .st7, .st8, .st19, .st10, .st11, .st13, .st14, .st15 {
+        stroke-linecap: round;
+      }
+
+      .st17, .st19, .st15 {
+        stroke-width: 12.96px;
+      }
+
+      .st18 {
+        stroke: #536981;
+        stroke-width: 3.24px;
+      }
+
+      .st5 {
+        stroke-opacity: .27;
+      }
+
+      .st6 {
+        stroke-opacity: .62;
+      }
+
+      .st24 {
+        fill: url(#Dégradé_sans_nom);
+      }
+
+      .st7 {
+        stroke: url(#Dégradé_sans_nom_4);
+      }
+
+      .st7, .st11 {
+        stroke-width: 2.6px;
+      }
+
+      .st8 {
+        stroke: url(#Dégradé_sans_nom_5);
+        stroke-width: 3.8px;
+      }
+
+      .st9 {
+        stroke-opacity: .46;
+      }
+
+      .st9, .st12, .st25 {
+        fill: #84d4e3;
+      }
+
+      .st10 {
+        stroke: #ecf8fa;
+        stroke-width: 11.88px;
+      }
+
+      .st11 {
+        stroke: url(#Dégradé_sans_nom_6);
+      }
+
+      .st12 {
+        stroke-opacity: .6;
+      }
+
+      .st13 {
+        stroke: url(#Dégradé_sans_nom_7);
+      }
+
+      .st13, .st14 {
+        stroke-width: 2.5px;
+      }
+
+      .st21 {
+        fill: #f4f7fd;
+        font-family: Arial-BoldMT, Arial;
+        font-size: 33px;
+        font-weight: 700;
+        letter-spacing: -.04em;
+      }
+
+      .st14 {
+        stroke: url(#Dégradé_sans_nom_3);
+      }
+    </style>
+    <linearGradient id="Dégradé_sans_nom" data-name="Dégradé sans nom" x1="-158.9" y1="699.82" x2="-157.9" y2="698.82" gradientTransform="translate(254241 223941) scale(1600 -320)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#142139"/>
+    </linearGradient>
+    <radialGradient id="Dégradé_sans_nom_2" data-name="Dégradé sans nom 2" cx="-158.37" cy="699.69" fx="-158.37" fy="699.69" r=".5" gradientTransform="translate(191061 329014) scale(1200 -470)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#84d4e3" stop-opacity=".19"/>
+      <stop offset="1" stop-color="#84d4e3" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="Dégradé_sans_nom_3" data-name="Dégradé sans nom 3" x1="-158.88" y1="697.06" x2="-157.88" y2="697.06" gradientTransform="translate(212981 76883.8862) scale(1339 -110.147)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#84d4e3" stop-opacity=".32"/>
+      <stop offset=".42" stop-color="#84d4e3" stop-opacity=".68"/>
+      <stop offset=".73" stop-color="#91ead2" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#c6a7f5" stop-opacity=".5"/>
+    </linearGradient>
+    <linearGradient id="Dégradé_sans_nom_4" data-name="Dégradé sans nom 4" x1="-158.88" y1="695.17" x2="-157.88" y2="695.17" gradientTransform="translate(212981 49583.8862) scale(1339 -71.147)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#84d4e3" stop-opacity=".32"/>
+      <stop offset=".42" stop-color="#84d4e3" stop-opacity=".68"/>
+      <stop offset=".73" stop-color="#91ead2" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#c6a7f5" stop-opacity=".5"/>
+    </linearGradient>
+    <linearGradient id="Dégradé_sans_nom_5" data-name="Dégradé sans nom 5" x1="-158.88" y1="692.89" x2="-157.88" y2="692.89" gradientTransform="translate(212981 34646.9265) scale(1339 -49.7833)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ecf8fa"/>
+      <stop offset=".35" stop-color="#84d4e3"/>
+      <stop offset=".68" stop-color="#91ead2"/>
+      <stop offset="1" stop-color="#c6a7f5"/>
+    </linearGradient>
+    <linearGradient id="Dégradé_sans_nom_6" data-name="Dégradé sans nom 6" x1="-158.88" y1="693.81" x2="-157.88" y2="693.81" gradientTransform="translate(212981 39483.0403) scale(1339 -56.6363)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#84d4e3" stop-opacity=".32"/>
+      <stop offset=".42" stop-color="#84d4e3" stop-opacity=".68"/>
+      <stop offset=".73" stop-color="#91ead2" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#c6a7f5" stop-opacity=".5"/>
+    </linearGradient>
+    <linearGradient id="Dégradé_sans_nom_7" data-name="Dégradé sans nom 7" x1="-158.88" y1="696.54" x2="-157.88" y2="696.54" gradientTransform="translate(212981 66822.0403) scale(1339 -95.6363)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#84d4e3" stop-opacity=".32"/>
+      <stop offset=".42" stop-color="#84d4e3" stop-opacity=".68"/>
+      <stop offset=".73" stop-color="#91ead2" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#c6a7f5" stop-opacity=".5"/>
+    </linearGradient>
+  </defs>
+  <rect class="st24" width="1600" height="320"/>
+  <ellipse class="st22" cx="1018" cy="158" rx="600" ry="235"/>
+  <g id="logo">
+    <circle class="st18" cx="145" cy="160" r="89.64"/>
+    <path class="st17" d="M66.16,116.8c14.84-27.1,42.59-44.65,73.44-46.44"/>
+    <path class="st19" d="M186.04,80.08c36.76,18.79,55.94,60.26,46.44,100.44"/>
+    <path class="st15" d="M216.28,214c-29.78,39.55-85.99,47.46-125.53,17.68-.64-.48-1.28-.98-1.91-1.48"/>
+    <path class="st10" d="M72.64,160h27c14.04,0,14.04-28.08,28.08-28.08s14.04,56.16,28.08,56.16,14.04-28.08,28.08-28.08h33.48"/>
+  </g>
+  <g id="nom-projet">
+    <text class="st21" transform="translate(54.77 43)"><tspan x="0" y="0">Synesthesia</tspan></text>
+  </g>
+  <g id="signature">
+    <text class="st20" transform="translate(31.76 291)"><tspan x="0" y="0">DU SON À LA FORME</tspan></text>
+  </g>
+  <g id="partition-ondulante">
+    <path class="st14" d="M249,160c79.4-7,111.16-50,199.5-69,79.4-17,124.07-13,208.43-7,109.18,7,148.88-37,238.21-34,94.29,3,148.88,56,238.21,49,99.25-8,143.92-49,228.28-41,89.33,8,138.95,41,216.37,25"/>
+    <path class="st7" d="M249,160c79.4-3,111.16-25,199.5-35,79.4-9,124.07-7,208.43-2,109.18,7,148.88-37,238.21-34,94.29,3,148.88,56,238.21,49,99.25-8,143.92-49,228.28-41,89.33,8,138.95,41,216.37,25"/>
+    <path class="st8" d="M249,160c79.4,0,111.16-2,199.5,0,79.4-2,124.07-1,208.43,2,109.18,7,148.88-37,238.21-34,94.29,3,148.88,56,238.21,49,99.25-8,143.92-49,228.28-41,89.33,8,138.95,41,216.37,25"/>
+    <path class="st11" d="M249,160c79.4,3,111.16,21,199.5,35,79.4,6,124.07,5,208.43,6,109.18,7,148.88-37,238.21-34,94.29,3,148.88,56,238.21,49,99.25-8,143.92-49,228.28-41,89.33,8,138.95,41,216.37,25"/>
+    <path class="st13" d="M249,160c79.4,7,111.16,45,199.5,69,79.4,14,124.07,9,208.43,11,109.18,7,148.88-37,238.21-34,94.29,3,148.88,56,238.21,49,99.25-8,143.92-49,228.28-41,89.33,8,138.95,41,216.37,25"/>
+  </g>
+  <g id="volume-01-polyedre-menthe">
+    <path class="st3" d="M504,119l24-19,27,17-4,32-29,13-25-22,7-21Z"/>
+    <path class="st1" d="M504,119l18,43M528,100l23,49M555,117l-58,23"/>
+  </g>
+  <g id="volume-02-sphere-cyan">
+    <circle class="st12" cx="759.75" cy="154" r="29"/>
+    <ellipse class="st2" cx="759.75" cy="154" rx="12" ry="29"/>
+    <path class="st2" d="M731.75,154c17-8,39-8,56,0"/>
+  </g>
+  <g id="volume-03-polyedre-violet">
+    <path class="st6" d="M953,123l55-20,46,42-11,66-63,14-47-49,20-53Z"/>
+    <path class="st4" d="M953,123l27,102M1008,103l35,108M1054,145l-121,31"/>
+  </g>
+  <g id="volume-04-forme-menthe">
+    <path class="st0" d="M1186.48,98c29-22,70-18,88,11,17,27,1,62-30,70-29,8-65-8-70-34-4-20,1-36,12-47Z"/>
+    <path class="st1" d="M1179.48,127c33-14,71-11,100,8M1206.48,92c11,30,12,61,1,79"/>
+  </g>
+  <g id="volume-05-polyedre-cyan">
+    <path class="st9" d="M1463,128l34,23-6,46-41,12-25-35,38-46Z"/>
+    <path class="st5" d="M1463,128l-13,81M1497,151l-72,23"/>
+  </g>
+  <g id="accents">
+    <circle class="st25" cx="527" cy="109" r="3"/>
+    <circle class="st16" cx="1134" cy="199" r="3"/>
+    <circle class="st23" cx="1393" cy="239" r="3"/>
+  </g>
+</svg>

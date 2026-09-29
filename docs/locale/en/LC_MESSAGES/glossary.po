@@ -1,12 +1,443 @@
+# English translations for Synesthesia.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the Synesthesia project.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Synesthesia 0.0.1\n"
+"POT-Creation-Date: 2026-09-25 17:46+0200\n"
 "Language: en\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: ../../glossary.rst:2
 msgid "Glossaire"
 msgstr "Glossary"
+
+#: ../../glossary.rst:4
+msgid "Les termes sont regroupés par domaine afin de faciliter la consultation. Ils restent triés alphabétiquement à l’intérieur de chaque catégorie."
+msgstr "Terms are grouped by field for easier browsing. They remain alphabetically sorted within each category."
+
+#: ../../glossary.rst:7
+msgid "Neurosciences, perception et expérimentation"
+msgstr "Neuroscience, perception and experimentation"
+
+#: ../../glossary.rst:11
+msgid "Anisotropie fractionnelle"
+msgstr "Fractional anisotropy"
+
+#: ../../glossary.rst:13
+msgid "Indice dérivé de l'imagerie de diffusion qui décrit à quel point la diffusion de l'eau est orientée dans une direction privilégiée. Il est notamment utilisé comme indicateur de l'organisation de la substance blanche, sans mesurer directement le sens des connexions neuronales ni établir une relation causale."
+msgstr "An index derived from diffusion imaging that describes how strongly water diffusion is oriented in a preferred direction. It is used in particular as an indicator of white matter organization, without directly measuring the direction of neural connections or establishing a causal relationship."
+
+#: ../../glossary.rst:14
+msgid "Chromesthésie"
+msgstr "Chromesthesia"
+
+#: ../../glossary.rst:16
+msgid "Forme de synesthésie dans laquelle des sons ou des caractéristiques musicales déclenchent automatiquement des expériences colorées. Les associations peuvent varier fortement d'une personne à l'autre et ne définissent pas une conversion universelle entre son et couleur."
+msgstr "A form of synesthesia in which sounds or musical characteristics automatically trigger color experiences. Associations can vary considerably between individuals and do not define a universal conversion between sound and color."
+
+#: ../../glossary.rst:17
+msgid "Connectivité fonctionnelle"
+msgstr "Functional connectivity"
+
+#: ../../glossary.rst:19
+msgid "Mesure statistique de la dépendance ou de la corrélation entre l'activité de différentes régions cérébrales au cours du temps. Elle indique que leurs activités covarient, mais ne démontre ni une connexion anatomique directe, ni le sens des échanges, ni une causalité."
+msgstr "A statistical measure of dependence or correlation between the activity of different brain regions over time. It indicates that their activities covary, but does not demonstrate a direct anatomical connection, the direction of exchanges or causality."
+
+#: ../../glossary.rst:20
+msgid "Correspondance intermodale"
+msgstr "Crossmodal correspondence"
+
+#: ../../glossary.rst:22
+msgid "Association systématique observée entre des caractéristiques appartenant à des modalités sensorielles différentes, par exemple entre un son aigu et une position visuelle élevée. Une correspondance de groupe n'implique pas une synesthésie ni une règle universelle valable pour chaque individu."
+msgstr "A systematic association observed between characteristics belonging to different sensory modalities, such as a high-pitched sound and an elevated visual position. A group correspondence implies neither synesthesia nor a universal rule applicable to every individual."
+
+#: ../../glossary.rst:23
+msgid "Émotion perçue"
+msgstr "Perceived emotion"
+
+#: ../../glossary.rst:25
+msgid "Émotion qu'un observateur attribue à un stimulus, par exemple considérer une musique comme joyeuse ou triste. Elle doit être distinguée de l'émotion effectivement ressentie par la personne qui l'écoute et de sa préférence pour le stimulus."
+msgstr "An emotion that an observer attributes to a stimulus, such as judging music to be happy or sad. It must be distinguished from the emotion actually experienced by the listener and from their preference for the stimulus."
+
+#: ../../glossary.rst:26
+msgid "IRMf (Imagerie par Résonance Magnétique fonctionnelle)"
+msgstr "fMRI (functional Magnetic Resonance Imaging)"
+
+#: ../../glossary.rst:28
+msgid "Technique d'imagerie cérébrale estimant indirectement les variations d'activité neuronale, généralement à partir des changements d'oxygénation du sang. Elle permet d'étudier l'activité et la connectivité fonctionnelle de régions cérébrales avec une résolution temporelle limitée."
+msgstr "A brain imaging technique that indirectly estimates changes in neural activity, usually from changes in blood oxygenation. It allows the activity and functional connectivity of brain regions to be studied with limited temporal resolution."
+
+#: ../../glossary.rst:29
+msgid "Stimulus"
+msgstr ""
+
+#: ../../glossary.rst:31
+msgid "Élément présenté à un participant dans une expérience afin de provoquer ou mesurer une réponse. Il peut s'agir ici d'un son, d'un extrait musical, d'une couleur, d'une forme ou d'une combinaison contrôlée de ces éléments."
+msgstr "An element presented to a participant in an experiment to elicit or measure a response. Here it may be a sound, a musical excerpt, a color, a shape or a controlled combination of these elements."
+
+#: ../../glossary.rst:35
+msgid "Synesthète"
+msgstr "Synesthete"
+
+#: ../../glossary.rst:37
+msgid "Personne présentant une forme de synesthésie. Dans un contexte expérimental, il convient de distinguer une synesthésie simplement déclarée d'un statut évalué au moyen d'un protocole de cohérence ou d'autres critères définis par l'étude."
+msgstr "A person experiencing a form of synesthesia. In an experimental context, self-reported synesthesia should be distinguished from a status assessed through a consistency protocol or other criteria defined by the study."
+
+#: ../../glossary.rst:32
+msgid "Synesthésie"
+msgstr "Synesthesia"
+
+#: ../../glossary.rst:34
+msgid "Phénomène perceptif dans lequel un stimulus déclenche de manière automatique et relativement stable une expérience supplémentaire, par exemple une couleur associée à un son. Les associations sont individuelles et leur présence ne peut pas être déduite d'une simple préférence ou d'une correspondance perceptive de groupe."
+msgstr "A perceptual phenomenon in which a stimulus automatically and relatively consistently triggers an additional experience, such as a color associated with a sound. Associations are individual, and their presence cannot be inferred from a simple preference or a group perceptual correspondence."
+
+#: ../../glossary.rst:40
+msgid "Analyse du signal et traitement audio"
+msgstr "Signal analysis and audio processing"
+
+#: ../../glossary.rst:44
+msgid "Attaque"
+msgstr "Onset"
+
+#: ../../glossary.rst:46
+msgid "Début d'un événement sonore, généralement caractérisé par une augmentation rapide de l'énergie ou une modification importante du spectre. La détection automatique des attaques (*onset detection*) permet de repérer temporellement des événements tels que des notes ou des impacts."
+msgstr "The beginning of a sound event, generally characterized by a rapid increase in energy or a substantial change in the spectrum. Automatic *onset detection* locates events such as notes or impacts in time."
+
+#: ../../glossary.rst:47
+msgid "Centroïde spectral"
+msgstr "Spectral centroid"
+
+#: ../../glossary.rst:49
+#, python-brace-format
+msgid "Mesure décrivant le « centre de gravité » du spectre en fréquence. Pour des amplitudes spectrales :math:`X_k` associées aux fréquences :math:`f_k`, il peut s'écrire :math:`C = \\frac{\\sum_k f_k X_k}{\\sum_k X_k}`. Une valeur élevée correspond généralement à un spectre contenant proportionnellement davantage d'énergie dans les hautes fréquences."
+msgstr "A measure describing the frequency spectrum's center of gravity. For spectral amplitudes :math:`X_k` associated with frequencies :math:`f_k`, it can be written as :math:`C = \\frac{\\sum_k f_k X_k}{\\sum_k X_k}`. A high value generally corresponds to a spectrum containing proportionally more energy at high frequencies."
+
+#: ../../glossary.rst:50
+msgid "DSP (Digital Signal Processing)"
+msgstr ""
+
+#: ../../glossary.rst:52
+msgid "Traitement numérique du signal. Ensemble des méthodes permettant d'analyser ou de transformer des signaux échantillonnés : filtrage, analyse fréquentielle, extraction de caractéristiques, détection d'événements, etc."
+msgstr "Digital signal processing. The methods used to analyze or transform sampled signals: filtering, frequency analysis, feature extraction, event detection, etc."
+
+#: ../../glossary.rst:53
+msgid "Échantillonnage"
+msgstr "Sampling"
+
+#: ../../glossary.rst:55
+msgid "Conversion d'un signal continu en une suite de valeurs mesurées à intervalles temporels réguliers. La fréquence d'échantillonnage, exprimée en hertz, indique le nombre d'échantillons acquis par seconde."
+msgstr "Conversion of a continuous signal into values measured at regular time intervals. The sampling rate, expressed in hertz, indicates the number of samples acquired per second."
+
+#: ../../glossary.rst:56
+msgid "Fenêtre d'analyse"
+msgstr "Analysis window"
+
+#: ../../glossary.rst:58
+msgid "Portion temporelle finie du signal utilisée pour calculer une mesure locale. Sa durée détermine un compromis entre résolution temporelle et fréquentielle ; deux fenêtres successives peuvent se chevaucher selon le pas temporel choisi."
+msgstr "A finite time segment of the signal used to calculate a local measurement. Its duration determines a trade-off between temporal and frequency resolution; successive windows may overlap depending on the chosen hop size."
+
+#: ../../glossary.rst:59
+msgid "FFT (Fast Fourier Transform)"
+msgstr ""
+
+#: ../../glossary.rst:61
+msgid "Transformée de Fourier rapide. Famille d'algorithmes calculant efficacement la transformée de Fourier discrète d'un signal. Elle permet notamment d'obtenir, pour une fenêtre temporelle, une représentation de son contenu en fréquences appelée spectre."
+msgstr "Fast Fourier transform. A family of algorithms that efficiently compute a signal's discrete Fourier transform. In particular, it provides a representation of the frequency content of a time window, called a spectrum."
+
+#: ../../glossary.rst:62
+msgid "Flux spectral"
+msgstr "Spectral flux"
+
+#: ../../glossary.rst:64
+msgid "Mesure de la variation du spectre entre deux fenêtres temporelles successives. Une augmentation importante peut signaler un changement sonore rapide ou une attaque, mais la mesure peut également réagir au bruit ou à d'autres modifications du signal."
+msgstr "A measure of the change in the spectrum between successive time windows. A substantial increase may indicate a rapid sound change or an onset, but the measure can also respond to noise or other signal changes."
+
+#: ../../glossary.rst:65
+msgid "Fréquence d'échantillonnage"
+msgstr "Sampling rate"
+
+#: ../../glossary.rst:67
+msgid "Nombre d'échantillons numériques représentant une seconde de signal, exprimé en hertz (Hz). Par exemple, une fréquence de 48 kHz correspond à 48 000 échantillons par seconde et par canal."
+msgstr "The number of digital samples representing one second of signal, expressed in hertz (Hz). For example, a rate of 48 kHz corresponds to 48,000 samples per second per channel."
+
+#: ../../glossary.rst:68
+msgid "Hauteur fondamentale"
+msgstr "Fundamental pitch"
+
+#: ../../glossary.rst:70
+msgid "Fréquence fondamentale :math:`f_0` associée à la périodicité principale d'un son et fortement liée à la hauteur tonale perçue lorsque celle-ci est définie. Son estimation peut devenir ambiguë ou impossible pour certains bruits, silences ou mélanges polyphoniques."
+msgstr "The fundamental frequency :math:`f_0` associated with a sound's main periodicity and closely related to perceived pitch when it is defined. Its estimation can become ambiguous or impossible for some noise, silence or polyphonic mixtures."
+
+#: ../../glossary.rst:71
+msgid "Lissage"
+msgstr "Smoothing"
+
+#: ../../glossary.rst:73
+msgid "Traitement réduisant les variations rapides d'une mesure au cours du temps. Il permet d'obtenir une animation plus stable, au prix d'une réponse potentiellement plus lente aux changements du signal."
+msgstr "Processing that reduces rapid changes in a measurement over time. It produces more stable animation, at the cost of a potentially slower response to signal changes."
+
+#: ../../glossary.rst:74
+msgid "MFCC (Mel-Frequency Cepstral Coefficients)"
+msgstr ""
+
+#: ../../glossary.rst:76
+msgid "Coefficients cepstraux calculés sur une échelle de fréquences de type Mel, conçue pour approximer certaines propriétés de la perception auditive. Ils résument l'enveloppe spectrale d'un son et sont fréquemment utilisés comme descripteurs de timbre ou comme entrées d'algorithmes d'analyse audio."
+msgstr "Cepstral coefficients computed on a Mel frequency scale, designed to approximate certain properties of auditory perception. They summarize a sound's spectral envelope and are frequently used as timbre descriptors or inputs to audio analysis algorithms."
+
+#: ../../glossary.rst:77
+msgid "Normalisation"
+msgstr "Normalization"
+
+#: ../../glossary.rst:79
+msgid "Transformation destinée à ramener une mesure dans une plage ou une échelle commune afin de faciliter sa comparaison ou son utilisation. La méthode choisie doit être documentée car elle modifie la relation entre les données audio et les paramètres visuels."
+msgstr "A transformation that brings a measurement into a common range or scale to facilitate comparison or use. The chosen method must be documented because it changes the relationship between audio data and visual parameters."
+
+#: ../../glossary.rst:80
+msgid "Pas temporel"
+msgstr "Hop size"
+
+#: ../../glossary.rst:82
+msgid "Intervalle séparant deux instants successifs auxquels une analyse est calculée. Avec des fenêtres chevauchantes, le pas temporel est inférieur à la durée de la fenêtre d'analyse et détermine en partie la résolution temporelle des mesures."
+msgstr "The interval between successive analysis instants. With overlapping windows, the hop size is shorter than the analysis window duration and partly determines the temporal resolution of measurements."
+
+#: ../../glossary.rst:83
+msgid "RMS (Root Mean Square)"
+msgstr ""
+
+#: ../../glossary.rst:85
+msgid "Valeur quadratique moyenne utilisée ici comme mesure de l'énergie ou du niveau d'un signal audio. Pour :math:`N` échantillons :math:`x_n`, :math:`RMS = \\sqrt{\\frac{1}{N}\\sum_{n=1}^{N} x_n^2}`. Elle ne représente pas directement la sonie perçue par l'auditeur."
+msgstr "The root mean square value, used here as a measure of an audio signal's energy or level. For :math:`N` samples :math:`x_n`, :math:`RMS = \\sqrt{\\frac{1}{N}\\sum_{n=1}^{N} x_n^2}`. It does not directly represent the listener's perceived loudness."
+
+#: ../../glossary.rst:86
+msgid "Sonie"
+msgstr "Loudness"
+
+#: ../../glossary.rst:88
+msgid "Intensité sonore telle qu'elle est perçue par l'être humain. Elle dépend notamment du niveau acoustique, du contenu fréquentiel et de la durée ; elle ne doit pas être assimilée directement à l'amplitude ou à l'énergie RMS du signal numérique."
+msgstr "Sound intensity as perceived by humans. It depends in particular on acoustic level, frequency content and duration; it must not be directly equated with the amplitude or RMS energy of the digital signal."
+
+#: ../../glossary.rst:89
+msgid "Spectre"
+msgstr "Spectrum"
+
+#: ../../glossary.rst:91
+msgid "Représentation de la répartition d'un signal selon les fréquences. Il est généralement obtenu sur une fenêtre temporelle à l'aide d'une transformée de Fourier et sert de base au calcul de nombreux descripteurs audio."
+msgstr "A representation of a signal's distribution across frequencies. It is usually obtained over a time window using a Fourier transform and provides the basis for calculating many audio descriptors."
+
+#: ../../glossary.rst:92
+msgid "Transformée de Fourier"
+msgstr "Fourier transform"
+
+#: ../../glossary.rst:94
+msgid "Transformation mathématique décomposant un signal en composantes fréquentielles. Pour un signal numérique fini, on utilise généralement la transformée de Fourier discrète, souvent calculée efficacement au moyen d'une FFT."
+msgstr "A mathematical transformation that decomposes a signal into frequency components. For a finite digital signal, the discrete Fourier transform is generally used, often computed efficiently through an FFT."
+
+#: ../../glossary.rst:97
+msgid "Acoustique et musique"
+msgstr "Acoustics and music"
+
+#: ../../glossary.rst:101
+msgid "Classe de hauteur"
+msgstr "Pitch class"
+
+#: ../../glossary.rst:103
+msgid "Regroupement de toutes les notes séparées par un nombre entier d'octaves et portant le même nom musical, par exemple tous les Do. Elle décrit la position cyclique d'une note dans l'octave indépendamment de son registre."
+msgstr "A grouping of all notes separated by an integer number of octaves and sharing the same musical name, such as all C notes. It describes a note's cyclic position within the octave independently of its register."
+
+#: ../../glossary.rst:104
+msgid "Consonance"
+msgstr ""
+
+#: ../../glossary.rst:106
+msgid "Propriété perceptive ou musicale décrivant généralement une combinaison de sons perçue comme relativement stable ou harmonieuse dans un contexte donné. Elle dépend des intervalles, du timbre, du contexte musical et de facteurs culturels et ne constitue pas une grandeur acoustique unique."
+msgstr "A perceptual or musical property that generally describes a combination of sounds perceived as relatively stable or harmonious in a given context. It depends on intervals, timbre, musical context and cultural factors, and is not a single acoustic quantity."
+
+#: ../../glossary.rst:107
+msgid "Hauteur tonale"
+msgstr "Pitch"
+
+#: ../../glossary.rst:109
+msgid "Perception permettant d'ordonner approximativement les sons du grave vers l'aigu. Elle est liée à la fréquence fondamentale pour de nombreux sons périodiques, mais constitue une propriété perceptive et non une simple mesure de fréquence."
+msgstr "The perception that allows sounds to be approximately ordered from low to high. It is related to fundamental frequency for many periodic sounds, but is a perceptual property rather than a simple frequency measurement."
+
+#: ../../glossary.rst:110
+msgid "Mode majeur / mineur"
+msgstr "Major / minor mode"
+
+#: ../../glossary.rst:112
+msgid "Organisation tonale reposant sur des relations d'intervalles caractéristiques autour d'une tonique. Les modes majeur et mineur peuvent influencer des jugements perceptifs ou émotionnels, mais ne suffisent pas à déterminer à eux seuls l'émotion d'un morceau ou une palette de couleurs."
+msgstr "Tonal organization based on characteristic interval relationships around a tonic. Major and minor modes can influence perceptual or emotional judgments, but alone are insufficient to determine a piece's emotion or a color palette."
+
+#: ../../glossary.rst:113
+msgid "Polyphonie"
+msgstr "Polyphony"
+
+#: ../../glossary.rst:115
+msgid "Présence simultanée de plusieurs notes ou voix musicales. Un signal polyphonique rend notamment l'estimation d'une hauteur fondamentale unique plus difficile qu'avec un son monophonique isolé."
+msgstr "The simultaneous presence of several musical notes or voices. In particular, a polyphonic signal makes estimating a single fundamental pitch more difficult than for an isolated monophonic sound."
+
+#: ../../glossary.rst:116
+msgid "Tempo"
+msgstr ""
+
+#: ../../glossary.rst:118
+msgid "Vitesse d'organisation temporelle de la musique, généralement exprimée en battements par minute (BPM). Son estimation automatique à partir d'un signal complexe est un problème distinct de la simple détection d'attaques."
+msgstr "The speed of music's temporal organization, generally expressed in beats per minute (BPM). Automatic estimation from a complex signal is a distinct problem from simple onset detection."
+
+#: ../../glossary.rst:119
+msgid "Timbre"
+msgstr ""
+
+#: ../../glossary.rst:121
+msgid "Ensemble des propriétés perceptives permettant notamment de distinguer deux sons de même hauteur et de même niveau produits par des sources différentes. Il dépend de caractéristiques spectrales et temporelles et ne se réduit pas à un descripteur unique tel que les MFCC ou le centroïde spectral."
+msgstr "The perceptual properties that allow sounds of the same pitch and level produced by different sources to be distinguished. Timbre depends on spectral and temporal characteristics and cannot be reduced to a single descriptor such as MFCCs or the spectral centroid."
+
+#: ../../glossary.rst:124
+msgid "Colorimétrie et rendu visuel"
+msgstr "Colorimetry and visual rendering"
+
+#: ../../glossary.rst:128
+msgid "Calibration"
+msgstr ""
+
+#: ../../glossary.rst:130
+msgid "Procédure consistant à mesurer et régler un dispositif par rapport à une référence connue. Pour un écran, elle vise notamment à maîtriser la luminance et la reproduction des couleurs afin que les stimuli affichés soient comparables entre mesures ou dispositifs."
+msgstr "A procedure that measures and adjusts a device against a known reference. For a display, it aims in particular to control luminance and color reproduction so that displayed stimuli can be compared across measurements or devices."
+
+#: ../../glossary.rst:131
+msgid "Chroma"
+msgstr ""
+
+#: ../../glossary.rst:133
+msgid "En colorimétrie, attribut décrivant l'intensité ou la saturation apparente d'une couleur indépendamment, autant que possible, de sa clarté. Dans le cahier des charges, ce terme désigne une dimension colorimétrique et ne doit pas être confondu avec les descripteurs musicaux appelés *chroma*."
+msgstr "In colorimetry, an attribute describing a color's intensity or apparent saturation as independently as possible of its lightness. In the specification, this term denotes a colorimetric dimension and must not be confused with musical descriptors called *chroma*."
+
+#: ../../glossary.rst:134
+msgid "CIELUV"
+msgstr ""
+
+#: ../../glossary.rst:136
+msgid "Espace colorimétrique défini par la CIE afin de représenter les couleurs de manière plus proche de leurs différences perceptives que l'espace RGB. Il permet notamment de calculer des distances entre couleurs, sous réserve d'utiliser une conversion et des conditions de référence définies."
+msgstr "A color space defined by the CIE to represent colors more closely to their perceptual differences than RGB. In particular, it allows distances between colors to be calculated, provided a defined conversion and reference conditions are used."
+
+#: ../../glossary.rst:137
+msgid "Gamut"
+msgstr ""
+
+#: ../../glossary.rst:139
+msgid "Ensemble des couleurs qu'un dispositif ou un espace colorimétrique est capable de représenter. Une couleur située hors du gamut d'un écran ne peut pas y être reproduite exactement."
+msgstr "The set of colors that a device or color space can represent. A color outside a display's gamut cannot be reproduced exactly on that display."
+
+#: ../../glossary.rst:140
+msgid "Palette"
+msgstr ""
+
+#: ../../glossary.rst:142
+msgid "Ensemble organisé de couleurs utilisables par le moteur de rendu. Dans Synesthesia, une palette peut être proposée par défaut ou définie dans un profil personnel ; elle ne représente pas nécessairement une correspondance perceptive universelle."
+msgstr "An organized set of colors available to the rendering engine. In Synesthesia, a palette may be provided by default or defined in a personal profile; it does not necessarily represent a universal perceptual correspondence."
+
+#: ../../glossary.rst:145
+msgid "Modélisation, synchronisation et représentation"
+msgstr "Modeling, synchronization and representation"
+
+#: ../../glossary.rst:149
+msgid "Courbe de transfert"
+msgstr "Transfer curve"
+
+#: ../../glossary.rst:151
+msgid "Fonction transformant une mesure d'entrée en un paramètre de sortie. Dans Synesthesia, elle peut par exemple convertir une énergie audio normalisée en taille, luminosité ou vitesse d'un élément visuel, avec une relation linéaire ou non linéaire."
+msgstr "A function that transforms an input measurement into an output parameter. In Synesthesia, it may, for example, convert normalized audio energy into a visual element's size, brightness or speed, through a linear or nonlinear relationship."
+
+#: ../../glossary.rst:152
+msgid "Horodatage"
+msgstr "Timestamping"
+
+#: ../../glossary.rst:154
+msgid "Association d'une donnée ou d'un événement à un instant précis. Dans Synesthesia, les mesures audio et les états visuels sont horodatés afin de conserver leur synchronisation pendant la lecture et l'export."
+msgstr "Associating data or an event with a precise instant. In Synesthesia, audio measurements and visual states are timestamped to maintain synchronization during playback and export."
+
+#: ../../glossary.rst:155
+msgid "Latence audio-visuelle"
+msgstr "Audiovisual latency"
+
+#: ../../glossary.rst:157
+msgid "Décalage temporel entre un événement audio et sa conséquence visuelle affichée. Elle résulte de l'acquisition ou du décodage, de la taille des blocs, de l'analyse DSP, de la planification des tâches et du rendu ; elle doit donc être mesurée de bout en bout."
+msgstr "The time offset between an audio event and its displayed visual consequence. It results from acquisition or decoding, block size, DSP analysis, task scheduling and rendering; it must therefore be measured end to end."
+
+#: ../../glossary.rst:158
+msgid "Profil de correspondance"
+msgstr "Mapping profile"
+
+#: ../../glossary.rst:160
+msgid "Ensemble versionné de règles et de paramètres transformant les mesures audio en attributs visuels. Il peut contenir des plages, seuils, courbes de transfert, palettes et autres réglages nécessaires pour reproduire un rendu."
+msgstr "A versioned set of rules and parameters that transform audio measurements into visual attributes. It may contain ranges, thresholds, transfer curves, palettes and other settings needed to reproduce a rendering."
+
+#: ../../glossary.rst:161
+msgid "Sémantique"
+msgstr "Semantics"
+
+#: ../../glossary.rst:163
+msgid "Ensemble du sens attribué à une information ou à une représentation. Dans le cahier des charges, conserver la même sémantique de mesures signifie que les mêmes grandeurs, unités, conventions et significations sont utilisées en pré-analyse et en traitement direct."
+msgstr "The meaning assigned to information or a representation. In the specification, retaining the same measurement semantics means using the same quantities, units, conventions and meanings in pre-analysis and live processing."
+
+#: ../../glossary.rst:166
+msgid "Statistiques et méthodologie scientifique"
+msgstr "Statistics and scientific methodology"
+
+#: ../../glossary.rst:170
+msgid "Comparaisons multiples"
+msgstr "Multiple comparisons"
+
+#: ../../glossary.rst:172
+msgid "Situation statistique dans laquelle plusieurs hypothèses sont testées simultanément. La multiplication des tests augmente le risque d'obtenir au moins un résultat significatif par hasard et peut nécessiter une correction statistique adaptée."
+msgstr "A statistical situation in which several hypotheses are tested simultaneously. Increasing the number of tests increases the risk of obtaining at least one significant result by chance and may require an appropriate statistical correction."
+
+#: ../../glossary.rst:173
+msgid "Médiation"
+msgstr "Mediation"
+
+#: ../../glossary.rst:175
+msgid "Hypothèse selon laquelle la relation entre deux variables passe en partie par une troisième variable. Dans les études musique-couleur citées, l'émotion peut par exemple être étudiée comme intermédiaire entre certaines caractéristiques musicales et les couleurs choisies."
+msgstr "The hypothesis that the relationship between two variables partly operates through a third variable. In the cited music-color studies, emotion may, for example, be examined as an intermediary between musical characteristics and chosen colors."
+
+#: ../../glossary.rst:176
+msgid "Réplication"
+msgstr "Replication"
+
+#: ../../glossary.rst:178
+msgid "Réalisation d'une nouvelle étude visant à vérifier si un résultat scientifique peut être retrouvé avec de nouvelles données et, selon le protocole, dans des conditions identiques ou proches."
+msgstr "Conducting a new study to check whether a scientific result can be reproduced with new data and, depending on the protocol, under identical or similar conditions."
+
+#: ../../glossary.rst:181
+msgid "Logiciel, formats et licences"
+msgstr "Software, formats and licenses"
+
+#: ../../glossary.rst:185
+msgid "AGPLv3 (GNU Affero General Public License version 3)"
+msgstr ""
+
+#: ../../glossary.rst:187
+msgid "Licence libre de type *copyleft* imposant notamment de fournir le code source correspondant lors de la redistribution d'une version couverte. Elle étend cette obligation aux versions modifiées utilisées pour fournir un service à des utilisateurs par l'intermédiaire d'un réseau."
+msgstr "A free *copyleft* license requiring, in particular, that corresponding source code be provided when a covered version is redistributed. It extends this obligation to modified versions used to provide a service to users over a network."
+
+#: ../../glossary.rst:188
+msgid "Codec"
+msgstr ""
+
+#: ../../glossary.rst:190
+msgid "Procédé ou logiciel assurant l'encodage et le décodage d'un flux numérique, par exemple audio ou vidéo. Un codec peut appliquer une compression avec ou sans perte et se distingue du conteneur qui organise les différents flux d'un fichier multimédia."
+msgstr "A method or software that encodes and decodes a digital stream, such as audio or video. A codec may apply lossy or lossless compression and differs from the container that organizes the various streams within a multimedia file."
+
+#: ../../glossary.rst:191
+msgid "Copyleft"
+msgstr ""
+
+#: ../../glossary.rst:193
+msgid "Principe de licence libre imposant que certaines redistributions ou œuvres dérivées conservent les libertés accordées par la licence d'origine. Les obligations exactes dépendent de la licence concernée."
+msgstr "A free licensing principle requiring certain redistributions or derivative works to preserve the freedoms granted by the original license. The exact obligations depend on the license concerned."

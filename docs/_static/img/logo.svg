@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
+  <title id="title">Synesthesia — onde et halo</title>
+  <desc id="description">Une onde claire traverse un cercle sombre entouré de trois arcs cyan, violet et menthe.</desc>
+  <rect width="512" height="512" rx="96" fill="#0B1020"/>
+  <g id="symbole" transform="translate(256 256) scale(2.45)">
+    <circle r="83" fill="none" stroke="#536981" stroke-width="3"/>
+    <path d="M-73-40A83 83 0 0 1-5-83" fill="none" stroke="#84D4E3" stroke-width="12" stroke-linecap="round"/>
+    <path d="M38-74A83 83 0 0 1 81 19" fill="none" stroke="#C6A7F5" stroke-width="12" stroke-linecap="round"/>
+    <path d="M66 50A83 83 0 0 1-52 65" fill="none" stroke="#91EAD2" stroke-width="12" stroke-linecap="round"/>
+    <path d="M-67 0h25c13 0 13-26 26-26S-3 26 10 26 23 0 36 0h31" fill="none" stroke="#ECF8FA" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
