@@ -69,6 +69,18 @@ table.image-grid td {
   text-align: center;
 }
 
+table.fixed-widths {
+    width: 100%;
+    table-layout: fixed;
+}
+
+table.fixed-widths th,
+table.fixed-widths td {
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
 /* Masque le préfixe de la classe dans les signatures (RTD/Furo selon markup) */
 .sig .sig-prename.descclassname,
 .sig .sig-prename.descclassname + .sig-name.descname::before {

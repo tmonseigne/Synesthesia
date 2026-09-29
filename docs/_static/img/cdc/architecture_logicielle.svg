@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="840" viewBox="0 0 1280 840" role="img" aria-labelledby="title description">
+  <title id="title">Architecture logicielle provisoire de Synesthesia</title>
+  <desc id="description">Quatre couches : présentation Qt, application, cœur et adaptateurs. L'audio est analysé en mesures horodatées, converties par les règles de profil en état visuel, puis dessiné pour l'aperçu ou l'export.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1L9 5 1 9" fill="none" stroke="#6B7891" stroke-width="1.8"/></marker>
+    <style>
+      text { font-family: Arial, sans-serif; }
+      .heading { fill: #10213E; font-size: 28px; font-weight: 700; }
+      .subtitle { fill: #4A5C74; font-size: 16px; }
+      .band-label { fill: #233750; font-size: 17px; font-weight: 700; }
+      .box-title { fill: #142841; font-size: 18px; font-weight: 700; }
+      .box-copy { fill: #40546C; font-size: 14px; }
+      .foot { fill: #40546C; font-size: 15px; }
+      .link { fill: none; stroke: #6B7891; stroke-width: 2.5; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1280" height="840" fill="#F7F9FC"/>
+  <text x="42" y="55" class="heading">Synesthesia — architecture logicielle</text>
+  <text x="42" y="81" class="subtitle">Découpage logique provisoire · frontières à confirmer pendant le prototype</text>
+
+  <rect x="40" y="105" width="1200" height="112" rx="15" fill="#E8F3F0" stroke="#B8D9D0"/>
+  <text x="60" y="135" class="band-label">Présentation</text>
+  <rect x="292" y="121" width="936" height="78" rx="11" fill="#FFFFFF" stroke="#9DC7BB"/>
+  <text x="314" y="150" class="box-title">Interface Qt via qtpy</text>
+  <text x="314" y="177" class="box-copy">Lecture, visualisation, édition des profils, progression et erreurs</text>
+
+  <path d="M640 217V244" class="link"/>
+  <rect x="40" y="247" width="1200" height="124" rx="15" fill="#E9F0FB" stroke="#B6CAEA"/>
+  <text x="60" y="279" class="band-label">Application</text>
+  <rect x="292" y="265" width="292" height="85" rx="11" fill="#FFFFFF" stroke="#A8BFE3"/>
+  <text x="312" y="296" class="box-title">Lecture et analyse</text>
+  <text x="312" y="322" class="box-copy">Ouverture, transport, progrès</text>
+  <rect x="596" y="265" width="292" height="85" rx="11" fill="#FFFFFF" stroke="#A8BFE3"/>
+  <text x="616" y="296" class="box-title">Profils</text>
+  <text x="616" y="322" class="box-copy">Édition, validation, chargement</text>
+  <rect x="900" y="265" width="328" height="85" rx="11" fill="#FFFFFF" stroke="#A8BFE3"/>
+  <text x="920" y="296" class="box-title">Export</text>
+  <text x="920" y="322" class="box-copy">Instants vidéo, images, état</text>
+
+  <path d="M640 371V398" class="link"/>
+  <rect x="40" y="401" width="1200" height="155" rx="15" fill="#F0ECFA" stroke="#C9BCE5"/>
+  <text x="60" y="433" class="band-label">Cœur</text>
+  <rect x="292" y="451" width="214" height="79" rx="11" fill="#FFFFFF" stroke="#C0AFE0"/>
+  <text x="309" y="481" class="box-title">Analyse DSP</text>
+  <text x="309" y="506" class="box-copy">Descripteurs audio</text>
+  <rect x="530" y="451" width="214" height="79" rx="11" fill="#FFFFFF" stroke="#C0AFE0"/>
+  <text x="547" y="481" class="box-title">Mesures</text>
+  <text x="547" y="506" class="box-copy">Horodatage, validité</text>
+  <rect x="768" y="451" width="214" height="79" rx="11" fill="#FFFFFF" stroke="#C0AFE0"/>
+  <text x="785" y="481" class="box-title">Correspondances</text>
+  <text x="785" y="506" class="box-copy">Règles du profil</text>
+  <rect x="1006" y="451" width="222" height="79" rx="11" fill="#FFFFFF" stroke="#C0AFE0"/>
+  <text x="1023" y="481" class="box-title">État visuel</text>
+  <text x="1023" y="506" class="box-copy">Indépendant du rendu</text>
+  <path d="M507 490H526M745 490H764M983 490H1002" class="link"/>
+
+  <path d="M640 556V583" class="link"/>
+  <rect x="40" y="586" width="1200" height="145" rx="15" fill="#EEF1F5" stroke="#C8D0DA"/>
+  <text x="60" y="618" class="band-label">Adaptateurs</text>
+  <rect x="292" y="635" width="214" height="70" rx="11" fill="#FFFFFF" stroke="#B6C1CD"/>
+  <text x="309" y="663" class="box-title">Audio</text>
+  <text x="309" y="688" class="box-copy">Fichier, lecture, direct</text>
+  <rect x="530" y="635" width="214" height="70" rx="11" fill="#FFFFFF" stroke="#B6C1CD"/>
+  <text x="547" y="663" class="box-title">Profils JSON</text>
+  <text x="547" y="688" class="box-copy">Stockage versionné</text>
+  <rect x="768" y="635" width="214" height="70" rx="11" fill="#FFFFFF" stroke="#B6C1CD"/>
+  <text x="785" y="663" class="box-title">Rendu 2D</text>
+  <text x="785" y="688" class="box-copy">Aperçu et images</text>
+  <rect x="1006" y="635" width="222" height="70" rx="11" fill="#FFFFFF" stroke="#B6C1CD"/>
+  <text x="1023" y="663" class="box-title">FFmpeg</text>
+  <text x="1023" y="688" class="box-copy">Encodage vidéo</text>
+
+  <text x="42" y="772" class="foot">Flux métier : audio → mesures → règles du profil → état visuel → image.</text>
+  <text x="42" y="798" class="foot">Horloge audio pour l'aperçu ; cadence vidéo pour l'export. Les deux utilisent les mêmes règles.</text>
+</svg>

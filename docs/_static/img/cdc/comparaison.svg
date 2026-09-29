@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title description">
+<title id="title">Synesthesia — esquisse de comparaison perceptive</title>
+<desc id="description">Session exploratoire avec consigne explicite, stimulus sonore et réponse aucune couleur.</desc>
+<defs><linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#91EAD2"/><stop offset=".55" stop-color="#82D2E6"/><stop offset="1" stop-color="#C5AAF8"/></linearGradient><linearGradient id="preview" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#13233F"/><stop offset="1" stop-color="#272044"/></linearGradient><radialGradient id="glow"><stop stop-color="#91EAD2" stop-opacity=".45"/><stop offset="1" stop-color="#91EAD2" stop-opacity="0"/></radialGradient></defs>
+<rect x="0" y="0" width="1440" height="900" fill="#0B1020"/>
+<rect x="0" y="0" width="228" height="900" fill="#11182B"/>
+<line x1="228" y1="0" x2="228" y2="900" stroke="#26314B" stroke-width="1"/>
+<circle cx="39" cy="41" r="16" fill="#91EAD2"/>
+<path d="M31 42c5-14 10 14 16 0" fill="none" stroke="#14243A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="66" y="48" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="19" font-weight="700">Synesthesia</text>
+<text x="28" y="104" fill="#7F8CA8" font-family="Arial, sans-serif" font-size="11" font-weight="700">ESPACE DE TRAVAIL</text>
+<circle cx="41" cy="149" r="7" fill="#91A0B9"/>
+<text x="62" y="154" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="14">Visualisateur</text>
+<circle cx="41" cy="203" r="7" fill="#91A0B9"/>
+<text x="62" y="208" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="14">Configurateur</text>
+<circle cx="41" cy="257" r="7" fill="#91A0B9"/>
+<text x="62" y="262" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="14">Profils</text>
+<rect x="16" y="288" width="196" height="46" fill="#25354C" rx="12"/>
+<rect x="16" y="288" width="4" height="46" fill="#91EAD2" rx="2"/>
+<circle cx="41" cy="311" r="7" fill="#91EAD2"/>
+<text x="62" y="316" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="14" font-weight="700">Comparaison</text>
+<text x="28" y="828" fill="#7584A0" font-family="Arial, sans-serif" font-size="11">Prototype d&#x27;interface · v0.1</text>
+<text x="264" y="57" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="28" font-weight="700">Comparaison perceptive</text>
+<text x="264" y="84" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="14">Parcours exploratoire · fonction envisagée après le premier périmètre.</text>
+<rect x="1271" y="37" width="145" height="37" fill="#263650" rx="10" stroke="#50617C" stroke-width="1"/>
+<text x="1289" y="61" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="12" font-weight="700">Session 03 / 12</text>
+<rect x="264" y="112" width="704" height="763" fill="#172138" rx="18" stroke="#35425C" stroke-width="1"/>
+<text x="290" y="152" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="18" font-weight="700">Une question à la fois</text>
+<rect x="290" y="177" width="652" height="67" fill="#243850" rx="12" stroke="#6ACABD" stroke-width="1"/>
+<text x="309" y="202" fill="#91EAD2" font-family="Arial, sans-serif" font-size="10" font-weight="700">CONSIGNE DE CETTE SESSION</text>
+<text x="309" y="225" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="13">Indiquez la couleur ressentie spontanément, si elle existe.</text>
+<text x="290" y="284" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="16" font-weight="700">Stimulus audio</text>
+<rect x="290" y="304" width="652" height="172" fill="url(#preview)" rx="14" stroke="#415470" stroke-width="1"/>
+<circle cx="342" cy="386" r="25" fill="#91EAD2"/>
+<path d="M336 374l18 12-18 12z" fill="#172638"/>
+<rect x="405" y="377.5" width="8" height="25" fill="#83D3DC" rx="4"/>
+<rect x="434" y="366.5" width="8" height="47" fill="#83D3DC" rx="4"/>
+<rect x="463" y="374.5" width="8" height="31" fill="#83D3DC" rx="4"/>
+<rect x="492" y="355.5" width="8" height="69" fill="#83D3DC" rx="4"/>
+<rect x="521" y="368.5" width="8" height="43" fill="#83D3DC" rx="4"/>
+<rect x="550" y="349.5" width="8" height="81" fill="#83D3DC" rx="4"/>
+<rect x="579" y="363.0" width="8" height="54" fill="#83D3DC" rx="4"/>
+<rect x="608" y="372.5" width="8" height="35" fill="#83D3DC" rx="4"/>
+<rect x="637" y="359.5" width="8" height="61" fill="#83D3DC" rx="4"/>
+<rect x="666" y="354.0" width="8" height="72" fill="#83D3DC" rx="4"/>
+<rect x="695" y="367.5" width="8" height="45" fill="#83D3DC" rx="4"/>
+<rect x="724" y="375.0" width="8" height="30" fill="#83D3DC" rx="4"/>
+<rect x="753" y="360.0" width="8" height="60" fill="#83D3DC" rx="4"/>
+<rect x="782" y="370.0" width="8" height="40" fill="#83D3DC" rx="4"/>
+<rect x="811" y="362.5" width="8" height="55" fill="#83D3DC" rx="4"/>
+<rect x="840" y="375.5" width="8" height="29" fill="#83D3DC" rx="4"/>
+<text x="309" y="451" fill="#91EAD2" font-family="Arial, sans-serif" font-size="12" font-weight="700">Réécouter le son</text>
+<text x="290" y="524" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="16" font-weight="700">Choix de couleur</text>
+<text x="290" y="548" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="12">Sélectionnez une réponse ou indiquez qu&#x27;aucune couleur n&#x27;apparaît.</text>
+<rect x="290" y="573" width="68" height="54" fill="#4772B4" rx="10"/>
+<rect x="372" y="573" width="68" height="54" fill="#62A8D4" rx="10"/>
+<rect x="454" y="573" width="68" height="54" fill="#87D6CB" rx="10" stroke="#D8E5F4" stroke-width="3"/>
+<rect x="536" y="573" width="68" height="54" fill="#A8DEC1" rx="10"/>
+<rect x="618" y="573" width="68" height="54" fill="#D9C16D" rx="10"/>
+<rect x="700" y="573" width="68" height="54" fill="#E49C7D" rx="10"/>
+<rect x="782" y="573" width="68" height="54" fill="#B389BE" rx="10"/>
+<rect x="864" y="573" width="68" height="54" fill="#818897" rx="10"/>
+<rect x="290" y="646" width="652" height="52" fill="#202D44" rx="10" stroke="#566882" stroke-width="1"/>
+<circle cx="314" cy="672" r="8" fill="#172138" stroke="#AFC0D4"/>
+<text x="335" y="677" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="13">Aucune couleur</text>
+<rect x="290" y="727" width="154" height="42" fill="#273750" rx="11" stroke="#53647F" stroke-width="1"/>
+<text x="307" y="754" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="12" font-weight="700">Précédent</text>
+<rect x="769" y="727" width="173" height="42" fill="#91EAD2" rx="11"/>
+<text x="786" y="754" fill="#172638" font-family="Arial, sans-serif" font-size="12" font-weight="700">Valider et suivre</text>
+<rect x="984" y="112" width="432" height="763" fill="#172138" rx="18" stroke="#35425C" stroke-width="1"/>
+<text x="1008" y="152" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="18" font-weight="700">Cadre de la session</text>
+<text x="1008" y="185" fill="#8E9FBA" font-family="Arial, sans-serif" font-size="10" font-weight="700">TYPE DE RÉPONSE</text>
+<rect x="1008" y="200" width="384" height="48" fill="#263E53" rx="10" stroke="#72CABB" stroke-width="1"/>
+<text x="1025" y="230" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="13" font-weight="700">Couleur ressentie</text>
+<rect x="1008" y="259" width="384" height="48" fill="#202D44" rx="10"/>
+<text x="1025" y="289" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="13">Couleur jugée adéquate</text>
+<rect x="1008" y="318" width="384" height="48" fill="#202D44" rx="10"/>
+<text x="1025" y="348" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="13">Appréciation du rendu</text>
+<line x1="1008" y1="400" x2="1392" y2="400" stroke="#3B4B65" stroke-width="1"/>
+<text x="1008" y="432" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="15" font-weight="700">Suivi</text>
+<rect x="1008" y="452" width="384" height="7" fill="#34445E" rx="3"/>
+<rect x="1008" y="452" width="96" height="7" fill="#91EAD2" rx="3"/>
+<text x="1008" y="493" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="12">3 réponses sur 12</text>
+<rect x="1008" y="545" width="384" height="150" fill="#1A2B42" rx="12" stroke="#3F5770" stroke-width="1"/>
+<text x="1026" y="576" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="14" font-weight="700">À propos des réponses</text>
+<text x="1026" y="605" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="12">Ce parcours ne confirme pas une synesthésie.</text>
+<text x="1026" y="631" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="12">La consigne et les stimuli dépendent du</text>
+<text x="1026" y="652" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="12">protocole choisi avant la session.</text>
+<text x="1008" y="766" fill="#91EAD2" font-family="Arial, sans-serif" font-size="12" font-weight="700">Exporter mes réponses</text>
+</svg>

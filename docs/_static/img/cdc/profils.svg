@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title description">
+<title id="title">Synesthesia — esquisse des profils</title>
+<desc id="description">Bibliothèque des profils avec recherche, duplication et détail du profil sélectionné.</desc>
+<defs><linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#91EAD2"/><stop offset=".55" stop-color="#82D2E6"/><stop offset="1" stop-color="#C5AAF8"/></linearGradient><linearGradient id="preview" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#13233F"/><stop offset="1" stop-color="#272044"/></linearGradient><radialGradient id="glow"><stop stop-color="#91EAD2" stop-opacity=".45"/><stop offset="1" stop-color="#91EAD2" stop-opacity="0"/></radialGradient></defs>
+<rect x="0" y="0" width="1440" height="900" fill="#0B1020"/>
+<rect x="0" y="0" width="228" height="900" fill="#11182B"/>
+<line x1="228" y1="0" x2="228" y2="900" stroke="#26314B" stroke-width="1"/>
+<circle cx="39" cy="41" r="16" fill="#91EAD2"/>
+<path d="M31 42c5-14 10 14 16 0" fill="none" stroke="#14243A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="66" y="48" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="19" font-weight="700">Synesthesia</text>
+<text x="28" y="104" fill="#7F8CA8" font-family="Arial, sans-serif" font-size="11" font-weight="700">ESPACE DE TRAVAIL</text>
+<circle cx="41" cy="149" r="7" fill="#91A0B9"/>
+<text x="62" y="154" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="14">Visualisateur</text>
+<circle cx="41" cy="203" r="7" fill="#91A0B9"/>
+<text x="62" y="208" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="14">Configurateur</text>
+<rect x="16" y="234" width="196" height="46" fill="#25354C" rx="12"/>
+<rect x="16" y="234" width="4" height="46" fill="#91EAD2" rx="2"/>
+<circle cx="41" cy="257" r="7" fill="#91EAD2"/>
+<text x="62" y="262" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="14" font-weight="700">Profils</text>
+<text x="28" y="828" fill="#7584A0" font-family="Arial, sans-serif" font-size="11">Prototype d&#x27;interface · v0.1</text>
+<text x="264" y="57" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="28" font-weight="700">Profils</text>
+<text x="264" y="84" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="14">Retrouvez vos correspondances et préparez un profil personnel.</text>
+<rect x="1263" y="36" width="153" height="42" fill="#91EAD2" rx="11"/>
+<text x="1280" y="63" fill="#172638" font-family="Arial, sans-serif" font-size="12" font-weight="700">+ Nouveau profil</text>
+<rect x="264" y="112" width="704" height="763" fill="#172138" rx="18" stroke="#35425C" stroke-width="1"/>
+<text x="290" y="151" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="18" font-weight="700">Bibliothèque</text>
+<rect x="290" y="173" width="651" height="44" fill="#202D44" rx="10" stroke="#4C5D77" stroke-width="1"/>
+<text x="310" y="201" fill="#A6B6CD" font-family="Arial, sans-serif" font-size="13">⌕  Rechercher un profil</text>
+<text x="290" y="252" fill="#91EAD2" font-family="Arial, sans-serif" font-size="11" font-weight="700">TOUS  ·  3</text>
+<text x="415" y="252" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="11" font-weight="700">PERSONNELS  ·  2</text>
+<text x="595" y="252" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="11" font-weight="700">PROPOSÉS  ·  1</text>
+<line x1="290" y1="267" x2="942" y2="267" stroke="#3B4B65" stroke-width="1"/>
+<rect x="290" y="286" width="651" height="77" fill="#202D44" rx="12" stroke="#3E5069" stroke-width="1"/>
+<circle cx="320" cy="324" r="14" fill="#91EAD2"/>
+<text x="348" y="320" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="15" font-weight="700">Profil proposé</text>
+<text x="348" y="342" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="11">Correspondances initiales · lecture seule</text>
+<text x="904" y="331" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="25">›</text>
+<rect x="290" y="377" width="651" height="77" fill="#263750" rx="12" stroke="#91EAD2" stroke-width="1"/>
+<circle cx="320" cy="415" r="14" fill="#C5AAF8"/>
+<text x="348" y="411" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="15" font-weight="700">Mon profil</text>
+<text x="348" y="433" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="11">Personnel · 4 règles · modifié aujourd&#x27;hui</text>
+<text x="904" y="422" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="25">›</text>
+<rect x="290" y="468" width="651" height="77" fill="#202D44" rx="12" stroke="#3E5069" stroke-width="1"/>
+<circle cx="320" cy="506" r="14" fill="#82D2E6"/>
+<text x="348" y="502" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="15" font-weight="700">Palette douce</text>
+<text x="348" y="524" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="11">Personnel · 3 règles · modifié récemment</text>
+<text x="904" y="513" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="25">›</text>
+<rect x="290" y="591" width="651" height="145" fill="#19283F" rx="14" stroke="#34475E" stroke-width="1"/>
+<text x="311" y="624" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="15" font-weight="700">Un profil conserve vos règles de rendu.</text>
+<text x="311" y="651" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="12">Le profil proposé reste disponible après toute personnalisation.</text>
+<text x="311" y="676" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="12">Les changements non enregistrés sont signalés avant de quitter.</text>
+<rect x="984" y="112" width="432" height="763" fill="#172138" rx="18" stroke="#35425C" stroke-width="1"/>
+<text x="1008" y="151" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="19" font-weight="700">Mon profil</text>
+<text x="1008" y="176" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="12">Profil personnel · basé sur le profil proposé</text>
+<rect x="1008" y="200" width="384" height="86" fill="url(#preview)" rx="13" stroke="#40516D" stroke-width="1"/>
+<rect x="1024" y="222" width="61" height="40" fill="#91EAD2" rx="9"/>
+<rect x="1097" y="222" width="61" height="40" fill="#82D2E6" rx="9"/>
+<rect x="1170" y="222" width="61" height="40" fill="#C5AAF8" rx="9"/>
+<rect x="1243" y="222" width="61" height="40" fill="#5C85B8" rx="9"/>
+<rect x="1316" y="222" width="61" height="40" fill="#273C68" rx="9"/>
+<text x="1008" y="328" fill="#8E9FBA" font-family="Arial, sans-serif" font-size="11" font-weight="700">CORRESPONDANCES ACTIVES</text>
+<rect x="1008" y="360" width="384" height="42" fill="#202D44" rx="9"/>
+<text x="1023" y="387" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="12">Hauteur estimée</text>
+<text x="1280" y="387" fill="#91EAD2" font-family="Arial, sans-serif" font-size="12" font-weight="700">Clarté</text>
+<rect x="1008" y="411" width="384" height="42" fill="#202D44" rx="9"/>
+<text x="1023" y="438" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="12">Énergie RMS</text>
+<text x="1280" y="438" fill="#91EAD2" font-family="Arial, sans-serif" font-size="12" font-weight="700">Taille</text>
+<rect x="1008" y="462" width="384" height="42" fill="#202D44" rx="9"/>
+<text x="1023" y="489" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="12">Flux spectral</text>
+<text x="1280" y="489" fill="#91EAD2" font-family="Arial, sans-serif" font-size="12" font-weight="700">Mouvement</text>
+<rect x="1008" y="513" width="384" height="42" fill="#202D44" rx="9"/>
+<text x="1023" y="540" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="12">Timbre</text>
+<text x="1280" y="540" fill="#91EAD2" font-family="Arial, sans-serif" font-size="12" font-weight="700">Forme</text>
+<rect x="1008" y="608" width="181" height="42" fill="#91EAD2" rx="11"/>
+<text x="1025" y="635" fill="#172638" font-family="Arial, sans-serif" font-size="12" font-weight="700">Ouvrir le profil</text>
+<rect x="1201" y="608" width="191" height="42" fill="#273750" rx="11" stroke="#53647F" stroke-width="1"/>
+<text x="1218" y="635" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="12" font-weight="700">Dupliquer</text>
+<rect x="1008" y="664" width="181" height="42" fill="#273750" rx="11" stroke="#53647F" stroke-width="1"/>
+<text x="1025" y="691" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="12" font-weight="700">Exporter</text>
+<rect x="1201" y="664" width="191" height="42" fill="#273750" rx="11" stroke="#53647F" stroke-width="1"/>
+<text x="1218" y="691" fill="#F5F7FD" font-family="Arial, sans-serif" font-size="12" font-weight="700">Importer</text>
+<line x1="1008" y1="738" x2="1392" y2="738" stroke="#3B4B65" stroke-width="1"/>
+<text x="1008" y="773" fill="#A8B7CF" font-family="Arial, sans-serif" font-size="11">Les règles restent modifiables dans le configurateur.</text>
+</svg>

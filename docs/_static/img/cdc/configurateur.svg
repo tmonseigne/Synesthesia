@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title description">
+  <title id="title">Synesthesia — maquette du configurateur</title>
+  <desc id="description">Éditeur de correspondances audio-visuelles avec profil personnel, réglages progressifs et aperçu immédiat.</desc>
+  <defs>
+    <linearGradient id="preview" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#14243F"/><stop offset="1" stop-color="#241D43"/></linearGradient>
+    <linearGradient id="palette" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#7DBEE1"/><stop offset=".48" stop-color="#91E8D1"/><stop offset="1" stop-color="#C7A7F8"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#9CEED8" stop-opacity=".55"/><stop offset="1" stop-color="#9CEED8" stop-opacity="0"/></radialGradient>
+    <clipPath id="previewClip"><rect x="1000" y="201" width="411" height="304" rx="14"/></clipPath>
+  </defs>
+  <rect width="1440" height="900" fill="#0B1020"/>
+  <rect width="228" height="900" fill="#11182B"/>
+  <line x1="228" y1="0" x2="228" y2="900" stroke="#26314B"/>
+  <g id="brand" font-family="Arial, sans-serif">
+    <circle cx="39" cy="41" r="16" fill="#90EAD1"/><path d="M31 42c5-14 10 14 16 0" fill="none" stroke="#14243A" stroke-width="3" stroke-linecap="round"/>
+    <text x="66" y="48" fill="#F5F7FD" font-size="19" font-weight="700">Synesthesia</text>
+    <text x="28" y="104" fill="#7F8CA8" font-size="11" font-weight="700" letter-spacing="2">ESPACE DE TRAVAIL</text>
+    <circle cx="41" cy="149" r="8" fill="none" stroke="#8E9DB8" stroke-width="2"/><path d="M39 145l6 4-6 4z" fill="#8E9DB8"/>
+    <text x="62" y="154" fill="#AAB6CC" font-size="14">Visualisateur</text>
+    <rect x="16" y="180" width="196" height="46" rx="12" fill="#25354C"/><rect x="16" y="180" width="4" height="46" rx="2" fill="#8DEAD0"/>
+    <path d="M33 195h17m-17 6h17m-17 6h11" stroke="#91EAD2" stroke-width="2" stroke-linecap="round"/>
+    <text x="62" y="208" fill="#F5F7FD" font-size="14" font-weight="700">Configurateur</text>
+    <circle cx="41" cy="265" r="9" fill="none" stroke="#8E9DB8" stroke-width="2"/><path d="M41 258v14m-7-7h14" stroke="#8E9DB8" stroke-width="2"/>
+    <text x="62" y="270" fill="#AAB6CC" font-size="14">Profils</text>
+    <text x="28" y="348" fill="#7F8CA8" font-size="11" font-weight="700" letter-spacing="2">PROFIL OUVERT</text>
+    <rect x="16" y="365" width="196" height="117" rx="14" fill="#1B263D" stroke="#34415B"/>
+    <circle cx="40" cy="391" r="9" fill="#C6A7F5"/>
+    <text x="61" y="395" fill="#F4F7FD" font-size="12" font-weight="700">Mon profil</text>
+    <text x="29" y="427" fill="#9EACC5" font-size="11">Basé sur le profil proposé</text>
+    <rect x="29" y="444" width="170" height="26" rx="8" fill="#293750"/>
+    <text x="42" y="461" fill="#C6D3E7" font-size="11">Changer de profil</text>
+    <path d="M179 454l5 4-5 4" fill="none" stroke="#C6D3E7" stroke-width="1.5"/>
+    <text x="28" y="828" fill="#7584A0" font-size="11">Prototype d'interface · v0.1</text>
+  </g>
+  <g id="header" font-family="Arial, sans-serif">
+    <text x="264" y="55" fill="#F7F8FC" font-size="28" font-weight="700">Configurateur</text>
+    <text x="264" y="82" fill="#9EACC5" font-size="14">Ajustez vos correspondances et observez le résultat.</text>
+    <rect x="1112" y="35" width="128" height="42" rx="11" fill="#27344D" stroke="#52617B"/>
+    <text x="1131" y="61" fill="#E7EEF9" font-size="12" font-weight="700">Réinitialiser</text>
+    <rect x="1250" y="35" width="162" height="42" rx="11" fill="#91EAD2"/>
+    <text x="1271" y="61" fill="#172638" font-size="12" font-weight="700">Enregistrer le profil</text>
+  </g>
+  <g id="workspace" font-family="Arial, sans-serif">
+    <rect x="264" y="112" width="704" height="763" rx="18" fill="#172138" stroke="#35425C"/>
+    <text x="288" y="149" fill="#F5F7FD" font-size="17" font-weight="700">Correspondances</text>
+    <text x="288" y="172" fill="#9EACC5" font-size="12">Choisissez ce que chaque mesure audio pilote dans le rendu.</text>
+    <rect x="804" y="131" width="139" height="30" rx="9" fill="#273650"/><text x="818" y="150" fill="#C6D5E8" font-size="11">+ Ajouter une règle</text>
+    <g id="mapping-cards">
+      <rect x="288" y="195" width="656" height="68" rx="12" fill="#25374F" stroke="#85DCC9" stroke-width="1.5"/>
+      <circle cx="313" cy="229" r="12" fill="#83D8C9"/><text x="309" y="233" fill="#163044" font-size="12" font-weight="700">1</text>
+      <text x="338" y="223" fill="#F4F7FC" font-size="13" font-weight="700">Hauteur détectée</text><text x="338" y="243" fill="#AAB9D0" font-size="11">Quand une hauteur est estimable</text>
+      <path d="M550 229h41m-8-6l8 6-8 6" fill="none" stroke="#8AD9CF" stroke-width="2"/>
+      <rect x="616" y="210" width="202" height="39" rx="9" fill="#334962"/><text x="631" y="234" fill="#F1F7FA" font-size="12">Clarté de la couleur</text><path d="M793 225l5 5 5-5" fill="none" stroke="#C5D8E4" stroke-width="1.5"/>
+      <rect x="865" y="216" width="36" height="22" rx="11" fill="#89E4CE"/><circle cx="889" cy="227" r="8" fill="#17344B"/>
+      <rect x="288" y="274" width="656" height="68" rx="12" fill="#202C43" stroke="#3E506A"/>
+      <circle cx="313" cy="308" r="12" fill="#C7A9F7"/><text x="309" y="312" fill="#34264D" font-size="12" font-weight="700">2</text>
+      <text x="338" y="302" fill="#F4F7FC" font-size="13" font-weight="700">Énergie RMS</text><text x="338" y="322" fill="#AAB9D0" font-size="11">Intensité du signal</text>
+      <path d="M550 308h41m-8-6l8 6-8 6" fill="none" stroke="#8AD9CF" stroke-width="2"/>
+      <rect x="616" y="289" width="202" height="39" rx="9" fill="#2D3B53"/><text x="631" y="313" fill="#F1F7FA" font-size="12">Taille de la forme</text><path d="M793 304l5 5 5-5" fill="none" stroke="#C5D8E4" stroke-width="1.5"/>
+      <rect x="865" y="295" width="36" height="22" rx="11" fill="#89E4CE"/><circle cx="889" cy="306" r="8" fill="#17344B"/>
+      <rect x="288" y="353" width="656" height="68" rx="12" fill="#202C43" stroke="#3E506A"/>
+      <circle cx="313" cy="387" r="12" fill="#83CAE6"/><text x="309" y="391" fill="#17344B" font-size="12" font-weight="700">3</text>
+      <text x="338" y="381" fill="#F4F7FC" font-size="13" font-weight="700">Flux spectral</text><text x="338" y="401" fill="#AAB9D0" font-size="11">Variations et attaques</text>
+      <path d="M550 387h41m-8-6l8 6-8 6" fill="none" stroke="#8AD9CF" stroke-width="2"/>
+      <rect x="616" y="368" width="202" height="39" rx="9" fill="#2D3B53"/><text x="631" y="392" fill="#F1F7FA" font-size="12">Vitesse d'animation</text><path d="M793 383l5 5 5-5" fill="none" stroke="#C5D8E4" stroke-width="1.5"/>
+      <rect x="865" y="374" width="36" height="22" rx="11" fill="#89E4CE"/><circle cx="889" cy="385" r="8" fill="#17344B"/>
+    </g>
+    <line x1="288" y1="448" x2="944" y2="448" stroke="#3C4B64"/>
+    <text x="288" y="484" fill="#F5F7FD" font-size="17" font-weight="700">Hauteur → clarté</text>
+    <text x="288" y="507" fill="#A9B8CE" font-size="12">La couleur s'éclaircit lorsque la hauteur détectée augmente.</text>
+    <text x="288" y="547" fill="#D7E1EF" font-size="12" font-weight="700">Plage de hauteur</text>
+    <rect x="288" y="560" width="194" height="45" rx="10" fill="#202D44" stroke="#4A5A75"/><text x="303" y="576" fill="#95A6BE" font-size="10">MINIMUM</text><text x="303" y="593" fill="#EFF5FC" font-size="13">80 Hz</text>
+    <rect x="494" y="560" width="194" height="45" rx="10" fill="#202D44" stroke="#4A5A75"/><text x="509" y="576" fill="#95A6BE" font-size="10">MAXIMUM</text><text x="509" y="593" fill="#EFF5FC" font-size="13">2 000 Hz</text>
+    <rect x="700" y="560" width="244" height="45" rx="10" fill="#202D44" stroke="#4A5A75"/><text x="715" y="576" fill="#95A6BE" font-size="10">ÉCHELLE</text><text x="715" y="593" fill="#EFF5FC" font-size="13">Logarithmique</text><path d="M919 581l6 6 6-6" fill="none" stroke="#CAD8E7" stroke-width="1.5"/>
+    <text x="288" y="642" fill="#D7E1EF" font-size="12" font-weight="700">Progression de la clarté</text>
+    <rect x="288" y="655" width="656" height="123" rx="11" fill="#202D44" stroke="#455570"/>
+    <g stroke="#394A63" stroke-width="1"><path d="M313 678h603M313 717h603M313 755h603M313 678v77M514 678v77M715 678v77M916 678v77"/></g>
+    <path d="M313 745C449 743 464 728 552 710S735 695 916 684" fill="none" stroke="#91EAD2" stroke-width="3"/>
+    <circle cx="313" cy="745" r="5" fill="#D8FFF0"/><circle cx="552" cy="710" r="5" fill="#D8FFF0"/><circle cx="916" cy="684" r="5" fill="#D8FFF0"/>
+    <text x="291" y="807" fill="#99AAC2" font-size="11">Faible</text><text x="895" y="807" fill="#99AAC2" font-size="11">Forte</text>
+    <rect x="751" y="824" width="193" height="30" rx="8" fill="#293850"/><text x="767" y="844" fill="#C8D6E7" font-size="11">Paramètres avancés  ⌄</text>
+  </g>
+  <g id="side-preview" font-family="Arial, sans-serif">
+    <rect x="984" y="112" width="432" height="763" rx="18" fill="#172138" stroke="#35425C"/>
+    <text x="1000" y="149" fill="#F5F7FD" font-size="17" font-weight="700">Aperçu immédiat</text>
+    <text x="1000" y="173" fill="#9EACC5" font-size="12">Exemple audio.wav · 01:24</text>
+    <g clip-path="url(#previewClip)">
+      <rect x="1000" y="201" width="411" height="304" fill="url(#preview)"/>
+      <circle cx="1214" cy="350" r="150" fill="url(#glow)"/>
+      <path d="M1021 427c74-94 94-141 155-91 44 37 71 37 124-11 41-38 77-43 119 12" fill="none" stroke="#98E5D7" stroke-width="22" stroke-linecap="round" opacity=".20"/>
+      <path d="M1021 427c74-94 94-141 155-91 44 37 71 37 124-11 41-38 77-43 119 12" fill="none" stroke="#A1EBDD" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="1176" cy="335" r="51" fill="none" stroke="#A6E9E0" stroke-width="2" opacity=".75"/><circle cx="1176" cy="335" r="29" fill="#A5E9DC" opacity=".14"/>
+      <circle cx="1302" cy="323" r="37" fill="none" stroke="#C3B3F5" stroke-width="2" opacity=".72"/>
+    </g>
+    <rect x="1000" y="201" width="411" height="304" rx="14" fill="none" stroke="#45516A"/>
+    <rect x="1014" y="216" width="94" height="27" rx="8" fill="#26374E"/><text x="1028" y="234" fill="#D8E7F1" font-size="11">Aperçu 2D</text>
+    <rect x="1000" y="521" width="411" height="48" rx="11" fill="#202E46"/>
+    <path d="M1020 535l14 10-14 10z" fill="#90E9D2"/>
+    <rect x="1053" y="544" width="315" height="4" rx="2" fill="#4D6179"/><rect x="1053" y="544" width="113" height="4" rx="2" fill="#90E9D2"/><circle cx="1166" cy="546" r="5" fill="#D8FFF0"/>
+    <text x="1000" y="613" fill="#F5F7FD" font-size="14" font-weight="700">Palette du profil</text>
+    <rect x="1000" y="628" width="411" height="34" rx="9" fill="url(#palette)"/>
+    <text x="1000" y="687" fill="#A9B8CE" font-size="11">Les couleurs sont personnalisables dans les réglages avancés.</text>
+    <line x1="1000" y1="715" x2="1411" y2="715" stroke="#3C4B64"/>
+    <text x="1000" y="745" fill="#F5F7FD" font-size="14" font-weight="700">Confort visuel</text>
+    <text x="1000" y="777" fill="#BAC8DA" font-size="12">Réduire les mouvements rapides</text>
+    <rect x="1365" y="762" width="36" height="22" rx="11" fill="#465772"/><circle cx="1376" cy="773" r="8" fill="#D6E1EE"/>
+    <text x="1000" y="816" fill="#BAC8DA" font-size="12">Réduire la luminosité</text>
+    <rect x="1365" y="801" width="36" height="22" rx="11" fill="#465772"/><circle cx="1376" cy="812" r="8" fill="#D6E1EE"/>
+  </g>
+</svg>
